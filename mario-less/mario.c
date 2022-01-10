@@ -18,7 +18,7 @@ int main(void)
         {
             if (j >= n-(i-1) && j <= n+(i-1))
         {
-            printf("#\n");
+            printf("#");
         }
         else
         {
