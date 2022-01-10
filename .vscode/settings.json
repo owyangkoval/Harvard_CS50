@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.html": "jinja-html",
+        "cs50.h": "c"
+    }
+}
