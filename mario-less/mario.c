@@ -1,33 +1,28 @@
 #include <cs50.h>
 #include <stdio.h>
 
+string hash(int);
+
 int main(void)
 {
-        int n;
+    int n;
     do
     {
-        n = get_int("Size: ");
+        n = get_int("Height: ");
     }
-    while (n < 0);
-
-    // For each row
-    for (int i = 1; i <= n; i++)
+    while (n < 0 || n > 8);
+    for(int i = 0; i < n; i++)
     {
-        // For each column
-        for (int j = 1; j <= 2*n - 1; j++)
+        for(int j = 0; j < n-1-i; j++)
         {
-            if (j >= n-(i-1) && j <= n+(i-1))
-        {
+            for(int j = 0; j < i+1; j++)
+            {
+                printf(".");
+            }
             printf("#");
         }
-        else
-        {
-            printf(" ");
-        }
-
-        // Move to next row
         printf("\n");
     }
 
- }
+
 }
