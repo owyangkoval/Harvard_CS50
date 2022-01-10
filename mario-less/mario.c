@@ -11,12 +11,12 @@ int main(void)
     while (n < 0);
 
     // For each row
-    for (int i = 1; i <= 8; i++)
+    for (int i = 1; i <= n; i++)
     {
         // For each column
-        for (int j = 1; j <= 8; j++)
+        for (int j = 1; j <= 2*n - 1; j++)
         {
-            // Print a brick
+            // Print a pyramid
             printf("#");
         }
 
