@@ -12,10 +12,10 @@ int main(void)
 
 
     // For each row
-    for (int i = 2; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         // For each column
-        for (int j = 4; j < n; j++)
+        for (int j = 0; j < n; j++)
         {
             // Print a pyramid
             printf("#");
