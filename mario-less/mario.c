@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int n;
+        int n;
     do
     {
         n = get_int("Size: ");
@@ -16,11 +16,16 @@ int main(void)
         // For each column
         for (int j = 1; j <= 2*n - 1; j++)
         {
-            // Print a pyramid
-            printf("#");
+            if (j >= n-(i-1) && j <= n+(i-1))
+        { printf("#");
+        }
+        else
+        { printf(" ");
         }
 
         // Move to next row
         printf("\n");
     }
+
+ }
 }
