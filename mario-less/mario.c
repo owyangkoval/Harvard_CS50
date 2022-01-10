@@ -1,10 +1,26 @@
+#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-    for (int i = 0; i < 8; i++)
+    int n;
+    do
     {
-        printf("?");
+        n = get_int("Size: ");
     }
-    printf("\n");
+    while (n < 1);
+
+    // For each row
+    for (int i = 0; i < n; i++)
+    {
+        // For each column
+        for (int j = 0; j < n; j++)
+        {
+            // Print a brick
+            printf("#");
+        }
+
+        // Move to next row
+        printf("\n");
+    }
 }
