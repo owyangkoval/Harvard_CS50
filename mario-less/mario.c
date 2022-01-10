@@ -10,8 +10,14 @@ int main(void)
     }
     while (n < 1);
 
-    for (int i = 0; i <= n; i++)
-    {
-        printf("#\n");
+    //rows
+    for (int i=1; i<=rows; n=0){
+      for(j=1; j<=rows-i; ++j){
+        printf(" ");
     }
-}
+      }
+      while (n!=2*i-1) {
+         printf("# ");
+         ++n;
+      }
+      printf("\n");
