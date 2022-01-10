@@ -1,17 +1,23 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main() {
-   int i, j, rows;
-   printf("Enter the number of rows: ");
-
+   int r, s, rows=0;
+   int t=0;
+   clrscr();
+   printf("Enter number of rows to print the pyramid: ");
    scanf("%d", &rows);
-
-
-   for (i = 1; i <= rows; ++i) {
-      for (j = 1; j <= i; ++j) {
-         printf("# ");
+   printf("\n");
+   printf("The Pyramid Pattern for the number of rows are:");
+   printf("\n\n");
+   for(r=1;r<=rows;++r,t=0) {
+      for(s=1; s<=rows-r; ++s){
+         printf(" ");
+      }
+      while (t!=2*r-1) {
+         printf("* ");
+         ++t;
       }
       printf("\n");
    }
+   getch();
    return 0;
 }
