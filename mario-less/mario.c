@@ -2,15 +2,17 @@
 #include <stdio.h>
 
 int main(void) {
+
     //initialize variables
     int height, n, j, k, i;
-
     printf("Height: \n");
+
     // Get user input
     height = get_int("Size: ");
     n = height;
     for(i = 0; i < height; i++) {
-        // create n spaces based off height
+
+    // create n spaces based off height
         for(k = n; k > i; k--)
             printf("%c", ' ');
 
