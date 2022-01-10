@@ -8,13 +8,13 @@ int main(void)
     {
         n = get_int("Size: ");
     }
-    while (n < 9);
+    while (n < 0);
 
     // For each row
-    for (int i = 0; i <= n; i++)
+    for (int i = 0; i <= 9; i++)
     {
         // For each column
-        for (int j = 0; j <= n; j++)
+        for (int j = 0; j <= 9; j++)
         {
             // Print a brick
             printf("#");
