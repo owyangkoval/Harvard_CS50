@@ -20,7 +20,6 @@ int main(void)
             // Print a pyramid
             printf("#");
         }
-        while (i < 1 || j > 23);
 
         // Move to next row
         printf("\n");
