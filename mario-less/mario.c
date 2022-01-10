@@ -3,7 +3,7 @@
 
 int main(void)
 {
-        int n, i, j;
+        int n;
     do
     {
         n = get_int("Size: ");
@@ -18,7 +18,7 @@ int main(void)
         {
             if (j >= n-(i-1) && j <= n+(i-1))
         {
-            printf("#");
+            printf("#\n");
         }
         else
         {
