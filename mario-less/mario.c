@@ -8,7 +8,7 @@ int main(void)
     {
         n = get_int("Size: ");
     }
-    while (n < 1 || n > 23) ;
+    while (n < 1) ;
 
 
     // For each row
