@@ -6,7 +6,7 @@ int main(void)
     int n;
     do
     {
-        n = get_int("Width: 8");
+        n = get_int("Width: 4");
     }
     while (n < 1);
 
