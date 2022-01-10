@@ -1,6 +1,4 @@
-#include <cs50.h>
 #include <stdio.h>
-
 
 int main(void)
 {
@@ -10,29 +8,26 @@ do
     n = get_int("Height: ");
 }
 while (n < 1 || n > 8);
-// this for loop makes new lines
-
-for (int i = 0; i < n; i++)
 {
-    for (int j = 0; j < n - 1 - i; j++)
-    {
+    int row,col,space,n1=4, n2=4;
+
+    for(row=1;row<=n1;row++){
+
+    for(space=n2-row;space>=0;space--)
         printf(" ");
+
+    for(col=1;col<=row;col++)
+        printf("*");
+
+    printf("##");
+
+    for(col=1;col<=row;col++)
+        printf("*");
+
+    for(space=n2-row;space>=0;space--)
+        printf(" ");
+
     }
 
-    for (int j = 0; j < i + 1; j++)
-    {
-        printf("#");
-    }
-
-    for (int j = 0; j > n - 1 - i; j++)
-    {
-        printf(" ");
-    }
-    for (int j = 0; j < i + 1; j++)
-    {
-        printf("#");
-    }
     printf("\n");
-
-}
 }
