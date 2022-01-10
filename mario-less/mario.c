@@ -11,10 +11,10 @@ int main(void)
     while (n < 0);
 
     // For each row
-    for (int i = 0; i <= 9; i++)
+    for (int i = 1; i <= 8; i++)
     {
         // For each column
-        for (int j = 0; j <= 9; j++)
+        for (int j = 1; j <= 8; j++)
         {
             // Print a brick
             printf("#");
