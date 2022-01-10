@@ -7,7 +7,7 @@ int main(void) {
 
     printf("Height: \n");
     // Get user input
-    height = Get_Int();
+    height = get_int("Size: ");
     n = height;
     for(i = 0; i < height; i++) {
         // create n spaces based off height
