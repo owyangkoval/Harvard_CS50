@@ -8,14 +8,14 @@ int main(void)
     {
         n = get_int("Size: ");
     }
-    while (n < 1);
+    while (n < 1 || n > 23) ;
 
 
     // For each row
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
         // For each column
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j < n + 2; j++)
         {
             // Print a pyramid
             printf("#");
