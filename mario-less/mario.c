@@ -6,13 +6,21 @@ int main(void)
     int n;
     do
     {
-        n = get_int("Width: ");
+        n = get_int("Size: ");
     }
     while (n < 1);
 
+    // For each row
     for (int i = 0; i < n; i++)
     {
-        printf("#");
+        // For each column
+        for (int j = 0; j < n; j++)
+        {
+            // Print a pyramid
+            printf("#");
+        }
+
+        // Move to next row
+        printf("\n");
     }
-    printf("\n");
 }
