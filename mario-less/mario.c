@@ -4,41 +4,12 @@
 
 int main(void)
 {
-    int n;
-do
-{
-    n = get_int("Size: ");
-}
-while (n < 1 || n > 8);
-// this for loop makes new lines
-
-for (int i = 0; i < n; i++)
-{
-    for (int j = 0; j < n - 1 - i; j++)
+    int height, row, column, space
+    do
     {
-        printf(" ");
+        height = get_int ("Size: ")
     }
+    while (height < 1 || height > 8)
 
-// for further examination
-    for (int g = 0; g < n; g++)
-    {
-        printf(" ");
-    }
-
-    for (int j = 0; j < i + 1; j++)
-    {
-        printf("#");
-    }
-
-    for (int j = 0; j > n - 1 - i; j++)
-    {
-        printf(" ");
-    }
-    for (int j = 0; j < i + 1; j++)
-    {
-        printf("#");
-    }
-    printf("\n");
-
-}
-}
+    for (row = 0; row < height; row++)
+    
