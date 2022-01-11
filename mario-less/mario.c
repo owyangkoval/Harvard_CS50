@@ -4,22 +4,23 @@
 
 int main(void)
 {
-    int height, row, column, space
+    int height, row, column, space;
     do
     {
-        height = get_int ("Size: ")
+        height = get_int ("Size: ");
     }
-    while (height < 1 || height > 8)
+    while (height < 1 || height > 8);
 
     for (row = 0; row < height; row++)
     {
-        for (space = 0; spce < height - row - 1; space++)
+        for (space = 0; space < height - row - 1; space++)
         {
-            print(" ");
+            printf(" ");
         }
         for (column = 0; column <= row; column++)
         {
-            print("#");
+            printf("#");
         }
-        print("\n");
+        printf("\n");
     }
+}
