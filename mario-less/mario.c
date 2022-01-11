@@ -12,4 +12,14 @@ int main(void)
     while (height < 1 || height > 8)
 
     for (row = 0; row < height; row++)
-    
+    {
+        for (space = 0; spce < height - row - 1; space++)
+        {
+            print(" ");
+        }
+        for (column = 0; column <= row; column++)
+        {
+            print("#");
+        }
+        print("\n");
+    }
