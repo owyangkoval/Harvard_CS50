@@ -4,12 +4,16 @@
 int main(void)
 
 {
+     long credit;
+{
      do
      {
           long AMEX = get_long("Card Number: ");
      }
      while
-     (AMEX = 15 digits);
+     {
+          credit = 15 digits;
+     }
 
 }
 }
