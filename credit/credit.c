@@ -4,15 +4,13 @@
 int main(void)
 
 {
-     long CardNumber;
 
      do
      {
-          AMEX = get_long("Card Number: ");
+          long AMEX = get_long("Card Number: ");
      }
      while
-     (AMEX = 15 dig);
-
+     (AMEX )
 
 
 }
