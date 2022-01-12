@@ -6,10 +6,10 @@ int main(void)
 {
      do
      {
-          long Amex = get_long("Number: ");
+          long AMEX = get_long("Card Number: ");
      }
      while
-     (long Amex = 15 digits);
+     (AMEX = 15 digits);
 
 }
 }
