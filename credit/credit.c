@@ -4,16 +4,13 @@
 int main(void)
 
 {
-long digit;
-}
-{
      do
      {
           long Number = get_long("Card Number: ");
      }
      while
      // number of digits in card
-     (digit = 15);
+     (Number)
 }
      printf("AMEX\n")
 }
