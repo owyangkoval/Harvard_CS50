@@ -11,7 +11,7 @@ int main(void)
           AMEX = get_long("Card Number: ")
      }
      while
-     (AMEX )
+     (AMEX = 15 dig)
 
 
 
