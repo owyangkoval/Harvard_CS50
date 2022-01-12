@@ -6,7 +6,10 @@ int main(void)
 {
      long number = get_long("Card Number: ");
 
-     int digit = 
+     do
+     {
+          
+     }
 
 
 
