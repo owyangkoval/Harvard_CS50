@@ -4,13 +4,12 @@
 int main(void)
 
 {
-     do
-     {
-          long Number = get_long("Card Number: ");
-     }
-     while
+
+     long Number = get_long("Card Number: ");
+
+     if
      // number of digits in card
-     (Number /= 15)
-}
-     printf("AMEX\n")
+     ( Number /= 15)
+
+     printf("AMEX\n");
 }
