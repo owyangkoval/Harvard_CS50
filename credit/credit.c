@@ -4,6 +4,6 @@
 
 int main(void)
 {
-    get_long ("Card Number: ")
+     long number = get_long("Card Number: ")
 
 }
