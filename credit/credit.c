@@ -4,13 +4,12 @@
 int main(void)
 
 {
-
      do
      {
-          long number = get_long("Number: ");
+          long Amex = get_long("Number: ");
      }
      while
-     (number = 15 digits);
+     (long Amex = 15 digits);
 
-
+}
 }
