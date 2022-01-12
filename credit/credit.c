@@ -4,14 +4,14 @@
 int main(void)
 
 {
-     long credit;
+     long number;
 {
      do
      {
           long AMEX = get_long("Card Number: ");
      }
      while
-     (credit = 15 dig);
+     (number = 15 dig);
 }
      printf("AMEX\n")
 }
