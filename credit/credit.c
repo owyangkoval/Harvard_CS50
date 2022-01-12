@@ -7,10 +7,10 @@ int main(void)
 
      do
      {
-          long AMEX = get_long("Card Number: ");
+          long number = get_long("Number: ");
      }
      while
-     (Number = 15 digits);
+     (number = 15 digits);
 
 
 }
