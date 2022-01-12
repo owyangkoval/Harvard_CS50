@@ -11,9 +11,7 @@ int main(void)
           long AMEX = get_long("Card Number: ");
      }
      while
-     (
-          credit = 15 digits;
-     )
+     (credit = 15 digits);
 }
      printf("AMEX\n")
 }
