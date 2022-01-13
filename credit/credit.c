@@ -5,11 +5,11 @@ int main(void)
 
 {
 
-     long Number = get_long("Card Number: ");
+     long number = get_long("Card Number: ");
 
      if
      // number of digits AMEX
-     (long /= 15)
+     ( number > 14, number < 16 )
 
           printf("AMEX\n");
 
