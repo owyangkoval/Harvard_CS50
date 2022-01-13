@@ -42,7 +42,10 @@ int main(void)
 
     int finalsum = sumeven + sumodd
 }
+
+     if ()
+
 }
 {
-    printf("final sum: %i\n," finalsum)
+
 }
