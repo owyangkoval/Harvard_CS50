@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(void)
+int main(void);
+
+     long num = get_long("Card Number: ");
 
      {
-     num = get_long("Card Number: ");
-     }
                 int dig2 = ((num % 100)/10)*2;
                 int dig4 = ((num % 10000)/1000)*2;
                 int dig6 = ((num % 1000000)/100000)*2;
@@ -40,7 +40,28 @@ int main(void)
 
     int finalsum = sumeven + sumodd
 }
+     // AMEX
+     if (num < 16 || num > 14)
+          {
+               dig15 == 3, dig14 == 4;
+          }
+     else {
+               dig15 == 3, dig14 == 7;
+          }
+     {
+          printf("AMEX/n");
+     }
 
+     //MASTERCARD
+     if (num < 17 || num > 15)
+          {
+               dig16 == 5, dig14 <= 5 && dig14 >= 1;
+          }
+     {
+          printf("AMEX/n");
+     }
+
+     //VISA
      if (num < 16 || num > 14)
           {
                dig15 == 3, dig14 == 4;
@@ -51,6 +72,8 @@ int main(void)
      {
           printf("AMEX/n");
      }
+
+     //INVALID
 
 }
 {
