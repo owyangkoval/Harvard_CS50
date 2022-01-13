@@ -14,7 +14,7 @@ int main(void)
      int Twelthigit = (Number % 100/10);
      int FourteenthDigit = (Number % 100/10);
      int SixteenthDigit = (Number % 100/10);
-        f j                               int EighteenthDigit = (Number % 100/10);
+        f j                           k    int EighteenthDigit = (Number % 100/10);
 
 {
      printf("FourthDigit: %i\n", FourthDigit);
