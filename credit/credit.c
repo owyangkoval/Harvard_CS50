@@ -52,7 +52,7 @@ int main(void);
                dig15 == 3, dig14 == 7;
           }
      {
-          printf("AMEX/n");
+          printf("AMEX\n");
      }
 
      //MASTERCARD
@@ -61,7 +61,7 @@ int main(void);
                dig16 == 5, dig14 <= 5 || dig14 >= 1;
           }
      {
-          printf("MASTERCARD/n");
+          printf("MASTERCARD\n");
      }
 
      //VISA
@@ -70,7 +70,7 @@ int main(void);
                dig16 == 4 || dig13 == 4;
           }
      {
-          printf("VISA/n");
+          printf("VISA\n");
      }
 
      //INVALID
