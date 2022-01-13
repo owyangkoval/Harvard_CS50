@@ -9,8 +9,7 @@ int main(void)
 
      if
      // number of digits AMEX
-     (Number <= 16 && Number >= 14)
-     
+     (Number == 15)
      {
           printf("AMEX\n");
      }
