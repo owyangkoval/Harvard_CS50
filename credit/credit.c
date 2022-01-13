@@ -3,8 +3,7 @@
 #include <math.h>
 
 int main(void)
-{
-     do
+
      {
      long number = get_long("Card Number: ");
      }
