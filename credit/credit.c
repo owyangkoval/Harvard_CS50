@@ -6,8 +6,8 @@ int main(void);
 
      num = get_long("Card Number: ")
 
-    for (num < 16 && num > 12);
-     do 
+    while (num < 16 && num > 12);
+
      {
                 int dig2 = ((num % 100)/10)*2;
                 int dig4 = ((num % 10000)/1000)*2;
@@ -27,7 +27,8 @@ int main(void);
                 dig14 = ((dig14 % 10) + (dig14 % 100)/10);
                 dig16 = ((dig16 % 10) + (dig16 % 100)/10);
 
-    int sumodd = dig2 + dig4 + dig6+ dig8 + dig10 + dig12 + dig14 + dig16;
+    int sumeven = dig2 + dig4 + dig6+ dig8 + dig10 + dig12 + dig14 + dig16;
+    int sumodd = dig1 + dig3 + dig5 + dig7 + dig9 + dig11 + dig13 + dig15;
 }
 {
     printf("sumodd: %i\n," sumodd)
