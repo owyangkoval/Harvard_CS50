@@ -7,7 +7,7 @@ int main(void)
 {
      long Number = get_long("Card Number: ");
      int SecondDigit = (Number % 100/10);
-     int FourthDigit = (Number % (100 ^ 2)/());
+     int FourthDigit = (Number % (100 * 100)/(1e3));
      int SixthDigit = (Number % 100/10);
      int EigthDigit = (Number % 100/10);
      int TenthDigit = (Number % 100/10);
