@@ -4,7 +4,12 @@
 
 int main(void);
 
-     long num = get_long("Card Number: ");
+    {
+     num = get_long("Card Number: ");
+    }
+if
+    (num < 17 && num >12);
+
 
      {
                 int dig2 = ((num % 100)/10)*2;
@@ -74,8 +79,9 @@ int main(void);
      }
 
      //INVALID
+     {
+          printf("INVALID\n");
+     }
 
-}
-{
 
 }
