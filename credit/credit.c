@@ -4,10 +4,13 @@
 
 int main(void);
 
+     long num;
+     
+     do
     {
      num = get_long("Card Number: ");
     }
-if
+     if
     (num < 17 && num >12);
 
 
