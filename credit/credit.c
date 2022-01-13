@@ -6,12 +6,13 @@
 int main(void)
 {
      long num = get_long("Card Number: ");
+     int dig
 }
           // digits
-          while ()
+          while (dig = 0; dig < 16; dig++)
 
           {
-               int dig = num % 10
+               int dig1 = num % 10
                int num2 = (num-(num % 10))/10
 
 
