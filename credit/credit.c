@@ -14,5 +14,10 @@ int main(void)
           printf("AMEX\n");
      }
 
-     else
+     else if
+     // number of digits MASTERCARD
+     (Number == 16)
+     {
+          printf("MASTERCARD\n");
+     }
 }
