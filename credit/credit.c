@@ -6,6 +6,7 @@
 int main(void)
 {
      long num = get_long("Card Number: ");
+     if ( num > 12 && num < 17 )
 }
           // digits
           while ()
