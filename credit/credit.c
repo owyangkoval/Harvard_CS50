@@ -6,7 +6,7 @@ int main(void)
 {
 
      long Number = get_long("Card Number: ");
-     int Digit = (Number % 100);
+     int Digit = (Number % );
      printf("Digit: %i\n", Digit);
 
 
