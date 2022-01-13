@@ -5,9 +5,12 @@ int main(void)
 
 {
      long Number = get_long("Card Number: ");
-     int Digit = (Number % 100/10);
-     int Digit = (Number % 100/10);
-     printf("Digit: %i\n", Digit);
+     int SecondDigit = (Number % 100/10);
+     int FourthDigit = (Number % 100/10);
+
+
+
+     printf("SecondDigit: %i\n", SecondDigit);
 
 
 }
