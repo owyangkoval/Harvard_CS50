@@ -4,13 +4,12 @@
 
 
 int main(void)
-
+{
+     int dig;
      long num = get_long("Card Number: ");
-     int dig =
 }
-
           // digits
-          while (dig = 0; dig <16, dig++);
+     while (dig=0; dig<16; dig++);
           {
                int dig = num % 10
                int num2 = (num-(num % 10))/10
@@ -20,7 +19,6 @@ int main(void)
                int dig3 = num3 % 10
           }
 
-          for
      {
      printf("digits: %i/n," dig)
      }
