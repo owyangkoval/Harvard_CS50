@@ -29,6 +29,8 @@ int main(void);
 
     int sumeven = dig2 + dig4 + dig6+ dig8 + dig10 + dig12 + dig14 + dig16;
     int sumodd = dig1 + dig3 + dig5 + dig7 + dig9 + dig11 + dig13 + dig15;
+
+    sumeven + sumodd = 
 }
 {
     printf("sumodd: %i\n," sumodd)
