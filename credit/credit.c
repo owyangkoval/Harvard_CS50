@@ -9,20 +9,7 @@ int main(void)
 
      if
      // number of digits AMEX
-     (Number == 15)
+     (Number % 100)
      {
           printf("AMEX\n");
      }
-
-     else if
-     // number of digits MASTERCARD
-     (Number == 16)
-     {
-          printf("MASTERCARD\n");
-     }
-
-     else
-     {
-          printf("INVALID\n");
-     }
-}
