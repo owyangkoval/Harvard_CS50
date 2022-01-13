@@ -4,12 +4,9 @@
 int main(void)
 
 {
-
+     do
      long Number = get_long("Card Number: ");
 
-     if
+     while
      // number of digits AMEX
      (Number % 100)
-     {
-          printf("AMEX\n");
-     }
