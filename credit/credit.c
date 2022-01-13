@@ -7,7 +7,7 @@ int main(void)
 {
      long Number = get_long("Card Number: ");
      int SecondDigit = (Number % 100/10);
-     float FourthDigit = (Number % 100/10);
+     int FourthDigit = (Number % 10000/1000);
      int SixthDigit = (Number % 100/10);
      int EigthDigit = (Number % 100/10);
      int TenthDigit = (Number % 100/10);
@@ -16,7 +16,7 @@ int main(void)
      int SixteenthDigit = (Number % 100/10);
      int EighteenthDigit = (Number % 100/10);
 
-     printf("FourthDigit: %f\n", FourthDigit);
+     printf("FourthDigit: i\n", FourthDigit);
 
 
 }
