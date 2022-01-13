@@ -9,14 +9,14 @@ int main(void)
 
      if
      // number of digits AMEX
-     (Number >= 14 && Number <=16)
+     (Number < 16 && Number > 14)
      {
           printf("AMEX\n");
      }
 
      else if
      // number of digits MASTERCARD
-     (Number >= 15 && Number <=17)
+     (Number < 17 && Number > 16)
      {
           printf("MASTERCARD\n");
      }
