@@ -13,7 +13,7 @@ int main(void)
           {
                int dig = num % 10
                int num2 = (num-(num % 10))/10
-
+               
                int dig2 = num2 % 10
                int num3 = (num2-(num2 % 10))/10
                int dig3 = num3 % 10
