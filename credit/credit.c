@@ -1,6 +1,5 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <math.h>
 
 
 int main(void)
@@ -9,7 +8,7 @@ int main(void)
      long Number = get_long("Card Number: ");
      int SecondDigit = (Number % 100/10);
      int FourthDigit = (Number % 10000/1000);
-     int SixthDigit = (Number % 100^4/10^5);
+     int SixthDigit = (Number % 100/10);
      int EigthDigit = (Number % 100/10);
      int TenthDigit = (Number % 100/10);
      int Twelthigit = (Number % 100/10);
