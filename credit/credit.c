@@ -43,7 +43,7 @@ int main(void)
 
      while (long < 16 || long > 14)
           {
-               dig15 = 
+               dig15 == 3, dig14 ==4, dig14 ==
           }
 
 
