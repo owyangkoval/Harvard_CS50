@@ -1,23 +1,26 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <math.h>
 
 
 int main(void)
 
+int dig, int num;
 {
-     long Number = get_long("Card Number: ");
-     int SecondDigit = (Number % 100/10);
-     int FourthDigit = (Number % (100 * 100)/(1e3));
-     int SixthDigit = (Number % 100/10);
-     int EigthDigit = (Number % 100/10);
-     int TenthDigit = (Number % 100/10);
-     int Twelthigit = (Number % 100/10);
-     int FourteenthDigit = (Number % 100/10);
-     int SixteenthDigit = (Number % 100/10);
-        f j                           kn9    int EighteenthDigit = (Number % 100/10);
-
-{
-     printf("FourthDigit: %i\n", FourthDigit);
+     num = get_long("Card Number: ");
 }
 
-}
+          // digits
+          while (num < 17 || num > 12);
+          {
+               int dig = num % 10
+               int num2 = (num-(num % 10))/10
+               int dig2 = num2 % 10
+               int num3 = (num2-(num2 % 10))/10
+               int dig3 = num3 % 10
+          }
+
+          for
+     {
+     printf("/n")
+     }
