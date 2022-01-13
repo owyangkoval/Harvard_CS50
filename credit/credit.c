@@ -7,8 +7,6 @@ int main(void)
      {
      long number = get_long("Card Number: ");
      }
-     while (number < 16)
-{
                 int dig2 = ((number % 100)/10)*2;
                 int dig4 = ((number % 10000)/1000)*2;
                 int dig6 = ((number % 1000000)/100000)*2;
@@ -43,7 +41,11 @@ int main(void)
     int finalsum = sumeven + sumodd
 }
 
-     if ()
+     while (long < 16 || long > 14)
+          {
+               dig15 = 
+          }
+
 
 }
 {
