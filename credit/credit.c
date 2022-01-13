@@ -40,8 +40,11 @@ int main(void);
 
     int finalsum = sumeven + sumodd
 }
+
+
+
      // AMEX
-     if (num < 16 || num > 14)
+     if (num < 16 && num > 14)
           {
                dig15 == 3, dig14 == 4;
           }
@@ -53,21 +56,18 @@ int main(void);
      }
 
      //MASTERCARD
-     if (num < 17 || num > 15)
+     if (num < 17 && num > 15)
           {
-               dig16 == 5, dig14 <= 5 && dig14 >= 1;
+               dig16 == 5, dig14 <= 5 || dig14 >= 1;
           }
      {
           printf("MASTERCARD/n");
      }
 
      //VISA
-     if (num < 16 || num > 14)
+     if (num == 13 && num == 16)
           {
-               dig15 == 3, dig14 == 4;
-          }
-     else {
-               dig15 == 3 && dig14 == 7;
+               dig16 == 4 || dig13 == 4;
           }
      {
           printf("VISA/n");
