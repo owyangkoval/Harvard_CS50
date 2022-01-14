@@ -12,7 +12,7 @@ int main(void){
         {
             return sum*3;
         }
-    else ((x > y || x < y) && sum = x + y)
+    else ( && sum = x + y)
         {
         return sum;
 }
