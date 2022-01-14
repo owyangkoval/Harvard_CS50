@@ -57,10 +57,10 @@ int main(void)
           printf("Number of Digits in Card number: %ld\n", count);
 
      //VISA
-          if (dig16 == 4)
-                    {
-                    printf("VISA\n");
-                    }
+          if ((dig16 == 4 && dig13 == 4) || (dig16 == 4))
+               {
+               printf("VISA\n");
+               }
 
 
      //MASTERCARD
