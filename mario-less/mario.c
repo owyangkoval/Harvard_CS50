@@ -4,8 +4,8 @@
 int main(void){
     // Here your code !
 
-    int x = get_int("Get X: ");
-    int y = get_int("Get Y: ");
+    printf("%i", test(2));
+    printf("%i", test())
     int z = x + y;
 
     if (x == y)
