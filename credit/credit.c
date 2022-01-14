@@ -13,7 +13,6 @@ int main(void)
      while
     (num < 17 && num >12);
 
-
      {
                 dig2 = ((num % 100)/10)*2;
                 dig4 = ((num % 10000)/1000)*2;
@@ -48,6 +47,7 @@ int main(void)
 
     finalsum = sumeven + sumodd;
      }
+
 
 {
      // AMEX
