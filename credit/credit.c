@@ -56,16 +56,13 @@ int main(void)
      }
 
      //MASTERCARD
-     if (num == 16 && dig)
-          {
-               dig16 == 5, dig14 <= 5 || dig14 >= 1;
-          }
+     if (num == 16 && dig16 == 5 && (dig14 <=5 || dig14 >=1))
      {
           printf("MASTERCARD\n");
      }
 
      //VISA
-     if (num == 13 && num == 16)
+     if ((num == 13 || num == 16) && )
           {
                dig16 == 4 || dig13 == 4;
           }
