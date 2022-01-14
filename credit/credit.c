@@ -49,19 +49,13 @@ int main(void)
 
 
      // AMEX
-     if (num == 15 && dig15 == 3 && (dig14 == 4 || dig14 == 7) && (lastdigit == 0))
+     if (num == 15 && dig15 == 3 && lastdigit == 0 && (dig14 == 4 || dig14 == 7))
      {
           printf("AMEX\n");
      }
 
-     //MASTERCARD
-     else if(num == 16 && dig16 == 5 && (dig14 == 5 || dig14 == 1) && (lastdigit == 0))
-     {
-          printf("MASTERCARD\n");
-     }
-
      //VISA
-     else if ((num == 13 && dig13 == 4) || (num == 16 && dig14 == 4 && lastdigit == 0))
+     else if ((num == 13 && dig13 == 4 && lastdigit == 0) || (num == 16 && dig14 == 4 && lastdigit == 0))
      {
           printf("VISA\n");
      }
