@@ -4,8 +4,8 @@
 
 int main(void);
 
+{
      long num;
-     
      do
     {
      num = get_long("Card Number: ");
@@ -47,10 +47,9 @@ int main(void);
     int sumodd = dig1 + dig3 + dig5 + dig7 + dig9 + dig11 + dig13 + dig15;
 
     int finalsum = sumeven + sumodd
-}
+     }
 
-
-
+{
      // AMEX
      if (num < 16 && num > 14)
           {
@@ -86,5 +85,5 @@ int main(void);
           printf("INVALID\n");
      }
 
-
+}
 }
