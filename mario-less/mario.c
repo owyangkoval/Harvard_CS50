@@ -10,10 +10,10 @@ int main(void){
 
     if (x == y)
         {
-        return sum*3;
+        result = sum*3
         }
     else
         {
-        return sum;
+        result = sum;
 }
 }
