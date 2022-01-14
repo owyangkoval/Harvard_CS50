@@ -45,7 +45,7 @@ int main(void)
     finalsum = sumeven + sumodd;
     lastdigit = (finalsum % 10);
 
-     printf("lastdigit: %li", lastdigit);
+     printf("lastdigit: %li\n", lastdigit);
 
 
      // AMEX
@@ -67,7 +67,7 @@ int main(void)
      }
 
      //INVALID
-     else 
+     else
      {
           printf("INVALID\n");
      }
