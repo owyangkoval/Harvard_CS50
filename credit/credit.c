@@ -56,4 +56,4 @@ int main(void)
     }
      printf("Number of Digits in Card number: %ld\n", count);
 
-
+}
