@@ -57,10 +57,7 @@ int main(void)
      // AMEX
      if (num < 16 && num > 14)
           {
-               dig15 == 3, dig14 == 4;
-          }
-     else {
-               dig15 == 3, dig14 == 7;
+               dig15 == 3, dig14 == 4 || dig14 == 7;
           }
      {
           printf("AMEX\n");
