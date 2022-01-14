@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(void);
+int main(void)
 
 {
      long num;
@@ -10,7 +10,7 @@ int main(void);
     {
      num = get_long("Card Number: ");
     }
-     if
+     while
     (num < 17 && num >12);
 
 
@@ -34,9 +34,9 @@ int main(void);
                 int dig16_1 = ((dig16 % 10) + (dig16 % 100)/10);
 
                 int dig1 = (num % 10);
-                int dig3 = (num % 1000)
-                int dig5 = (num % 100000)
-                int dig7 = (num % 10000000)
+                int dig3 = (num % 1000);
+                int dig5 = (num % 100000);
+                int dig7 = (num % 10000000);
                 int dig9 = (num % 1000000000);
                 int dig11 = (num % 100000000000);
                 int dig13 = (num % 10000000000000);
@@ -46,7 +46,7 @@ int main(void);
     int sumeven = dig2_1 + dig4_1 + dig6_1+ dig8_1 + dig10_1 + dig12_1 + dig14_1 + dig16_1;
     int sumodd = dig1 + dig3 + dig5 + dig7 + dig9 + dig11 + dig13 + dig15;
 
-    int finalsum = sumeven + sumodd
+    int finalsum = sumeven + sumodd;
      }
 
 {
