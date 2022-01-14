@@ -48,6 +48,7 @@ int main(void)
      printf("lastdigit: %li", lastdigit);
 
 
+
 {
      // AMEX
      if (num < 16 && num > 14)
