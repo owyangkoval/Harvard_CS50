@@ -8,11 +8,11 @@ int main(void){
     int y = get_int("Get Y: ");
     int sum = x + y;
 
-    if (x == y && sum == x + y)
+    if (x == y)
         {
-            return sum*3;
+        return sum*3;
         }
-    else ( && sum = x + y)
+    else
         {
         return sum;
 }
