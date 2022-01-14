@@ -14,7 +14,7 @@ int main(void)
      while
     (num < 17 && num >12);
 
-     {
+
                 dig2 = ((num % 100)/10)*2;
                 dig4 = ((num % 10000)/1000)*2;
                 dig6 = ((num % 1000000)/100000)*2;
@@ -48,9 +48,9 @@ int main(void)
 
     finalsum = sumeven + sumodd;
      lastdigit = (finalsum % 10);
-     }
+
 {
-     while (lastdigit == 0);
+     printf("lastdigit: %li", lastdigit);
 }
 
 {
