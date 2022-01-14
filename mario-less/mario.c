@@ -10,10 +10,10 @@ int main(void){
 
     if (x == y)
         {
-        printf("%i\n," z*3);
+        printf("%i\n", z);
         }
     else
         {
-        printf("%i\n," z);
+        printf("%i\n", z);
         }
 }
