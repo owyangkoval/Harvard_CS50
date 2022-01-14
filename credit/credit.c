@@ -56,7 +56,10 @@ int main(void)
                }
           printf("Number of Digits in Card number: %ld\n", count);
 
-     printf("Digit 16 %li\n", dig16);
+     printf("Digit 16 %li\n", );
+
+
+
 
      //VISA
           if ((dig16 == 4 && dig13 == 4) || (dig16 == 4))
