@@ -47,12 +47,11 @@ int main(void)
 
      printf("lastdigit: %li\n", lastdigit);
 
-     while(n
-     num > 0)
-
-     num = num / 1;
-     count = count + 1;
-
+    while(num)
+    {
+        num=num/10;
+        count++;
+    }
      printf("\n Number of Digits in Card number = %ld\n", count);
 
 }
