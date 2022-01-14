@@ -7,19 +7,29 @@ int main(void)
 {
      long int num, count=0, dig1, dig2, dig3, dig4, dig5, dig6,
      dig7, dig8, dig9, dig10, dig11, dig12, dig13, dig14,
-     dig15, dig16, dig2_1, dig4_1, dig6_1, dig8_1, dig10_1,
+     dig15, dig16, dig2x2, dig4x2, dig6x2, dig8x2, dig10x2, dig12x2, dig14x2,dig16x2,
+     dig2_1, dig4_1, dig6_1, dig8_1, dig10_1,
      dig12_1, dig14_1, dig16_1, sumeven, sumodd, finalsum, lastdigit;
 
      num = get_long("Card Number: ");
 
-     dig2 = ((num % 100)/10)*2;
-     dig4 = ((num % 10000)/1000)*2;
-     dig6 = ((num % 1000000)/100000)*2;
-     dig8 = ((num % 100000000)/1000000)*2;
-     dig10 = ((num % 10000000000)/100000000)*2;
-     dig12 = ((num % 1000000000000)/10000000000)*2;
-     dig14 = ((num % 100000000000000)/1000000000000)*2;
-     dig16 = ((num  % 10000000000000000)/100000000000000)*2;
+     dig2 = ((num % 100)/10);
+     dig4 = ((num % 10000)/1000);
+     dig6 = ((num % 1000000)/100000);
+     dig8 = ((num % 100000000)/1000000);
+     dig10 = ((num % 10000000000)/100000000);
+     dig12 = ((num % 1000000000000)/10000000000);
+     dig14 = ((num % 100000000000000)/1000000000000);
+     dig16 = ((num  % 10000000000000000)/100000000000000);
+
+     dig2x2 = (dig2 * 2);
+     dig4x2 = (dig4 * 2);
+     dig6x2 = (dig6 * 2);
+     dig8x2 = (dig8 * 2);
+     dig10x2 = (dig10 * 2);
+     dig12x2 = (dig12 * 2);
+     dig14x2 = (dig14 * 2);
+     dig16x2 = (dig16 * 2);
 
      dig2_1 = ((dig2 % 10) + (dig2 % 100)/10);
      dig4_1 = ((dig4 % 10) + (dig4 % 100)/10);
