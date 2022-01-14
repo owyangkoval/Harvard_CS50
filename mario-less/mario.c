@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <cs50.h>
 
 int main(void){
     // Here your code !
@@ -7,18 +8,12 @@ int main(void){
     int y = get_int("Get Y: ");
     int sum = x + y;
 
-    printf("%d", x);
-    printf("n\%d", y);
-
-    if (x == y)
+    if (x == y && sum == x + y)
         {
-                sum = x + y;
-        }
             return sum*3;
-
-    for (x > y || x < y)
-        {
-                sum = x + y;
         }
+    else ((x > y || x < y) && sum = x + y)
+        {
         return sum;
+}
 }
