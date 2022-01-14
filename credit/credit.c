@@ -49,7 +49,7 @@ int main(void)
 
 
      // AMEX
-     if (num == 15 && dig15 == 3 && (dig14 == 4 || dig14 == 7))
+     if (num == 15 && dig15 == 3 && (dig14 == 4 || dig14 == 7) && (lastdigit == 0))
      {
           printf("AMEX\n");
      }
@@ -61,7 +61,7 @@ int main(void)
      }
 
      //VISA
-     else if ((num == 13 && dig13 == 4) || (num == 16 && dig14 == 4))
+     else if ((num == 13 && dig13 == 4) || (num == 16 && dig14 == 4) && lastdigit == 0))
      {
           printf("VISA\n");
      }
