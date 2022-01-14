@@ -5,9 +5,6 @@
           printf("MASTERCARD\n");
      }
 
-
-
-
      // AMEX
      if (dig15 == 3 && (dig14 == 4 || dig14 == 7) && lastdigit == 0)
      {
