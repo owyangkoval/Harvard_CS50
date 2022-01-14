@@ -41,7 +41,7 @@ int main(void)
      dig16_1 = ((dig16 % 10) + (dig16 % 100)/10);
 
      dig1 = (num % 10);
-     dig3 = (num % 1000);
+     dig3 = (num % 10);
      dig5 = (num % 100000);
      dig7 = (num % 10000000);
      dig9 = (num % 1000000000);
@@ -68,7 +68,7 @@ int main(void)
 
 
 
-printf("%li\n", dig5);
+printf("%li\n", dig3);
 
 
 
