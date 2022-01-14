@@ -50,7 +50,7 @@ int main(void)
      lastdigit = (finalsum % 10);
      }
 {
-     while (lastdigit = 0)
+     while (lastdigit == 0);
 }
 
 {
