@@ -56,9 +56,15 @@ int main(void)
                }
           printf("Number of Digits in Card number: %ld\n", count);
 
+     //VISA
+          if ((dig13 == 4 && lastdigit == 0) || (dig14 == 4 && lastdigit == 0))
+                    {
+                    printf("VISA\n");
+                    }
+
 
      //MASTERCARD
-          if (dig16 == 5 && (dig14 == 5 || dig14 == 1) && (lastdigit == 0))
+               else if (dig16 == 5 && (dig14 == 5 || dig14 == 1) && (lastdigit == 0))
                {
                printf("MASTERCARD\n");
                }
@@ -67,12 +73,6 @@ int main(void)
                else if (dig15 == 3 && (dig14 == 4 || dig14 == 7) && lastdigit == 0)
                     {
                     printf("AMEX\n");
-                    }
-
-     //VISA
-               else if ((dig13 == 4 && lastdigit == 0) || (dig14 == 4 && lastdigit == 0))
-                    {
-                    printf("VISA\n");
                     }
 
      //INVALID
