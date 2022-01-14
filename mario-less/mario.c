@@ -9,7 +9,7 @@ int main(void)
         {
             return (x + y)*3;
         }
-    else (x > y || x < y)
+    else (x > y || x < y);
         {
             return (x + y);
         }
