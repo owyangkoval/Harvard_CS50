@@ -56,7 +56,7 @@ int main(void)
      }
 
      //MASTERCARD
-     if (num < 17 && num > 15)
+     if (num == 16 && dig)
           {
                dig16 == 5, dig14 <= 5 || dig14 >= 1;
           }
