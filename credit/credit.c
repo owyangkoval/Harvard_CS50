@@ -55,13 +55,13 @@ int main(void)
      }
 
      //MASTERCARD
-     if (num == 16 && dig16 == 5 && (dig14 == 5 || dig14 == 1))
+     else if(num == 16 && dig16 == 5 && (dig14 == 5 || dig14 == 1))
      {
           printf("MASTERCARD\n");
      }
 
      //VISA
-     if ((num == 13 && dig13 == 4) || (num == 16 && dig14 == 4))
+     else if ((num == 13 && dig13 == 4) || (num == 16 && dig14 == 4))
      {
           printf("VISA\n");
      }
