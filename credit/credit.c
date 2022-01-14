@@ -42,18 +42,44 @@ int main(void)
     sumeven = dig2_1 + dig4_1 + dig6_1+ dig8_1 + dig10_1 + dig12_1 + dig14_1 + dig16_1;
     sumodd = dig1 + dig3 + dig5 + dig7 + dig9 + dig11 + dig13 + dig15;
 
-     // Last Digit of Sum
-    finalsum = sumeven + sumodd;
-    lastdigit = (finalsum % 10);
+          // Last Digit of Sum
+          finalsum = sumeven + sumodd;
+          lastdigit = (finalsum % 10);
 
-     printf("lastdigit: %li\n", lastdigit);
+          printf("lastdigit: %li\n", lastdigit);
 
-     // Number of Digits
-    while(num)
-    {
-        num=num/10;
-        count++;
-    }
-     printf("Number of Digits in Card number: %ld\n", count);
+          // Number of Digits
+          while(num)
+               {
+               num=num/10;
+               count++;
+               }
+          printf("Number of Digits in Card number: %ld\n", count);
+
+
+     //MASTERCARD
+          else if(num == 16 && dig16 == 5 && (dig14 == 5 || dig14 == 1) && (lastdigit == 0))
+               {
+               printf("MASTERCARD\n");
+               }
+
+     //AMEX
+          else if (dig15 == 3 && (dig14 == 4 || dig14 == 7) && lastdigit == 0)
+               {
+               printf("AMEX\n");
+               }
+
+     //VISA
+          else if ((dig13 == 4 && lastdigit == 0) || (dig14 == 4 && lastdigit == 0))
+               {
+               printf("VISA\n");
+               }
+
+     //INVALID
+          else
+               {
+               printf("INVALID\n");
+               }
+
 
 }
