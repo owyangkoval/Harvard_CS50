@@ -1,16 +1,24 @@
-#include <cs50.h>
-int main(void)
+#include <stdio.h>
 
-{
+int main(void){
     // Here your code !
-    int x, y;
+
+    int x = get_int("Get X: ");
+    int y = get_int("Get Y: ");
+    int sum = x + y;
+
+    printf("%d", x);
+    printf("n\%d", y);
 
     if (x == y)
         {
-            return (x + y)*3;
+                sum = x + y;
         }
-    else (x > y || x < y);
+            return sum*3;
+
+    for (x > y || x < y)
         {
-            return (x + y);
+                sum = x + y;
         }
+        return sum;
 }
