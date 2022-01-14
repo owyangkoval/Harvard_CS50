@@ -5,7 +5,7 @@
 int main(void)
 
 {
-     long int num, dig1, dig2, dig3, dig4, dig5, dig6,
+     long int num, sum, dig1, dig2, dig3, dig4, dig5, dig6,
      dig7, dig8, dig9, dig10, dig11, dig12, dig13, dig14,
      dig15, dig16, dig2_1, dig4_1, dig6_1, dig8_1, dig10_1,
      dig12_1, dig14_1, dig16_1, sumeven, sumodd, finalsum, lastdigit;
@@ -47,9 +47,10 @@ int main(void)
 
      printf("lastdigit: %li\n", lastdigit);
 
+     sum = numberOfDigits(num);
 
      // AMEX
-     if ((dig15 == 3) && (dig14 == 4 || dig14 == 7) && (lastdigit == 0))
+     if (sum = 15 && (dig15 == 3) && (dig14 == 4 || dig14 == 7) && (lastdigit == 0))
      {
           printf("AMEX\n");
      }
