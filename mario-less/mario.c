@@ -6,14 +6,14 @@ int main(void){
 
     int x = get_int("Get X: ");
     int y = get_int("Get Y: ");
-    int sum = x + y;
+    int z = x + y;
 
     if (x == y)
         {
-        result = sum*3
+        printf("%i\n," z*3);
         }
     else
         {
-        result = sum;
-}
+        printf("%i\n," z);
+        }
 }
