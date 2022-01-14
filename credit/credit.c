@@ -5,7 +5,8 @@
 int main(void)
 
 {
-     long num, int dig1, dig2, dig3, dig4, dig5, dig6, dig7, dig8, dig9, dig10, dig11, dig12, dig13, dig14, dig15, dig16, dig2_1, dig4_1, dig6_1, dig8_1, dig10_1, dig12_1, dig14_1, dig16_1, sumeven, sumodd, finalsum, lastdigit;
+     long num;
+     int dig1, dig2, dig3, dig4, dig5, dig6, dig7, dig8, dig9, dig10, dig11, dig12, dig13, dig14, dig15, dig16, dig2_1, dig4_1, dig6_1, dig8_1, dig10_1, dig12_1, dig14_1, dig16_1, sumeven, sumodd, finalsum, lastdigit;
      do
     {
      num = get_long("Card Number: ");
@@ -49,7 +50,7 @@ int main(void)
      lastdigit = (finalsum % 10);
      }
 {
-     if (lastdigit= )
+     while (lastdigit = 0)
 }
 
 {
