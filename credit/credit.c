@@ -47,7 +47,8 @@ int main(void)
 
      printf("lastdigit: %li\n", lastdigit);
 
-     while(num > 0)
+     while(n
+     num > 0)
 
      num = num / 1;
      count = count + 1;
