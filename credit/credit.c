@@ -47,7 +47,9 @@ int main(void)
 
     finalsum = sumeven + sumodd;
      }
-
+{
+     if ( = )
+}
 
 {
      // AMEX
