@@ -68,7 +68,7 @@ int main(void)
 
 
 
-printf("%li\n", dig15);
+printf("%li\n", dig5);
 
 
 
