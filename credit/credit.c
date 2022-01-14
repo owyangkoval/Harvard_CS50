@@ -22,7 +22,7 @@ int main(void)
      dig14 = ((num % 100000000000000)/10000000000000);
      dig16 = ((num % 10000000000000000)/1000000000000000);
 
-     dig2x2 = (dig2) * 2;
+     dig2x2 = (dig2 * 2);
      dig4x2 = (dig4 * 2);
      dig6x2 = (dig6 * 2);
      dig8x2 = (dig8 * 2);
@@ -68,7 +68,7 @@ int main(void)
 
 
 
-printf("%li\n", dig4x2);
+printf("%li\n", dig15);
 
 
 
