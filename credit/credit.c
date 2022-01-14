@@ -49,14 +49,11 @@ int main(void)
 
 
 
-{
      // AMEX
-     if (num == 15)
-          
-          dig15 == 3, dig14 == 4 || dig14 == 7;
-
+     if (num == 15 && dig15 == 3 && dig14 == 4 || dig14 == 7)
+     {
           printf("AMEX\n");
-
+     }
 
      //MASTERCARD
      if (num < 17 && num > 15)
