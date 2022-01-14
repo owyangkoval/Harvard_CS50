@@ -41,13 +41,13 @@ int main(void)
      dig16_1 = ((dig16 % 10) + (dig16 % 100)/10);
 
      dig1 = (num % 10);
-     dig3 = ((num % 100);
-     dig5 = (num % 100000);
-     dig7 = (num % 10000000);
-     dig9 = (num % 1000000000);
-     dig11 = (num % 100000000000);
-     dig13 = (num % 10000000000000);
-     dig15 = (num % 1000000000000000);
+     dig3 = ((num % 1000)/100);
+     dig5 = ((num % 100000)/10000);
+     dig7 = ((num % 10000000)/1000000);
+     dig9 = ((num % 1000000000)/100000000);
+     dig11 = ((num % 100000000000)/10000000000);
+     dig13 = ((num % 10000000000000)/1000000000000);
+     dig15 = ((num % 1000000000000000)/100000000000000);
 
     sumeven = dig2_1 + dig4_1 + dig6_1+ dig8_1 + dig10_1 + dig12_1 + dig14_1 + dig16_1;
     sumodd = dig1 + dig3 + dig5 + dig7 + dig9 + dig11 + dig13 + dig15;
@@ -65,12 +65,6 @@ int main(void)
                count++;
                }
           printf("Number of Digits in Card number: %ld\n", count);
-
-
-
-printf("%li\n", dig3);
-
-
 
 
      //VISA
