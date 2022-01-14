@@ -3,7 +3,7 @@
 }
 
      //MASTERCARD
-     else if(num == 16 && dig16 == 5 && (dig14 == 5 || dig14 == 1) && (lastdigit == 0))
+     else if(4003600000000014)
      {
           printf("MASTERCARD\n");
      }

@@ -58,7 +58,7 @@ int main(void)
 
 
      //MASTERCARD
-          if (dig16 == 5 && (dig14 == 5 || dig14 == 1) && (lastdigit == 0))
+          if (num == 16 && dig16 == 5 && (dig14 == 5 || dig14 == 1) && (lastdigit == 0))
                {
                printf("MASTERCARD\n");
                }
@@ -80,6 +80,5 @@ int main(void)
                {
                printf("INVALID\n");
                }
-
 
 }
