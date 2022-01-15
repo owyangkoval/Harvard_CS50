@@ -4,8 +4,8 @@
 int main(void){
     // Here your code !
 
-    printf("%i", test(2));
-    printf("%i", test(11))
+    printf("%i", test(1,2));
+    printf("%i", test(2,2))
     int z = x + y;
 
     if (x == y)
