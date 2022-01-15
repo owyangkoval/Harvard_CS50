@@ -2,14 +2,18 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(void)
+int main(void);
 
-int height = get_int("Size: ")
+int height = get_int("Size: ");
 
 {
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 9; i++)
     {
-        printf("?");
+        printf("#");
     }
+        for (int i = 0; i < 8; i++)
+    {
+        printf(" ");
+
     printf("\n");
 }
