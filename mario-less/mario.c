@@ -9,9 +9,9 @@ int main(void)
     int row;
 
     //row
-    for (row = 0; row < 9; i++)
+    for (row = 0; row < 8; i++)
     {
         printf("#\n");
-        row += 1;
+        i += 1;
     }
 }
