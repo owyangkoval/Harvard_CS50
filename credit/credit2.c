@@ -9,9 +9,10 @@ int main(void)
 
      num = get_long("Card Number: ");
 
-     while(num < 0, )
+     while(num = 0, num < 17, num++)
           {
-               odd_num (num % 10)
+               odd_num (num % 10)/10
+               odd_num++
           }
 
 
