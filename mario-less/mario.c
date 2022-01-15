@@ -12,6 +12,6 @@ int main(void)
     for (row = 0; row < 9; row++)
     {
         printf("#\n");
-        row += 1;
+        i = i + 1;
     }
 }
