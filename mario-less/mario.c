@@ -13,8 +13,7 @@ int main(void)
     {
         printf(" \n");
     }
-        //column
-        for (row = 0; column < 8 ; column++)
+        for (row = 0; row <; row++)
         {
             printf("#\n");
         }
