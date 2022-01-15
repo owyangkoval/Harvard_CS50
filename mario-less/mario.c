@@ -9,7 +9,7 @@ int main(void)
     int row, column, space;
 
     //row
-    do (row = 0; row < 9; row++)
+    for (row = 0; row < 9; row++)
     {
         printf("#\n");
     }
