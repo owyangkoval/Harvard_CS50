@@ -3,17 +3,16 @@
 #include <math.h>
 
 int main(void);
-
-int height = get_int("Size: ");
-
 {
-    for (int i = 0; i < 9; i++)
+    int i = get_int("Size: ");
+    int row, column, space;
+
+    for (row = 0; row < 9; row++)
     {
         printf("#");
     }
-        for (int i = 0; i < 8; i++)
+     for (column = 0; column < 9; column++)
     {
         printf(" ");
-
-    printf("\n");
+    }
 }
