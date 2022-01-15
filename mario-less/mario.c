@@ -9,13 +9,9 @@ int main(void)
     int row, column, space;
 
     //row
-    for (row = 0; row < ; row++)
+    for (row = 0; row < 9; row++)
     {
-        printf(".\n");
+        printf("#\n");
     }
-        for (row = 0; row < ; row++)
-        {
-            printf("#\n");
-        }
-
+        for (row = 0; row )
 }
