@@ -13,8 +13,5 @@ int main(void)
     {
         printf("#\n");
     }
-        for (row )
-    {
-        printf(" \n");
-    }
+
 }
