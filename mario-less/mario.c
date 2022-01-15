@@ -13,8 +13,8 @@ int main(void)
     {
         printf("#\n");
     }
-        for (row = 0; row >; row++)
+        for (row = 0; row < (i-1); row++)
         {
-            printf("#\n");
+            printf(" \n");
         }
 }
