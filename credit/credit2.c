@@ -16,6 +16,8 @@ int main(void)
           }
 
 
+
+
      //VISA
           if ((dig16 == 4 && dig13 == 4) || (dig16 == 4))
                {
