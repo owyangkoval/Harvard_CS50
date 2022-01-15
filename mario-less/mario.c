@@ -11,11 +11,10 @@ int main(void)
     //row
     for (row = 0; row < 9; row++)
     {
-        printf("#\n");
-        ;
-    }
         for (row = 0; row < (i-1); row++)
         {
             printf(" \n");
         }
+        printf("#\n");
+}
 }
