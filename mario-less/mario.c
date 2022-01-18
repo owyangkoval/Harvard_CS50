@@ -11,6 +11,7 @@ int main(void)
     //row
     for (row = 0; row < 8; row++)
     {
+        //column
         for (column = 0, column < 8, column++)
             {
                 for (space = 0, space < (i - 1), space++)
