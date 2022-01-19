@@ -3,21 +3,13 @@
 #include <stdio.h>
 #include <string.h>
 
-int string_length(string s);
+  
+int main() {
+    char s[] = "Programming is fun";
+    int i;
 
-int main(void)
-{
-    string name = get_string("Name: ");
-    int length = string_length(name);
-    printf("%i\n", length);
-}
+    for (i = 0; s[i] != '\0'; ++i);
 
-int string_length(string s)
-{
-    int i = 0;
-    while (s[i] != '\0')
-    {
-        i++;
-    }
-    return i;
+    printf("Length of the string: %d", i);
+    return 0;
 }
