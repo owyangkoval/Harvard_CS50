@@ -4,15 +4,16 @@
 #include <string.h>
 
 // Points assigned to each letter of the alphabet
-int POINTS[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
+int POINTS[87] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
 
 int compute_score(string word);
 
 int main(void)
 {
-    int points[26];
+    char letters[26];
 
-        points[1] = (A, E, I, L, N, O, R, S, T, U)
+
+        letters[A, E, I, L, N, O, R, S, T, U] = 1
         points[2] = (D, G)
         points[3] = (B, C, M, D)
         points[4] = ([F, H, V, W, Y)
@@ -20,10 +21,6 @@ int main(void)
         points[8] = (J, X)
         points[10] = Q, Z)
 
-
-
-print f
-}
     // Get input words from both players
     string word1 = get_string("Player 1: ");
     string word2 = get_string("Player 2: ");
@@ -42,4 +39,5 @@ print f
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
+}
 }
