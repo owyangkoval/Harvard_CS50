@@ -11,7 +11,7 @@ int main(void)
 
 printf("Grade %i", grade);
 
-    for (int letter = 0, n = strlen(statement); i < n; i++)
+    for (int l = 0, n = strlen(statement); l < n; l++)
     {
         if (islower(s[i]))
         {
