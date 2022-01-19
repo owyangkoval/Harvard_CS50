@@ -19,7 +19,10 @@ int main(void)
     int score2 = compute_score(word2);
 
     // TODO: Print the winner
-}
+    printf("Player x wins!");
+
+}]
+
 
 int compute_score(string word)
 {
