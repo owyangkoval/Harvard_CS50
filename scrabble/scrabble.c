@@ -10,10 +10,11 @@ int compute_score(string word);
 
 int main(void)
 {
-    int letters [26]
+    int points [ ]
 
-        Letter [A, E, I, L, N, O, R, S, T, U] = 1
+        points [1] = A, E, I, L, N, O, R, S, T, U
 
+print f
 }
     // Get input words from both players
     string word1 = get_string("Player 1: ");
