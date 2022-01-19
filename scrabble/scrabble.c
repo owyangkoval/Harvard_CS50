@@ -14,7 +14,7 @@ int main(void)
 
 
         letters[A, E, I, L, N, O, R, S, T, U] = 1
-        points[2] = (D, G)
+        letters[D, G) = 2
         points[3] = (B, C, M, D)
         points[4] = ([F, H, V, W, Y)
         points[5] = K
