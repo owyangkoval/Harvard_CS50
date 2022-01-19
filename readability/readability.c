@@ -7,9 +7,11 @@ int main(void)
 
 {
     string statement = get_string("Statement: ");
+    int grade, letter;
 
-printf("Grade  ");
-    for (int i = 0, n = strlen(statement); i < n; i++)
+printf("Grade %i", grade);
+
+    for (int letter = 0, n = strlen(statement); i < n; i++)
     {
         if (islower(s[i]))
         {
