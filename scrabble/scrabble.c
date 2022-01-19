@@ -10,9 +10,10 @@ int compute_score(string word);
 
 int main(void)
 {
-    int points [ ]
+    int letters [26]
 
-        points [1] = A, E, I, L, N, O, R, S, T, U
+        letters [A, E, I, L, N, O, R, S, T, U] = 1
+
 
 print f
 }
