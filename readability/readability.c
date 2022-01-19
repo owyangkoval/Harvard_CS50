@@ -3,13 +3,11 @@
 #include <stdio.h>
 #include <string.h>
 
-  
+
 int main() {
-    char s[] = "Programming is fun";
-    int i;
 
-    for (i = 0; s[i] != '\0'; ++i);
+    string text = get_string("Text: ");
+    printf("%s\n," text);
+    int count_letters(string text);
 
-    printf("Length of the string: %d", i);
-    return 0;
 }
