@@ -10,9 +10,13 @@ int compute_score(string word);
 
 int main(void)
 {
-    int letters [26]
+    int letters[26];
 
-        letters [A, E, I, L, N, O, R, S, T, U] = 1
+        letters[A, E, I, L, N, O, R, S, T, U] = 1
+        letters[D, G]
+        letters[B, C, M, D]
+        letters[F, H, V, W, Y]
+
 
 
 print f
