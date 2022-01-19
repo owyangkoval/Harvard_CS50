@@ -23,11 +23,10 @@ int main(void)
     // TODO: Print the winner
     printf("Player x wins!");
 
-}]
+}
 
 
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-}
 }
