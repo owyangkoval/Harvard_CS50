@@ -4,20 +4,18 @@
 #include <string.h>
 
 int main(void)
-
 {
-    string statement = get_string("Statement: ");
-    int length = strlen(statement);
+    string name = get_string("Name: ");
+    int length = string_length(name);
     printf("%i\n", length);
+}
 
-    int grade, words, sentence, letter_sum, sentence_sum;
-
-    letter_sum = (letters/words)*100;
-    sentence_sum = (sentence/words)*100;
-
-    grade = 0.0588 * letter_sum - 0.296 * sentence_sum - 15.8;
-
+int string_length(string s)
+{
+    int i = 0;
+    while (s[i] != '\0')
     {
-        printf("Grade %i", grade);
+        i++;
     }
+    return i;
 }
