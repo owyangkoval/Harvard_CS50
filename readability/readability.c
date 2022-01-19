@@ -7,20 +7,17 @@ int main(void)
 
 {
     string statement = get_string("Statement: ");
-    int grade, letter;
+    int grade, l, w, s;
+    int n = strlen(statement);
 
 printf("Grade %i", grade);
 
-    for (int l = 0, n = strlen(statement); l < n; l++)
+    for (l = 0, n = strlen(statement); l < n; l++)
     {
-        if (islower(s[i]))
-        {
-            printf("%c", s[i] - 32);
-        }
-        else
-        {
-            printf("%c", s[i]);
-        }
+            for (w = 0; w < l; w++)
+            {
+                for (s = 0, s < w; s++)
+            }
     }
     printf("\n");
 }
