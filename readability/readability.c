@@ -7,7 +7,10 @@ int main(void)
 
 {
     string statement = get_string("Statement: ");
-    int grade, letters, words, sentence, letter_sum, sentence_sum;
+    int length = strlen(statement);
+    printf("%i\n", length);
+
+    int grade, words, sentence, letter_sum, sentence_sum;
 
     letter_sum = (letters/words)*100;
     sentence_sum = (sentence/words)*100;
