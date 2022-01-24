@@ -3,7 +3,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-int main(int argc, int argv[1]){
+int main(int argc, string argv[]){
 
     string plaintext = get_string("Plaintext: ");
 
