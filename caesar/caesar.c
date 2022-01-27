@@ -5,6 +5,7 @@
 
 int main(int argc, string argv[2]){
 
+    argv[2]==k
     int i, cipher;
 
     int plain[52] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D',
