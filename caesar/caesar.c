@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[]){
 
-    int i, ;
+    int i, k;
 
     //get word plaintext
     string plaintext=get_string("Plaintext: \n")
