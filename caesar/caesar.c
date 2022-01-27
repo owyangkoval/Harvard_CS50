@@ -5,13 +5,10 @@
 
 int main(int argc, string argv[1]){
 
-    printf("%s\n",argv)
-
     int i, k;
 
     //get word plaintext
     string plaintext=get_string("Plaintext: \n")
-
 
     //plaintext array
     int i[52] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D',
