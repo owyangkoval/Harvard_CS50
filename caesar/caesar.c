@@ -5,14 +5,14 @@
 
 int main(int argc, string argv[]){
 
-    int i, p, c;
+    int i, plain, key, cipher;
 
-    int p[52] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D',
+    int plain[52] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D',
     'E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
         for (i=0;i<=52;i++)
             {
-            c[i]==(p[i])+k%26
+            c[i]==(plain[i]+key)%26
             }
     printf("\n");
 
