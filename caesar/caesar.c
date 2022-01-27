@@ -5,9 +5,4 @@
 
 int main(int argc, string argv[]){
 
-    char ASCII;
-    printf("Plaintext: ");
-    scanf("%c\n", &ASCII);
-    printf("%i\n", ASCII);
-
-}
+    char 
