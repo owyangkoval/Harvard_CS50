@@ -14,6 +14,8 @@ int main(int argc, string argv[2]){
             {
             cipher[i]==(plain[i]+key)%26
             }
+            printf("%s\n",s);
+            
     printf("\n");
 
 }
