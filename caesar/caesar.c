@@ -3,19 +3,11 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main(int argc, string argv[1]){
+int main(int argc, string argv[]){
 
-    int i, k;
-
-    //get word plaintext
-    string plaintext=get_string("Plaintext: \n")
-
-    k==argc[2]
-
-    //plaintext array
-    int plain[52] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D',
-    'E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-
-
+    char ASCII;
+    printf("Plaintext: ");
+    scanf("%c\n", &ASCII);
+    printf("%i\n", ASCII);
 
 }
