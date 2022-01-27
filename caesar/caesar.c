@@ -12,7 +12,7 @@ int main(int argc, string argv[]){
 
         for (i=0;i<=52;i++)
             {
-            c[i]==(plain[i]+key)%26
+            cipher[i]==(plain[i]+key)%26
             }
     printf("\n");
 
