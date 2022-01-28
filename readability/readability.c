@@ -4,8 +4,6 @@
 
 int main(void){
 
-int l=0;
-
 int count_letters(string text);
 int count_sentences(string text);
 
@@ -15,11 +13,11 @@ int count_sentences(string text);
     for (int i = 0, n = strlen(s); i < n; i++){
         if(l="32")
             {
-                l++;
+                ++l;
             }
         else
             {
-        printf("%i", l);
+        printf("%i", n);
         }
             printf("\n");
 }
