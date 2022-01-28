@@ -23,7 +23,7 @@ int i, k=0;
 
     //Lower Case Alphabet
     for(i=97;i<=122;i++){
-        c[i]=(p[i]+k)%26;
+        c[i]=(p[i]+k);
         printf("%s\n",c);
     }
 
