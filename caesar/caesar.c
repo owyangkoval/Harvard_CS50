@@ -7,7 +7,7 @@ int main(int argc, string argv[]){
 
 int i, k, c;
 
-    char ch='A';
+    char ch[52]
 
     string plain = get_string("Plaintext: ");
 
