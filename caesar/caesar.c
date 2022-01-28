@@ -17,7 +17,7 @@ string c=0;
         //Formula for cipher
         s[i]=(s[i]+1);
         //Need integer back to char
-        c[i] = itoa(s);
+        c[i] = sprintf(s);
         printf("%d\n",c[i]);
         }
     }
