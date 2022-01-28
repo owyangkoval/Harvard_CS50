@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[]){
 
-int i, k;
+int i;
 
     char p[52];
     char c[52];
@@ -15,14 +15,15 @@ int i, k;
 
     //Upper Case Alphabet
     for(i=65;i<=90;i++){
-        c[i]==(p[i]+argv[2])%26
+        c[i]=(p[i]+k)%26;
+        printf("%s\n",c);
     }
 
     //Lower Case Alphabet
     for(i=97;i<=122;i++){
-        c[i]==(p[i]+argv[2])%26
+        c[i]=(p[i]+k)%26;
+        printf("%s\n",c);
     }
 
-    printf("%i\n",ch);
 
 }
