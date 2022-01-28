@@ -7,7 +7,7 @@ int main(int argc, string argv[]){
 
     string s = get_string("Plaintext: ");
 
-char array[100];
+char l[100];
 int i = atoi(s);
 int c;
 
