@@ -18,7 +18,7 @@ int count_sentences(string text);
         else
             {
         printf("%i", n);
-            }
+        }
             printf("\n");
 }
 }
