@@ -8,7 +8,7 @@ int main(int argc, string argv[]){
 string s = get_string("Plaintext: ");
 
 int i = atoi(s);
-int k???
+int k??
 string c=0;
 
     //Upper and Lower Case Alphabet
