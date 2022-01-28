@@ -6,4 +6,4 @@ int main(void);
 
 int L,S;
 
-scanf(“%s”, str)
+string text= get_string("Text: ")
