@@ -2,11 +2,15 @@
 #include<cs50.h>
 #include<string.h>
 
-int main(void);
+int string_length(string s);
+int count_letters(string text);
+
+int main(void){
 
 int i;
-
-
-int count_letters(string text);
-get_string("Text: ")
-
+{
+    string name = get_string("Name: ");
+    int length = string_length(name);
+    printf("%i\n", length);
+}
+}
