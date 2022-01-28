@@ -16,7 +16,8 @@ string c=0;
         {
         //Formula for cipher
         s[i]=(s[i]+1);
-        printf("%d\n",s[i]);
+        c[i] = char s[i];
+        printf("%d\n",c[i]);
         }
     }
 
