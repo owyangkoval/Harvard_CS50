@@ -5,15 +5,14 @@
 int count_letters(string text);
 int count_sentences(string text);
 
-int main(void){
-
-
+int l;
+int main(void)
+{
     string s = get_string("Input:  ");
-    printf("Output: ");
-    for (int i = 0; i < strlen(s); i++)
+    printf("Output: \n");
+    for (int i = 0, n = strlen(s); i < n; i++)
     {
-        printf("%c", s[i]);
+        l=
+        printf("%i\n", s[i]);
     }
-    printf("\n");
-
 }
