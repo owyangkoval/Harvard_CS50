@@ -10,15 +10,9 @@ int count_sentences(string text);
 {
     string s = get_string("Text: ");
     printf("Output: \n");
-    for (l = 0, n = strlen(s); l < n; l++){
-        if(l="32")
+    for (l = 0, n = strlen(s); l < n; l++)
             {
-                ++l;
-            }
-        else
-            {
-        printf("%i", l);
+        printf("%i", n);
         }
             printf("\n");
-}
 }
