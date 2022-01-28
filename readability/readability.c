@@ -10,5 +10,5 @@ char s[1000];
 int i, words=0;
 string text;
 
-printf("Text: ");
-scanf("%s", text)
+    printf("Text: ");
+    scanf("%s", text)
