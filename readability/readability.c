@@ -3,21 +3,21 @@
 #include<string.h>
 
 int main(void){
-
+int l;
 int count_letters(string text);
 int count_sentences(string text);
 
 {
     string s = get_string("Text: ");
     printf("Output: \n");
-    for (int i = 0, n = strlen(s); i < n; i++){
+    for (l = 0, n = strlen(s); l < n; l++){
         if(l="32")
             {
                 ++l;
             }
         else
             {
-        printf("%i", n);
+        printf("%i", l);
         }
             printf("\n");
 }
