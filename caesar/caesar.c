@@ -8,7 +8,8 @@ int main(int argc, string argv[]){
 string s = get_string("Plaintext: ");
 
 int i = atoi(s);
-int c;
+int k???
+string c=0;
 
 
     //Upper and Lower Case Alphabet
@@ -16,7 +17,7 @@ int c;
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z')){
         c[i]=(s[i]+k)%26;
 
-        printf("%s\n",c[i]);
+        printf("%c\n",c[i]);
         }
     }
 
