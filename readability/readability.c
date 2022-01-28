@@ -4,6 +4,11 @@
 
 int main(void);
 
-int L,S;
+char L[1000];
+char s[1000];
 
-string text= get_string("Text: ")
+int i, words=0;
+string text;
+
+printf("Text: ");
+scanf("%s", text)
