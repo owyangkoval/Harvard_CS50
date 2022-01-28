@@ -5,4 +5,15 @@
 
 int main(int argc, string argv[]){
 
-    char 
+int i, k, c;
+char p;
+
+    char ch[52];
+
+    string plain = get_string("Plaintext: ");
+
+
+    printf("%i\n",ch);
+
+
+}
