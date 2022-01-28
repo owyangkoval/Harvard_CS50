@@ -15,7 +15,7 @@ int count_letters(string text)
     {
     for(i=0;i)
     {
-        i++;
+        printf("%);
     }
     return i;
     }
