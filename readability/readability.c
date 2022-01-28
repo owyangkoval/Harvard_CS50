@@ -7,6 +7,8 @@ int count_sentences(string text);
 
 int main(void){
 
+char s[] = 
+
 int i=0;
 {
     string name = get_string("Text: ");
