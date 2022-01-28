@@ -13,7 +13,7 @@ int count_sentences(string text);
     printf("Output: \n");
     for (l = 0, n = strlen(s); l < n; l++)
             {
-        printf("%i", n);
+        printf("%i", s);
         }
             printf("\n");
 }
