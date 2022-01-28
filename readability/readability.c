@@ -13,6 +13,7 @@ int main(void)
     printf("Output: \n");
     for (int i = 0, n = strlen(s); i < n; i++)
     {
-        printf("%i\n", n);
+        printf("%i", n);
     }
+            printf("\n");
 }
