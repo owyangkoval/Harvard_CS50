@@ -11,7 +11,7 @@ int main(void)
 {
     string s = get_string("Input:  ");
     printf("Output: \n");
-    for (int i = 0, n = strlen(s); i<n; i++)
+    for (int i = 0, n = strlen(s); i < n; i++)
     {
         printf("%i\n", n);
     }
