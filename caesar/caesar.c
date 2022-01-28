@@ -15,7 +15,7 @@ int c;
     //Upper and Lower Case Alphabet
     for(i=0;i<strlen(s);i++){
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z')){
-        c[i]=(s[i]+k);
+        c[i]=(s[i]+k)%26;
 
         printf("%s\n",c[i]);
         }
