@@ -1,18 +1,21 @@
-#include<stdio.h>
-#include<cs50.h>
-#include<string.h>
+#include <stdio.h>
+#include <ctype.h>
+#include "cs50.h"
 
-int main(void){
-int l;
-int count_letters(string text);
-int count_sentences(string text);
-
+int count_letters (string s)
 {
-    string s = get_string("Text: ");
-    printf("Output: \n");
-    for (l = 0, n = strlen(s); l < n; l++)
-            {
-        printf("%i", n);
-        }
-            printf("\n");
+    int n = 0;
+
+    while (*s)                  /* while not the nul-character */
+        if (isalpha (*s++))     /* check if current is letter, advance ptr */
+            n++;                /* increment letter count */
+
+    return n;                   /* return letter count */
+}
+
+int main (void) {
+
+    string text = get_string ("Text: ");
+
+    printf ("Number of letters: %d\n", count_letters(text));
 }
