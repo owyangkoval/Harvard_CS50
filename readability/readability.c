@@ -2,18 +2,18 @@
 #include<cs50.h>
 #include<string.h>
 
+int main(void){
+
 int count_letters(string text);
 int count_sentences(string text);
 
-int l;
-
-int main(void)
 {
-    string s = get_string("Input:  ");
+    string s = get_string("Text:  ");
     printf("Output: \n");
     for (int i = 0, n = strlen(s); i < n; i++)
     {
         printf("%i", n);
     }
             printf("\n");
+}
 }
