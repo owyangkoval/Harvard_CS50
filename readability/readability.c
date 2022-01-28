@@ -11,9 +11,9 @@ int count_sentences(string text);
     //prompt user for text
     string s = get_string("Text: ");
     printf("Output: \n");
-    for (l = 0, n = strlen(s); l < n; l++)
+    for (int i = 0, n = strlen(s); i < n; i++)
             {
-        printf("%i", s);
+        printf("%i", n);
         }
             printf("\n");
 }
