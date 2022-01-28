@@ -15,8 +15,8 @@ string c=0;
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
         {
         //Formula for cipher
-        c[i]=(s[i]+1);
-        printf("%d\n",c[i]);
+        s[i]=(s[i]+1);
+        printf("%d\n",s[i]);
         }
     }
 
