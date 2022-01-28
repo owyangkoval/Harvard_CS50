@@ -4,11 +4,25 @@
 
 int main(void);
 
+int i;
+
 char L[1000];
 char s[1000];
 
-int i, words=0;
-string text;
+   string text=get_string("Text: ")
 
-    printf("Text: ");
-    scanf("%s", text)
+    for(i=0;s[i];i++)
+    {
+    	if(s[i]==32)
+    	 words++;
+
+ 	}
+ 	if(i>0)
+ 	 words++;
+
+
+
+    printf("no of words in string = %d\n",words);
+
+    return 0;
+}
