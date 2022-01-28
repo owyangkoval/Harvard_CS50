@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[]){
 
-int i;
+int i, k=0;
 
     char p[52];
     char c[52];
