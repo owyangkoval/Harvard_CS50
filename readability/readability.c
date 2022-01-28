@@ -13,13 +13,13 @@ int count_sentences(string text);
     string s = get_string("Text: ");
     printf("Output: \n");
     for (int i = 0, n = strlen(s); i < n; i++){
-        if(l=="32")
+        if(l="32")
             {
                 l++;
             }
         else
             {
-        printf("%i", n);
+        printf("%i", l);
         }
             printf("\n");
 }
