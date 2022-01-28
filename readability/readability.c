@@ -7,19 +7,15 @@ int count_sentences(string text);
 
 int main(void){
 
-char s[] = 
+int i;
+char l[52] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+        'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 
-int i=0;
-{
-    string name = get_string("Text: ");
+string name = get_string("Text: ");
 
-int count_letters(string text)
+int count_letters(string text);
+    for(i=0;i<l[52];i++)
     {
-    for(i=0;i)
-    {
-        printf("%);
+        printf("%d",i);
     }
-    return i;
-    }
-}
 }
