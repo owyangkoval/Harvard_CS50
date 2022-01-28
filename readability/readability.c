@@ -11,9 +11,9 @@ int i=0;
 {
     string name = get_string("Text: ");
 
-int string_length(string s)
+int count_letters(string text)
     {
-  
+    for(i=0;i)
     {
         i++;
     }
