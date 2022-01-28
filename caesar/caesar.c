@@ -5,14 +5,24 @@
 
 int main(int argc, string argv[]){
 
-int i, k, c;
+int i, k;
 
-    char ch[52]
+    char p[52];
+    char c[52];
 
     string plain = get_string("Plaintext: ");
+    scanf("%s\n", plain);
 
+    //Upper Case Alphabet
+    for(i=65;i<=90;i++){
+        c[i]==(p[i]+argv[2])%26
+    }
+
+    //Lower Case Alphabet
+    for(i=97;i<=122;i++){
+        c[i]==(p[i]+argv[2])%26
+    }
 
     printf("%i\n",ch);
-
 
 }
