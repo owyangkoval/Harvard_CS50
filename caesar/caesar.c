@@ -18,13 +18,13 @@ int i, k=0;
     //Upper Case Alphabet
     for(i=65;i<=90;i++){
         c[i]=(p[i]+k);
-        printf("%s\n",c);
+        printf("%c\n",c[i]);
     }
 
     //Lower Case Alphabet
     for(i=97;i<=122;i++){
         c[i]=(p[i]+k);
-        printf("%s\n",c);
+        printf("%c\n",c[i]);
     }
 
 
