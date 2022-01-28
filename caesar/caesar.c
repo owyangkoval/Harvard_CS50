@@ -14,7 +14,7 @@ int i = atoi(s);
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
         {
         //Formula for cipher
-        s[i]=(s[i]+6);
+        s[i]=(s[i]+1);
         printf("%d\n",s[i]);
         }
     }
