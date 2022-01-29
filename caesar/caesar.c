@@ -15,11 +15,9 @@ int i = atoi(s);
         {
         //Formula for cipher using key
         s[i]=(s[i]+1);
-        printf("%d\n",s[i]);
+        printf("%c",s[i]);
         }
-    //Need integer back to char
-    string c = itoa(s);
-    printf("%d\n",c[i]);
     }
+        printf("\n");
 
 }
