@@ -8,19 +8,18 @@ int main(int argc, string argv[]){
 string s = get_string("Plaintext: ");
 
 int i = atoi(s);
-string c=0;
 
     //Getting int values for a-z through ASCII
     for(i=0;i<=strlen(s);i++){
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
         {
-        //Formula for cipher
+        //Formula for cipher using key
         s[i]=(s[i]+1);
-        //Need integer back to char
-        c[i] = sprintf(s);
-        printf("%d\n",c[i]);
+        printf("%d\n",s[i]);
         }
+    //Need integer back to char
+    string c = itoa(s);
+    printf("%d\n",c[i]);
     }
-
 
 }
