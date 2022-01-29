@@ -11,7 +11,7 @@ int i = atoi(s);
 
     //Getting int values for a-z through ASCII
     for(i=0;i<=strlen(s);i++){
-        if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+        if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z') || (s[i] == ' '))
         {
         //Formula for cipher using key
         s[i]=(s[i]+1);
