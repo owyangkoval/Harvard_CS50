@@ -14,10 +14,6 @@ int i = atoi(s);
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z')){
         //Formula for cipher using key
         s[i]=(s[i]+1);
-        }
-        //need space 
-        else if(s[i] == ' ')
-        {
         printf("%c",s[i]);
         }
     }
