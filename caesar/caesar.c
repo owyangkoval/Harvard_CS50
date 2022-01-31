@@ -14,24 +14,21 @@ int j;
     for(i=0;i<=strlen(s);i++){
         while((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
             {
+                //Formula for cipher using key
+                s[i]=(s[i]+key);
+                printf("%c",s[i]);
                 for (j = i; s[j] != '\0'; ++j)
                     {
                     s[j] = s[j + 1];
                     }
                 s[j] = '\0';
-                //Formula for cipher using key
-                s[i]=(s[i]+key);
-                printf("%c",s[i]);
             }
-        }
         if(s[i]==' ')
                 {
                 //spaces stay the same
                 s[i]=s[i];
                 printf("%c",s[i]);
                 }
-
-
-        }
+    }
         printf("\n");
 }
