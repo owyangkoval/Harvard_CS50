@@ -25,11 +25,6 @@ int j;
                     while(s[i] <='/0')
                 printf("%c",s[i]);
             }
-        else if((s[i] >='{' && s[i] <= '@') || (s[i] >= '[' && s[i] <= '`'))
-            {
-                s[i]=(s[i]+5);
-                printf("%c",s[i]);
-            }
     }
         printf("\n");
 }
