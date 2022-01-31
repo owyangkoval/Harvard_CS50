@@ -12,8 +12,11 @@ int j;
 
     //Getting int values for a-z through ASCII
     for(i=0;i<=strlen(s);i++)
-    {
-        if(s[i] ==' ')
+        {
+        if(s[i] >= 91 && s[i] <= 96)
+        }
+        {
+        if(s[i]==' ')
         {
             s[i]=s[i];
             printf("%c",s[i]);
