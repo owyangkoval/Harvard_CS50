@@ -14,7 +14,11 @@ int j;
     for(i=0;i<=strlen(s);i++)
         {
         if(s[i] >= 91 && s[i] <= 96)
-        }
+            {
+                s[i]=s[i]
+                printf("%c",)}
+            }
+}
         {
         if(s[i]==' ')
         {
