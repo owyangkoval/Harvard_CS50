@@ -34,6 +34,7 @@ int j;
         else if((s[i] <= '@' && s[i] >='{') || (s[i] <= '`' && s[i] >= '['))
             {
                 i++;
+                printf("%c",s[i]);
             }
         }
     printf("\n");
