@@ -11,6 +11,10 @@ int i = atoi(s);
 
     //Getting int values for a-z through ASCII
     for(i=0;i<=strlen(s);i++){
+        while(s[i]<=96||s[i]>=91)
+        {
+                  i++;
+        }
         if(s[i] ==' ')
         {
             s[i]=s[i];
