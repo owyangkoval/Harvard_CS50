@@ -23,6 +23,7 @@ int j;
                 s[i]=s[i];
                 printf("%c",s[i]);
             }
+        else if(s[i]!=)
     }
         printf("\n");
 }
