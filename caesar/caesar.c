@@ -7,6 +7,9 @@ int main(int argc, string argv[]){
 
 string s = get_string("Plaintext: ");
 
+int isspace(int argument);
+
+
 int i = atoi(s);
 
     //Getting int values for a-z through ASCII
@@ -15,6 +18,7 @@ int i = atoi(s);
         //Formula for cipher using key
         s[i]=(s[i]+1);
         printf("%c",s[i]);
+        int isspace(int argument);
         }
     }
         printf("\n");
