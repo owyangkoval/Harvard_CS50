@@ -11,7 +11,7 @@ string s = get_string("Plaintext: ");
 int i = atoi(s);
 int j;
     for(i=0;i<=strlen(s);i++){
-        if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+        while((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
             {
                 //Formula for cipher using key
                 s[i]=(s[i]+key);
