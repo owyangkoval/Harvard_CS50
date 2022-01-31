@@ -5,6 +5,7 @@
 
 int main(int argc, string argv[]){
 
+int key = get_int("Key: ");
 string s = get_string("Plaintext: ");
 
 int i = atoi(s);
@@ -13,7 +14,7 @@ int j;
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
             {
                 //Formula for cipher using key
-                s[i]=(s[i]+2);
+                s[i]=(s[i]+key);
                 printf("%c",s[i]);
             }
         else if(s[i]==' ')
