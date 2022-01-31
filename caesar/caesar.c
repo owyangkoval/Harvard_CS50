@@ -10,24 +10,28 @@ string s = get_string("Plaintext: ");
 
 int i = atoi(s);
 int j;
+
     for(i=0;i<=strlen(s);i++){
         while((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
             {
+                for (j = i; s[j] != '\0'; ++j)
+                    {
+                    s[j] = s[j + 1];
+                    }
+                line[j] = '\0';
                 //Formula for cipher using key
                 s[i]=(s[i]+key);
                 printf("%c",s[i]);
             }
-        else if(s[i]==' ')
-            {
+        }
+        if(s[i]==' ')
+                {
                 //spaces stay the same
                 s[i]=s[i];
                 printf("%c",s[i]);
-                if(s[i]!='\0'){
-                    i++;
-                    printf("%c",s[i]);
                 }
 
-            }
+
         }
         printf("\n");
 }
