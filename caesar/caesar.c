@@ -19,7 +19,6 @@ int i, j;
                 //Formula for cipher using key
                 s[i]=(s[i]+2);
                 printf("%c",s[i]);
-                }
             }
         if(s[i]==' ')
             {
