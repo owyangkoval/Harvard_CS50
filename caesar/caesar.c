@@ -11,8 +11,7 @@ int i = atoi(s);
 int j;
 
     //Getting int values for a-z through ASCII
-    for(i=0;i<=strlen(s);i++)
-        {
+    for(i=0;i<=strlen(s);i++){
         //spaces stay the same
         if(s[i]==' ')
             {
@@ -33,7 +32,7 @@ int j;
             }
         else if((s[i] <= '@' && s[i] >='{') || (s[i] <= '`' && s[i] >= '['))
             {
-                s[i]={s[i]}
+                s[i]=s[i]+1;
                 printf("%c",s[i]);
             }
         }
