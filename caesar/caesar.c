@@ -16,10 +16,10 @@ int i = atoi(s);
             s[i]=s[i];
             printf("%c",s[i]);
         }
-        else if(((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))) && (s[i] == '\0')
+        else if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
         {
             //Formula for cipher using key
-            s[i]=(s[i]+27);
+            s[i]=(s[i]+2);
             printf("%c",s[i]);
         }
     }
