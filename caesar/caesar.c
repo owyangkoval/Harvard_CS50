@@ -7,18 +7,18 @@ int main(int argc, string argv[]){
 
 string s = get_string("Plaintext: ");
 
-int i, j;
-
+int i = atoi(s);
+int j;
     for(i=0;i<=strlen(s);i++){
-        if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z') || (s[i]=='\0'))
+        if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
             {
-            for(j=i;s[j]!='\0';j++)
-                {
-                s[j]=s[j]+1;
-                }
                 //Formula for cipher using key
                 s[i]=(s[i]+2);
                 printf("%c",s[i]);
+            }
+        if(s[i]!='\0')
+            {
+                
             }
         if(s[i]==' ')
             {
