@@ -22,7 +22,7 @@ int j;
             {
                 //Formula for cipher using key
                 s[i]=(s[i]+2);
-                    while(s[i] <='/0')
+                s[i] = '\0';
                 printf("%c",s[i]);
             }
     }
