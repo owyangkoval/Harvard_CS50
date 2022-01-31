@@ -10,11 +10,11 @@ string s = get_string("Plaintext: ");
 int i = atoi(s);
 int j;
 
-    //Getting int values for a-z through ASCII
     for(i=0;i<=strlen(s);i++){
-        //spaces stay the same
+
         if(s[i]==' ')
             {
+                //spaces stay the same
                 s[i]=s[i];
                 printf("%c",s[i]);
             }
@@ -26,7 +26,7 @@ int j;
             }
         else if((s[i] >='{' && s[i] <= '@') || (s[i] >= '[' && s[i] <= '`'))
             {
-                s[i]=0;
+                s[i]=(s[i]+5);
                 printf("%c",s[i]);
             }
     }
