@@ -14,12 +14,12 @@ int j;
     for(i=0;i<=strlen(s);i++)
         {
         if(s[i]==' ')
-            {
+        {
             s[i]=s[i];
             printf("%c",s[i]);
-            }
+        }
         else if(s[i] >= 'a' && s[i] <= 'z')
-            {
+        {
             //Formula for cipher using key
             s[i]=(s[i]+2);
             printf("%c",s[i]);
@@ -31,5 +31,5 @@ int j;
             printf("%c",s[i]);
                 }
         printf("\n");
-        }
+
 }
