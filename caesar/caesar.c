@@ -2,11 +2,11 @@
 #include <cs50.h>
 #include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
+
 
 int main(int argc, string argv[]){
 
-int key = argv[2];
+int key = (argv[2]);
 string s = get_string("Plaintext: ");
 
 int i = atoi(s);
