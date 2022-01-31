@@ -22,11 +22,6 @@ int j;
                 //spaces stay the same
                 s[i]=s[i];
                 printf("%c",s[i]);
-                for (j = i; s[j] != '\0'; ++j)
-                    {
-                        s[j] = s[j + 1];
-                    }
-                s[j] = '\0';
             }
         }
         printf("\n");
