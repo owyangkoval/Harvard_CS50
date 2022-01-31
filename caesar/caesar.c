@@ -13,22 +13,28 @@ int j;
     //Getting int values for a-z through ASCII
     for(i=0;i<=strlen(s);i++)
         {
+        //spaces stay the same
         if(s[i]==' ')
             {
-            s[i]=s[i];
-            printf("%c",s[i]);
+                s[i]=s[i];
+                printf("%c",s[i]);
+            }
+        //non-alphabetical characters get eliminated
+        else if(s[i]=='\0')
+            {
+                i++;
             }
         else if(s[i] >= 'a' && s[i] <= 'z')
             {
-            //Formula for cipher using key
-            s[i]=(s[i]+2);
-            printf("%c",s[i]);
+                //Formula for cipher using key
+                s[i]=(s[i]+2);
+                printf("%c",s[i]);
             }
         else if(s[i] >= 'A' && s[i] <= 'Z')
             {
-            //Formula for cipher using key
-            s[i]=(s[i]+2);
-            printf("%c",s[i]);
+                //Formula for cipher using key
+                s[i]=(s[i]+2);
+                printf("%c",s[i]);
             }
         }
     printf("\n");
