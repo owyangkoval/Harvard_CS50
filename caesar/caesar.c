@@ -13,10 +13,6 @@ int j;
     //Getting int values for a-z through ASCII
     for(i=0;i<=strlen(s);i++)
         {
-        if(s[i] > 90 || s[i] <)
-            {
-                printf("%c",s[i]);
-            }
         //spaces stay the same
         if(s[i]==' ')
             {
@@ -33,7 +29,11 @@ int j;
             {
                 //Formula for cipher using key
                 s[i]=(s[i]+2);
-                printf("%c",s[i]);
+                  printf("%c",s[i]);
+            }
+        else if((s[i] <= '@' && s[i] >='{') || (s[i] <= '`' && s[i] >= '['))
+            {
+                i++;
             }
         }
     printf("\n");
