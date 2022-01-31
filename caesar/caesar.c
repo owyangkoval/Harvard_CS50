@@ -19,11 +19,6 @@ int j;
                 s[i]=s[i];
                 printf("%c",s[i]);
             }
-        //non-alphabetical characters get eliminated
-        else if(s[i]=='\0')
-            {
-                i++;
-            }
         else if(s[i] >= 'a' && s[i] <= 'z')
             {
                 //Formula for cipher using key
