@@ -18,7 +18,7 @@ int j;
                     {
                     s[j] = s[j + 1];
                     }
-                line[j] = '\0';
+                s[j] = '\0';
                 //Formula for cipher using key
                 s[i]=(s[i]+key);
                 printf("%c",s[i]);
