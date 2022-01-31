@@ -21,8 +21,8 @@ int j;
         else if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
             {
                 //Formula for cipher using key
+                s[i] == '\0';
                 s[i]=(s[i]+2);
-                s[i] = '\0';
                 printf("%c",s[i]);
             }
     }
