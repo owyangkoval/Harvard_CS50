@@ -22,6 +22,7 @@ int j;
                 //spaces stay the same
                 s[i]=s[i];
                 printf("%c",s[i]);
+                if{s[i]==}
             }
         }
         printf("\n");
