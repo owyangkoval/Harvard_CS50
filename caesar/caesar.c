@@ -12,17 +12,21 @@ int i = atoi(s);
 int j;
 
     for(i=0;i<=strlen(s);i++){
-        while((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+        if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
             {
                 //Formula for cipher using key
                 s[i]=(s[i]+key);
                 printf("%c",s[i]);
             }
-        if(s[i]==' ')
+        else if(s[i]==' ')
                 {
                 //spaces stay the same
                 s[i]=s[i];
                 printf("%c",s[i]);
+                }
+        else if((s[i] >= '{' && s[i] <= '@') || (s[i] >= '[' && s[i] <= '`'))
+                {
+                s[i]=s[i]
                 }
     }
         printf("\n");
