@@ -24,10 +24,6 @@ int j;
                 s[i]=s[i];
                 printf("%c",s[i]);
                 }
-        else if((s[i] >= '{' && s[i] <= '@') || (s[i] >= '[' && s[i] <= '`'))
-                {
-                s[i]=s[i]
-                }
     }
         printf("\n");
 }
