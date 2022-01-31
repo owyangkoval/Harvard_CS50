@@ -16,11 +16,7 @@ int j;
                 s[i]=(s[i]+2);
                 printf("%c",s[i]);
             }
-        if(s[i]=='\0')
-            {
-                
-            }
-        if(s[i]==' ')
+        else if(s[i]==' ')
             {
                 //spaces stay the same
                 s[i]=s[i];
