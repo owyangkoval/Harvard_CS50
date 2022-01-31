@@ -18,17 +18,17 @@ int j;
                 s[i]=s[i];
                 printf("%c",s[i]);
             }
-            }
         else if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
             {
                 //Formula for cipher using key
-                s[i]=(s[i]+1);
+                s[i]=(s[i]+2);
                 printf("%c",s[i]);
             }
-        else if((s[i] >='{' && s[i] <= '@') || (s[i] >= '[') && s[i] <= '`'))
+        else if((s[i] >='{' && s[i] <= '@') || (s[i] >= '[' && s[i] <= '`'))
             {
                 i++;
                 printf("%c",s[i]);
             }
-    printf("\n");
+    }
+        printf("\n");
 }
