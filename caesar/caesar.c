@@ -9,7 +9,7 @@ int main(int argc, string argv[2]){
 //argc count verification
     if(argc == 2)
         {
-            return 0;
+            return;
         }
     if(argc > 2)
         {
