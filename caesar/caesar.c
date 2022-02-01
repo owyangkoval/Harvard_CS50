@@ -20,11 +20,6 @@ int main(int argc, string argv[2]){
             printf("Usage: ./caesar key\n");
             return 0;
         }
-    else
-        {
-            printf("Usage: ./caesar key\n");
-            return 0;
-        }
 
 //variables
 string s = get_string("Plaintext: ");
@@ -37,13 +32,13 @@ int c;
         if(s[i] >= 'a' && s[i] <= 'z')
                 {
                 //Uppercase Formula for cipher using key
-                c=(s[i]+ key)%26;
+                c=(s[i]+ key);
                 printf("%c",c);
                 }
         else if (s[i] >= 'A' && s[i] <= 'Z')
                 {
                 //Lowercase Formula for cipher using key
-                c=(s[i]+ key)%26;
+                c=(s[i]+ key);
                 printf("%c",c);
                 }
         else if(s[i]==' ')
