@@ -12,8 +12,11 @@ int i;
 int letters;
 
     //counting letters
-    for(i=0;i<strlen(text);i++)
+    for(i=0;i<strlen(text);i++){
+        if((text[i] <= 'Z' && text[i] >= 'A') || (text[i] <= 'z' && text[i] >= 'a'))
         {
-            
-            printf("%i letters",letters)
+            letters = letters + 1;
+            printf("%i letters",letters);
         }
+    }
+}
