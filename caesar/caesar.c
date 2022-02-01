@@ -25,6 +25,10 @@ int j;
                 s[i]=s[i];
                 printf("%c",s[i]);
                 }
+        else
+        {
+            return 
+        }
     }
         printf("\n");
 }
