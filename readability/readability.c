@@ -2,9 +2,11 @@
 #include <cs50.h>
 #include <string.h>
 
-int main(void);
+
+int main(void){
 
 string text = get_string("Text: ");
-printf("T)
+printf("%s\n",text);
 
 
+}
