@@ -16,4 +16,8 @@ int count_letters(string text)
 
     //counting letters
     for(i=0;i<=strlen(text);i++)
-        
+        while(count_letters=0)
+            (
+                printf("%i\n",count_letters)
+                count_letters++
+            )
