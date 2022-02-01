@@ -18,7 +18,7 @@ char letters = atoi(text);
         {
         printf("%s\n",text);
         printf("%i\n", letters);
-        
+        letters++;
         }
     else
         {
