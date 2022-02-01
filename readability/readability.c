@@ -8,17 +8,16 @@
 int main(void){
 
 string text = get_string("Text: ");
+printf("%s\n",text);
 
 int i;
-char letters = atoi(text);
+int isalpha(char c);
 
     //counting letters
     for(i=0;i<=strlen(text);i++)
-        if (isalpha(letters))
+        if (isalpha(c))
         {
-        printf("%s\n",text);
-        printf("%i\n", letters);
-        letters++;
+        printf("%i letters\n", isalpha);
         }
     else
         {
