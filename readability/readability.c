@@ -16,12 +16,5 @@ int isalpha(letters);
 
     //counting letters
     for(i=0;i<=strlen(text);i++)
-        if (isalpha(letters))
-        {
-        printf("%i letters\n", isalpha);
-        }
-    else
-        {
-        return 0;
-        }
-}
+        if (letters >= 'a' && letters <='z');
+            
