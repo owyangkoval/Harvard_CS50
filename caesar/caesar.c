@@ -6,6 +6,14 @@
 
 int main(int argc, string argv[2]){
 
+if(argc>2)
+    {
+        printf("Usage: ./caesar key")
+    }
+        return 1;
+
+
+
 string s = get_string("Plaintext: ");
 int key = atoi(argv[1]);
 int i = atoi(s);
