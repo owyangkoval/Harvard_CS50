@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
+#include <stdlib.h>
 
 
 int main(void){
@@ -8,15 +9,14 @@ int main(void){
 string text = get_string("Text: ");
 printf("%s\n",text);
 
-int i;
-int letters;
+int i = 0;
+int letters = 0;
 
     //counting letters
-    for(i=0;i<strlen(text);i++){
-        if((text[i] <= 'Z' && text[i] >= 'A') || (text[i] <= 'z' && text[i] >= 'a'))
+    if(i<strlen(text))
         {
             letters = letters + 1;
-            printf("%i letters",letters);
+            printf("%i letters\n",letters);
+            letters++;
         }
-    }
 }
