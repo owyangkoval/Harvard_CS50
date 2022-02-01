@@ -26,9 +26,9 @@ int j;
                 printf("%c",s[i]);
                 }
             printf("\n");
-        }
         else
-            {
-            return 0;
+                {
+                printf("0\n");
+                }
             }
-    }
+}
