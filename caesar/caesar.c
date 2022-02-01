@@ -12,7 +12,7 @@ int i = atoi(s);
 int j;
 
     for(i=0;i<=strlen(s);i++){
-        if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+        if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z')|| (a[i] - 48 >= 0 && a[i] - 48 <= 9))
             {
                 //Formula for cipher using key
                 s[i]=(s[i]+key);
