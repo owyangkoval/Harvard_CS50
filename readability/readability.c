@@ -10,18 +10,27 @@ int main(void){
 string text = get_string("Text: ");
 printf("%s\n",text);
 
-int i;
-int lsum=0;
-int letters=0;
-int count_letters(string text);
+int i; int letters=0; int words=0;
 
-    //counting letters
+int count_letters(string text);
+int count_words(string text);
+
+    //count letters
     for(i = 0; i < strlen(text); i++){
         if(isalpha(text[i]))
             {
-            lsum = lsum+1;
+            letters = letters+1;
             }
     }
-            printf("%i",lsum);
+            printf("%i letters",letters);
            printf("\n");
+    //count words
+    for(i = 0; i < strlen(text); i++){
+        if(isalpha(text[i]))
+            {
+            }
+    }
+            printf("%i", words);
+           printf("\n");
+
 }
