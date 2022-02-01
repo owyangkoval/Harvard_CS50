@@ -16,4 +16,4 @@ int count_letters(string text)
 
     //counting letters
     for(i=0;i<=strlen(text);i++)
-        if (letters >= 'a' && letters <='z');
+        
