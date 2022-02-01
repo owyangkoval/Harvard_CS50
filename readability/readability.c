@@ -14,7 +14,8 @@ int i = 0;
 char letters = 0;
 
     //counting letters
-    if (isalpha(letters))
+    while(i<=strlen(text))
+        if (isalpha(letters))
         {
         printf("Your input is alphabetical.\n");
         }
