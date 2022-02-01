@@ -6,31 +6,19 @@
 
 int main(int argc, string argv[2]){
 
-   if( argc == 2 ) {
-      printf("The argument supplied is %s\n", argv[1]);
-      return 
-   }
-   else if( argc > 2 ) {
-      printf("Usage: ./caesar key\n");
-   }
-   else {
-      printf("Usage: ./caesar key\n");
-   }
-}
-
 string s = get_string("Plaintext: ");
-
 int key = atoi(argv[1]);
 int i = atoi(s);
 int j;
 
+
     for(i=0;i<=strlen(s);i++){
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
-            {
+                {
                 //Formula for cipher using key
                 s[i]=(s[i]+key);
                 printf("%c",s[i]);
-            }
+                }
         else if(s[i]==' ')
                 {
                 //spaces stay the same
@@ -38,9 +26,9 @@ int j;
                 printf("%c",s[i]);
                 }
         else
-        {
+            {
             return
-        }
+            }
     }
         printf("\n");
 }
