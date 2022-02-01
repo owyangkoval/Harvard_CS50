@@ -9,14 +9,14 @@ int main(int argc, string argv[2]){
 //argc count verification
     if(argc == 2)
         {
-            return 1;
+            return 0;
         }
-    else if(argc > 2)
+    if(argc > 2)
         {
             printf("Usage: ./caesar key\n");
             return 1;
         }
-    else(argc < 2)
+    else if(argc < 2)
         {
             return 0;
         }
