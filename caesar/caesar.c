@@ -20,8 +20,13 @@ int main(int argc, string argv[2]){
             printf("Usage: ./caesar key\n");
             return 0;
         }
+    else
+        {
+            printf("Usage: ./caesar key\n");
+            return 0;
+        }
 
-//variables 
+//variables
 string s = get_string("Plaintext: ");
 int key = atoi(argv[1]);
 int i = atoi(s);
@@ -35,7 +40,7 @@ int c;
                 c=(s[i]+ key)%26;
                 printf("%c",c);
                 }
-        if (s[i] >= 'A' && s[i] <= 'Z')
+        else if (s[i] >= 'A' && s[i] <= 'Z')
                 {
                 //Lowercase Formula for cipher using key
                 c=(s[i]+ key)%26;
