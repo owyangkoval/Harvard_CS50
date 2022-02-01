@@ -11,7 +11,7 @@ string text = get_string("Text: ");
 printf("%s\n",text);
 
 int i = 0;
-int letters = 0;
+int isalpha(char letters);
 
     //counting letters
     if(i<strlen(text))
