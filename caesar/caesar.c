@@ -21,11 +21,8 @@ int main(int argc, string argv[2]){
             return 0;
         }
 
-
-//string
+//variables 
 string s = get_string("Plaintext: ");
-
-//ints
 int key = atoi(argv[1]);
 int i = atoi(s);
 int c;
@@ -35,13 +32,13 @@ int c;
         if(s[i] >= 'a' && s[i] <= 'z')
                 {
                 //Uppercase Formula for cipher using key
-                c=s[i]+ key;
+                c=(s[i]+ key)%26;
                 printf("%c",c);
                 }
         if (s[i] >= 'A' && s[i] <= 'Z')
                 {
                 //Lowercase Formula for cipher using key
-                c=s[i]+ key;
+                c=(s[i]+ key)%26;
                 printf("%c",c);
                 }
         else if(s[i]==' ')
