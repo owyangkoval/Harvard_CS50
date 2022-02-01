@@ -41,9 +41,9 @@ int c;
                 c=(s[i]+ key);
                 printf("%c",c);
                 }
-        else if(s[i]==' ')
+        else if((s[i] >= '{' && s[i] <= "@") || (s[i] >= '[' && s[i] <= '`') || s[i]==' ')
                 {
-                //spaces stay the same
+                //special characters and spaces stay the same
                 s[i]=s[i];
                 printf("%c",s[i]);
                 }
