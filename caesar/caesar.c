@@ -8,6 +8,7 @@ int main(int argc, string argv[2]){
 
 string s = get_string("Plaintext: ");
 
+int key = atoi(argv[1]);
 int i = atoi(s);
 int j;
 
@@ -24,7 +25,6 @@ int j;
                 s[i]=s[i];
                 printf("%c",s[i]);
                 }
-        else if{s[i]!=' '}
     }
         printf("\n");
 }
