@@ -6,16 +6,18 @@
 
 int main(int argc, string argv[2]){
 
-if(argc > 2)
+
+if(argc == 2)
     {
-        printf("Usage: ./caesar key");
+        printf("Usage: ./caesar key\n");
     }
         return 1;
-else if(argc < 2)
+
+else if(argc > 2)
     {
-        printf(")
+        printf("Usage: ./caesar key\n");
     }
- return 0;
+        return 1;
 
 string s = get_string("Plaintext: ");
 int key = atoi(argv[1]);
