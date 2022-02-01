@@ -6,19 +6,31 @@
 
 int main(int argc, string argv[2]){
 
-if(argc > 2)
-    {
-        printf("Usage: ./caesar key\n");
-    }
-        return 1;
-        
+//argc count verification
+    if(argc == 2)
+        {
+            return 1;
+        }
+    else if(argc > 2)
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
+    else(argc < 2)
+        {
+            return 0;
+        }
+
+
+//string
 string s = get_string("Plaintext: ");
 
+//ints
 int key = atoi(argv[1]);
 int i = atoi(s);
 int j;
 
-
+//integer for array
     for(i=0;i<=strlen(s);i++){
         if((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
                 {
