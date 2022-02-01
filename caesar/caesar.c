@@ -29,13 +29,7 @@ int c;
 
 //integer for array
     for(i=0;i<=strlen(s);i++){
-              if((s[i] >= '{' && s[i] <= '@') || (s[i] >= '[' && s[i] <= '`') || (s[i]==' '))
-                {
-                //special characters stay the same
-                s[i]=s[i];
-                printf("%c",s[i]);
-                }
-        else if (s[i] >= 'a' && s[i] <= 'z')
+             if (s[i] >= 'a' && s[i] <= 'z')
                 {
                 //Uppercase Formula for cipher using key
                 c=(s[i]+ key);
@@ -46,6 +40,12 @@ int c;
                 //Lowercase Formula for cipher using key
                 c=(s[i]+ key);
                 printf("%c",c);
+                }
+        else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
+                {
+                //special characters stay the same
+                s[i]=s[i];
+                printf("%c",s[i]);
                 }
             }
         printf("\n");
