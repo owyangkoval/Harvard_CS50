@@ -11,13 +11,15 @@ string text = get_string("Text: ");
 printf("%s\n",text);
 
 int i = 0;
-int isalpha(char letters);
+char letters = 0;
 
     //counting letters
-    if(i<strlen(text))
+    if (isalpha(letters))
         {
-            letters = letters + 1;
-            printf("%i letters\n",letters);
-            letters++;
+        printf("Your input is alphabetical.\n");
+        }
+    else
+        {
+        printf("Your input is not alphabetical.\n");
         }
 }
