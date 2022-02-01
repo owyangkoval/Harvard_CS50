@@ -25,20 +25,21 @@ int main(int argc, string argv[2]){
 string s = get_string("Plaintext: ");
 int key = atoi(argv[1]);
 int i = atoi(s);
-int c;
 
 //integer for array
     for(i=0;i<=strlen(s);i++){
              if (s[i] >= 'a' && s[i] <= 'z')
                 {
                 //Uppercase Formula for cipher using key
-                c=(s[i]+ key);
+                int offset='a';
+                int c=(s[i]+key-offset)%26+offset;
                 printf("%c",c);
                 }
         else if (s[i] >= 'A' && s[i] <= 'Z')
                 {
                 //Lowercase Formula for cipher using key
-                c=(s[i]+ key)%26;
+                int offset='A';
+                int c=(s[i]+key-offset)%26+offset;
                 printf("%c",c);
                 }
         else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
