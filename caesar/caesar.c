@@ -9,7 +9,7 @@ int main(int argc, string argv[2]){
 //argc count verification
     if(argc == 2)
         {
-            return;
+            return 1;
         }
     if(argc > 2)
         {
@@ -18,6 +18,7 @@ int main(int argc, string argv[2]){
         }
     else if(argc < 2)
         {
+            printf("Usage: ./caesar key\n");
             return 0;
         }
 
