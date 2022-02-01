@@ -28,7 +28,8 @@ int j;
             printf("\n");
         else
                 {
-                printf("0\n");
+                i++;
                 }
+        return 0;
             }
 }
