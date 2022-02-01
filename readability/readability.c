@@ -24,9 +24,11 @@ int count_words(string text);
     }
             printf("%i letters",letters);
            printf("\n");
+
+
     //count words
     for(i = 0; i < strlen(text); i++){
-        if(isalpha(text[i]))
+        if((text[i]))
             {
             }
     }
