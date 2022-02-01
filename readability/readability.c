@@ -16,11 +16,12 @@ int letters=0;
 int count_letters(string text);
 
     //counting letters
-    for(i = 0; i < strlen(text); i++) {
+    for(i = 0; i < strlen(text); i++){
         if(isalpha(text[i]))
             {
             lsum = lsum+1;
-            printf("%i\n",lsum);
             }
     }
+            printf("%i",lsum);
+           printf("\n");
 }
