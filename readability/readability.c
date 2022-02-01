@@ -11,7 +11,7 @@ string text = get_string("Text: ");
 printf("%s\n",text);
 
 int i;
-char letters ();
+int count_letters(string text);
 
     //counting letters
     for(i=0;i<=strlen(text);i++)
