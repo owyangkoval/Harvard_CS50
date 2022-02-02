@@ -10,7 +10,7 @@ int main(void){
 string text = get_string("Text: ");
 printf("%s\n",text);
 
-int i; int letters=0; int words=0;
+int i; int letters=0; int words=1;
 
 int count_letters(string text);
 int count_words(string text);
@@ -27,7 +27,7 @@ int count_words(string text);
 
 
     //count words
-    for(i = 1; i < strlen(text); i++){
+    for(i = 0; i < strlen(text); i++){
         if((text[i])==' ')
             {
                 words = words+1;
