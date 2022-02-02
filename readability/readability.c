@@ -11,7 +11,7 @@ int main(void){
 string text = get_string("Text: ");
 printf("%s\n",text);
 
-int i; int letters=0; int words=1; int sentences=0;
+int i; int letters=0; int words=0; int sentences=0;
 float letteravg=0; float sentenceavg=0; float index=0;
 int grade;
 
