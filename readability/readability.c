@@ -34,7 +34,7 @@ int count_words(string text);
         if((text[i])==' ')
             {
                     words = words+1;
-                    letteravg=(letters/words)*100;
+                    letteravg=(letters/words)*(100);
             }
         }
             printf("%i words", words);
@@ -47,7 +47,7 @@ int count_words(string text);
         if((text[i])=='.' || (text[i])=='?' || (text[i])=='!')
             {
                     sentences = sentences+1;
-                    sentenceavg=(sentences/words)*100;
+                    sentenceavg=(sentences/words)*(100);
             }
         }
             printf("%i sentences", sentences);
