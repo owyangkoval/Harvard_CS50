@@ -29,42 +29,29 @@ int count_words(string text);
            printf("\n");
 
 
-    //count words
+    //count words and letter average
     for(i = 0; i < strlen(text); i++){
         if((text[i])==' ')
             {
                     words = words+1;
+                    letteravg=(letters/words)*100;
             }
         }
             printf("%i words", words);
+            printf("%f\n", letteravg);
            printf("\n");
 
 
-    //count sentences
+    //count sentences and sentence average
     for(i = 0; i < strlen(text); i++){
         if((text[i])=='.' || (text[i])=='?' || (text[i])=='!')
             {
                     sentences = sentences+1;
+                    sentenceavg=(sentences/words)*100;
             }
         }
             printf("%i sentences", sentences);
+            printf("%f\n", sentenceavg);
            printf("\n");
-
-    //letter average
-    for(i = 0; i < strlen(text); i++){
-            {
-                letteravg=(letters/words)*100;
-            }
-        }
-        printf("%f\n", letteravg);
-        
-    //sentence average
-    for(i = 0; i < strlen(text); i++){
-            {
-                sentenceavg=(sentences/words)*100;
-            }
-        }
-        printf("%f\n", sentenceavg);
-
 
 }
