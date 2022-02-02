@@ -39,7 +39,7 @@ int i = atoi(s);
                 {
                 //Lowercase Formula for cipher using key
                 int offset='A';
-                int c=(s[i]+key-offset)%26+offset;
+                c=(s[i]+key-offset)%26+offset;
                 printf("%c",c);
                 }
         else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
