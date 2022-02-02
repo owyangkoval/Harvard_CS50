@@ -10,7 +10,7 @@ int main(void){
 string text = get_string("Text: ");
 printf("%s\n",text);
 
-int i; int letters=0; int words=1; int sentences=1;
+int i; int letters=0; int words=1; int sentences=0;
 
 int count_letters(string text);
 int count_words(string text);
@@ -39,7 +39,7 @@ int count_words(string text);
 
     //count sentences
     for(i = 0; i < strlen(text); i++){
-        if((text[i])=='.') || (text[i]=='?') || (text[i]=='!')))
+        if((text[i])=='.' || (text[i])=='?' || (text[i])=='!')
             {
                 sentences = sentences+1;
             }
