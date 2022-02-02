@@ -28,8 +28,9 @@ int count_words(string text);
 
     //count words
     for(i = 0; i < strlen(text); i++){
-        
+        if((text[i])==' ')
             {
+                word++;
             }
     }
             printf("%i", words);
