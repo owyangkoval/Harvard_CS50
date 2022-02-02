@@ -25,7 +25,7 @@ int count_words(string text);
                 letters = letters+1;
             }
         }
-            printf("%i letters",letters);
+            printf("%i letters\n",letters);
            printf("\n");
 
 
