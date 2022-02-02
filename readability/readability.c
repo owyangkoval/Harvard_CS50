@@ -56,6 +56,7 @@ int count_words(string text);
                 letteravg=(letters/words)*100;
             }
         }
+        printf("%f\n", letteravg);
     //sentence average
     for(i = 0; i < strlen(text); i++){
             {
