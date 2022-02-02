@@ -55,7 +55,7 @@ int count_words(string text);
             grade = (0.0588 * letters) - (0.296 * sentences) - 15.8;
             }
         }
-        printf("Grade %f", grade);
+        printf("Grade %f", round(grade));
         printf("/\n");
 
 }
