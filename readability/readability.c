@@ -51,21 +51,14 @@ int count_words(string text);
             printf("%i sentences", sentences);
            printf("\n");
 
-    //letter average
+    //letter average and sentence average
     for(i = 0; i < strlen(text); i++){
             {
                 letteravg=(letters/words)*100;
-            }
-        }
-        printf("%f\n", letteravg);
-
-    //sentence average
-    for(i = 0; i < strlen(text); i++){
-            {
                 sentenceavg=(sentences/words)*100;
             }
         }
+        printf("%f\n", letteravg);
         printf("%f\n", sentenceavg);
-
 
 }
