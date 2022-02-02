@@ -45,9 +45,10 @@ int count_words(string text);
         if((text[i])=='.' || (text[i])=='?' || (text[i])=='!')
             {
                     sentences = sentences+1;
-
+                    sentenceavg=(sentences/words)*100;
             }
         }
+                    printf("%f\n", sentenceavg);
             printf("%i sentences", sentences);
            printf("\n");
 
@@ -55,11 +56,9 @@ int count_words(string text);
     for(i = 0; i < strlen(text); i++){
             {
                 letteravg=(letters/words)*100;
-                sentenceavg=(sentences/words)*100;
             }
         }
         printf("%f\n", letteravg);
-        printf("%f\n", sentenceavg);
 
     //coleman-liau
     for(i = 0; i < strlen(text); i++){
