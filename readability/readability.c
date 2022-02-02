@@ -27,13 +27,13 @@ int count_words(string text);
 
 
     //count words
-    for(i = 0; i < strlen(text); i++){
+    for(i = 1; i < strlen(text); i++){
         if((text[i])==' ')
             {
-                word++;
+                words = words+1;
             }
     }
-            printf("%i", words);
+            printf("%i words", words);
            printf("\n");
 
 }
