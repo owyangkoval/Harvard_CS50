@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <math.h>
 
 
 int main(void){
@@ -46,5 +47,11 @@ int count_words(string text);
     }
             printf("%i sentences", sentences);
            printf("\n");
+
+    //coleman-liau
+    for(i = 0; i < strlen(text); i++){
+        {
+
+        }
 
 }
