@@ -26,7 +26,7 @@ string s = get_string("Plaintext: ");
 int key = atoi(argv[1]);
 int i = atoi(s);
 
-//integer for array
+//integer for strings
     for(i=0;i<=strlen(s);i++){
              if (s[i] >= 'a' && s[i] <= 'z')
                 {
@@ -44,7 +44,7 @@ int i = atoi(s);
                 }
         else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
                 {
-                //special characters stay the same
+                //special characters and spaces stay the same
                 s[i]=s[i];
                 printf("%c",s[i]);
                 }
