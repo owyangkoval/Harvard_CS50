@@ -51,7 +51,11 @@ int count_words(string text);
     //coleman-liau
     for(i = 0; i < strlen(text); i++){
         {
-
+        int grade = (0.0588 * letters) - (0.296 * sentences) - 15.8;
         }
+    }
+        printf("Grade %i", grade);
+        printf("/\n");
+        )
 
 }
