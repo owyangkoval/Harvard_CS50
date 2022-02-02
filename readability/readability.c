@@ -12,7 +12,7 @@ string text = get_string("Text: ");
 printf("%s\n",text);
 
 int i; int letters=0; int words=1; int sentences=0;
-float letteravg=0; float sentenceavg=0;
+float letteravg; float sentenceavg;
 int grade;
 
 int count_letters(string text);
@@ -34,9 +34,9 @@ int count_words(string text);
         if((text[i])==' ')
             {
                     words = words+1;
-                    letteravg=letters/words;
-                    letteravg=letteravg*100;
             }
+            letteravg=letters/words;
+            letteravg=letteravg*100;
         }
             printf("%i words", words);
             printf("%f\n", letteravg);
@@ -48,8 +48,9 @@ int count_words(string text);
         if((text[i])=='.' || (text[i])=='?' || (text[i])=='!')
             {
                     sentences = sentences+1;
-                    sentenceavg=(sentences/words)*100;
             }
+            sentenceavg=sentences/words;
+            sentenceavg=sentenceavg*100;
         }
             printf("%i sentences", sentences);
             printf("%f\n", sentenceavg);
