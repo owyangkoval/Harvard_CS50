@@ -11,7 +11,7 @@ int main(void){
 string text = get_string("Text: ");
 printf("%s\n",text);
 
-int i; int letters=0; int words=1; int sentences=0;
+int i; int letters=0; int letteravg=0; int words=1; int sentences=0; sentenceavg=0;
 float grade;
 
 int count_letters(string text);
@@ -49,13 +49,18 @@ int count_words(string text);
             printf("%i sentences", sentences);
            printf("\n");
 
-    //coleman-liau
+    //letter average
     for(i = 0; i < strlen(text); i++){
             {
-            grade = (0.0588 * letters) - (0.296 * sentences) - 15.8;
+            letteravg==(letters/words)*100;
             }
         }
-        printf("Grade %f", round(grade));
-        printf("/\n");
+    //sentence average
+    for(i = 0; i < strlen(text); i++){
+            {
+            sentenceavg==(sentences/words)*100;
+            }
+        }
+
 
 }
