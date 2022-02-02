@@ -67,5 +67,5 @@ int count_words(string text);
             index=(0.0588*letteravg)-(0.296*sentenceavg)-15.8;
         }
     }
-        printf("Grade %f\n", index);
+        printf("Grade %f\n", round(index));
 }
