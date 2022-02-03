@@ -26,8 +26,9 @@ int main(int argc, string argv[2]){
     if (strlen(argv[1])==26)
         {
         }
-    else if(isalpha(argv[1]))
+    else if(notalpha(argv[1]))
         {
+            return 0;
         }
     else if(strlen(argv[1]) < 26 || strlen(argv[1]) > 26)
         {
