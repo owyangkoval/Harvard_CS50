@@ -32,6 +32,19 @@ int main(int argc, string argv[2]){
             return 0;
         }
 
+//argv no digits/variables
+    int j=0;
+    for(j=0;j<=argv[1][25];j++){
+        if(isalpha(argv[1][25]))
+        {}
+            }
+        else
+        {
+            return 1;
+        }
+
+
+
 //variables
 string s = get_string("Plaintext: ");
 int i;
