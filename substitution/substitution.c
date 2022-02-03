@@ -34,7 +34,6 @@ int main(int argc, string argv[2]){
 //variables
 string s = get_string("Plaintext: ");
 int i = atoi(s);
-int key = atoi(argv[1]);
 int c;
 
 
@@ -42,14 +41,10 @@ int c;
     for(i=0;i<=strlen(s);i++){
             if (s[i] >= 'a' && s[i] <= 'z')
                 {
-                //Uppercase Formula for cipher using key?????
-                
-                }
-        else if (s[i] >= 'A' && s[i] <= 'Z')
-                {
                 //Lowercase Formula for cipher using key?????
-                key=key%26;
-                printf("%c",key);
+                int offset='a';
+                s[i]=s[i]-offset;
+                printf("%c", s[i]);
                 }
         else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
                 {
