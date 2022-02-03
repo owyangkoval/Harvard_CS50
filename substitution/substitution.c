@@ -23,16 +23,13 @@ int main(int argc, string argv[2]){
         }
 
 //argv count verification
-    if(strlen(argv[1]) == 26)
+    if(strlen(argv[1]) == 26 && isalpha(argv[1]))
         {
         }
     else if(strlen(argv[1]) < 26 || strlen(argv[1]) > 26)
         {
             printf("Key must contain 26 characters.\n");
             return 0;
-        }
-    else if(isalpha(argv[1]))
-        {
         }
 
 //variables
