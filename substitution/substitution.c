@@ -33,14 +33,14 @@ int main(int argc, string argv[2]){
 
 //variables
 string s = get_string("Plaintext: ");
-char* k = (argv[1]);
 int i = atoi(s);
+char* k = (argv[i]);
 int c;
 
 
 //integer for strings
     for(i=0;i<=strlen(s);i++){
-             if (s[i] >= 'a' && s[i] <= 'z')
+            if (s[i] >= 'a' && s[i] <= 'z')
                 {
                 //Uppercase Formula for cipher using key?????
                 k[i]=s[i];
