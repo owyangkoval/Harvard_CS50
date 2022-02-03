@@ -33,12 +33,17 @@ int main(int argc, string argv[2]){
 
 //variables
 string s = get_string("Plaintext: ");
-int i = atoi(s);
+int i;
 int c;
-
 
 //integer for strings
     for(i=0;i<=strlen(s);i++){
+            if (s[i] >= 'a' && s[i] <= 'z')
+                {
+                //Lowercase Formula for cipher using key?????
+                int offset=s[i]-'a';
+                printf("%i", offset);
+                }
             if (s[i] >= 'a' && s[i] <= 'z')
                 {
                 //Lowercase Formula for cipher using key?????
