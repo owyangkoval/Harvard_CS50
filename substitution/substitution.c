@@ -42,16 +42,16 @@ char* key = (argv[1]);
     for(i=0;i<=strlen(s);i++){
             if (s[i] >= 'a' && s[i] <= 'z')
                 {
-                //Lowercase Formula for cipher using key?????
+                //Lowercase Formula for cipher using key
                 int offset=s[i]-'a';
                 c=key[offset];
-                printf("%i", c);
+                printf("%c", c);
                 }
-            if (s[i] >= 'a' && s[i] <= 'z')
+            if (s[i] >= 'A' && s[i] <= 'Z')
                 {
-                //Lowercase Formula for cipher using key?????
-                int offset=s[i]-'a';
-                printf("%c", offset);
+                int offset=s[i]-'A';
+                c=key[offset];
+                printf("%c", c);
                 }
         else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
                 {
@@ -60,6 +60,6 @@ char* key = (argv[1]);
                 printf("%c",s[i]);
                 }
             }
-        printf("\n");
+    printf("\n");
         return 0;
 }
