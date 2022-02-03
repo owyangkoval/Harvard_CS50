@@ -31,6 +31,9 @@ int main(int argc, string argv[2]){
             printf("Key must contain 26 characters.\n");
             return 0;
         }
+    else if(isalpha(argv[1]))
+        {
+        }
 
 //variables
 string s = get_string("Plaintext: ");
