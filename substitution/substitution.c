@@ -43,7 +43,7 @@ int c;
                 {
                 //Lowercase Formula for cipher using key?????
                 int offset=s[i]-'a';
-                printf("%c", s[i]);
+                printf("%c", offset);
                 }
         else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
                 {
