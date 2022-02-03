@@ -47,13 +47,13 @@ char* key = (argv[1]);
                 c=key[offset];
                 printf("%c", c);
                 }
-            if (s[i] >= 'A' && s[i] <= 'Z')
+            else if (s[i] >= 'A' && s[i] <= 'Z')
                 {
                 int offset=s[i]-'A';
                 c=key[offset];
                 printf("%c", c);
                 }
-        else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
+            else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
                 {
                 //special characters and spaces stay the same
                 s[i]=s[i];
