@@ -12,35 +12,46 @@ int main(int argc, string argv[2]){
         }
     if(argc > 2)
         {
-            printf("Usage: ./caesar key\n");
+            printf("./substitution key\n");
             return 1;
         }
     else if(argc < 2)
         {
-            printf("Usage: ./caesar key\n");
+            printf("Usage: ./substitution key\n");
+            return 0;
+        }
+
+//argv count verification
+    if(strlen(argv[1]) == 26)
+        {
+        }
+    else if(strlen(argv[1]) < 26 || strlen(argv[1]) > 26)
+        {
+            printf("Key must contain 26 characters.\n");
             return 0;
         }
 
 //variables
 string s = get_string("Plaintext: ");
-int key = atoi(argv[1]);
+char* k = (argv[1]);
 int i = atoi(s);
 int c;
 
-//formula for strings
+
+//integer for strings
     for(i=0;i<=strlen(s);i++){
              if (s[i] >= 'a' && s[i] <= 'z')
                 {
-                //Uppercase Formula for cipher using key
-                int offset='a';
-                c=(s[i]+key-offset)%26+offset;
+                //Uppercase Formula for cipher using key?????
+                k[i]=s[i];
+                c=k[i];
                 printf("%c",c);
                 }
         else if (s[i] >= 'A' && s[i] <= 'Z')
                 {
-                //Lowercase Formula for cipher using key
-                int offset='A';
-                c=(s[i]+key-offset)%26+offset;
+                //Lowercase Formula for cipher using key?????
+                k[i]=s[i];
+                c=k[i];
                 printf("%c",c);
                 }
         else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
