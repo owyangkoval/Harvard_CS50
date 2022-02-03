@@ -42,7 +42,8 @@ int c;
                 {
                 //Lowercase Formula for cipher using key?????
                 int offset=s[i]-'a';
-                printf("%i", offset);
+                c=
+                printf("%i", c);
                 }
             if (s[i] >= 'a' && s[i] <= 'z')
                 {
