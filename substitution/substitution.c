@@ -26,10 +26,6 @@ int main(int argc, string argv[2]){
     if (strlen(argv[1])==26)
         {
         }
-    else if(notalpha(argv[1]))
-        {
-            return 0;
-        }
     else if(strlen(argv[1]) < 26 || strlen(argv[1]) > 26)
         {
             printf("Key must contain 26 characters.\n");
@@ -40,7 +36,7 @@ int main(int argc, string argv[2]){
 string s = get_string("Plaintext: ");
 int i;
 char c;
-char* key = (argv[1]);
+char* key = argv[1];
 
 
 //integer for strings
