@@ -43,8 +43,7 @@ int c;
             if (s[i] >= 'a' && s[i] <= 'z')
                 {
                 //Uppercase Formula for cipher using key?????
-                c=s[i];
-                printf("%c",c);
+
                 }
         else if (s[i] >= 'A' && s[i] <= 'Z')
                 {
