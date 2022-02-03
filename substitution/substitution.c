@@ -23,8 +23,18 @@ int main(int argc, string argv[2]){
         }
 
 //argv count verification
-    if(strlen(argv[1]) == 26 && isalpha(argv[1]))
+    if(strlen(argv[1]) == 26)
         {
+     for(int k = 0, n = strlen(argv[1]); k < n; k++)
+
+{
+    if (isdigit(argv[1][k]) )
+
+    {
+
+        printf("error");
+        return 1;
+    }
         }
     else if(strlen(argv[1]) < 26 || strlen(argv[1]) > 26)
         {
