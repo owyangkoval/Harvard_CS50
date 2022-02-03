@@ -23,12 +23,11 @@ int main(int argc, string argv[2]){
         }
 
 //argv count verification
-     for(int k = 0, n = strlen(argv[1]); k < n; k++){
-        if (isdigit(argv[1][k]) ){
-
+    for(int k = 0, n = strlen(argv[1]); k < n; k++){
+    if (isdigit(argv[1][k]) )
+        {
         printf("error");
         return 1;
-        }
         }
     else if(strlen(argv[1]) < 26 || strlen(argv[1]) > 26)
         {
@@ -67,4 +66,5 @@ char* key = (argv[1]);
             }
     printf("\n");
         return 0;
+    }
 }
