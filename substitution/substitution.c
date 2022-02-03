@@ -33,7 +33,7 @@ int main(int argc, string argv[2]){
 
 //variables
 string s = get_string("Plaintext: ");
-int i,
+int i, char c;
 char* key = (argv[1]);
 
 
@@ -43,7 +43,7 @@ char* key = (argv[1]);
                 {
                 //Lowercase Formula for cipher using key?????
                 int offset=s[i]-'a';
-
+                
                 printf("%i", c);
                 }
             if (s[i] >= 'a' && s[i] <= 'z')
