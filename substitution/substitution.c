@@ -34,9 +34,10 @@ int main(int argc, string argv[2]){
 
 //argv no digits/variables
     int j=0;
-    for(j=0;j<=argv[1][25];j++){
-        if(isalpha(strlen(argv[1][j])))
+    while(j<=argv[1][25]){
+        if(isalpha(argv[1][j]))
             {
+                j++;
             }
         else
             {
