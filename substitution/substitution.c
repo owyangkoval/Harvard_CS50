@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
 
@@ -18,7 +19,7 @@ int main(int argc, string argv[2]){
     else if(argc < 2)
         {
             printf("Usage: ./substitution key\n");
-            return 0;
+            return 1;
         }
 
 //argv count verification
@@ -45,13 +46,13 @@ char* key = (argv[1]);
                 //Lowercase Formula for cipher using key
                 int offset=s[i]-'a';
                 c=key[offset];
-                printf("%c", c);
+                printf("%c", tolower(c));
                 }
             else if (s[i] >= 'A' && s[i] <= 'Z')
                 {
                 int offset=s[i]-'A';
                 c=key[offset];
-                printf("%c", c);
+                printf("%c", toupper(c));
                 }
             else if((s[i] >= '{') || (s[i] <= '@') || (s[i] >= '[') || (s[i] <= '`') || (s[i]==' '))
                 {
