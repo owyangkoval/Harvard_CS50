@@ -33,8 +33,9 @@ int main(int argc, string argv[2]){
 
 //variables
 string s = get_string("Plaintext: ");
-int i, int c;
-char key = (argv[1]);
+int i,
+char* key = (argv[1]);
+
 
 //integer for strings
     for(i=0;i<=strlen(s);i++){
