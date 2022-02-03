@@ -33,8 +33,8 @@ int main(int argc, string argv[2]){
 
 //variables
 string s = get_string("Plaintext: ");
-int i;
-int c;
+int i, int c;
+char key = (argv[1]);
 
 //integer for strings
     for(i=0;i<=strlen(s);i++){
@@ -42,7 +42,7 @@ int c;
                 {
                 //Lowercase Formula for cipher using key?????
                 int offset=s[i]-'a';
-                c=
+
                 printf("%i", c);
                 }
             if (s[i] >= 'a' && s[i] <= 'z')
