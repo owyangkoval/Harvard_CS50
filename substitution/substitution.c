@@ -34,7 +34,7 @@ int main(int argc, string argv[2]){
 //variables
 string s = get_string("Plaintext: ");
 int i = atoi(s);
-string key = atoi(argv[1]);
+string key = itoa(argv[1]);
 int c;
 
 
