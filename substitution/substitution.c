@@ -40,7 +40,11 @@ int main(int argc, string argv[2]){
             }
         else if
             {
-
+            int k;
+            argv[1][k]==argv[1][j];
+            for (k=0;k<=argv[1][k];k++){
+                argv[1][k]=argv[1][k+1];
+                    }
             }
         else
             {
