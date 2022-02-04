@@ -46,10 +46,12 @@ int main(int argc, string argv[2]){
 
     for(int k=j+1; k<argv[1][k]; ){
             if (argv[1][j] == argv[1][k]){
-            for(k=j; k<=argv[1][k]; k++){
-            argv[1][k] = argv[1][k+1];
+            for(k=j; k<=argv[1][k]; k++)
+                {
+                argv[1][k] = argv[1][k+1];
+                return 1;
+                }
             }
-            return 1;
         }
 
 //variables
