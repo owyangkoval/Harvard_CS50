@@ -8,8 +8,7 @@ int POINTS[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 
 
 int compute_score(string word);
 
-int main(void)
-{
+int main(void){
 
 int i; int c=0;
 
@@ -32,17 +31,17 @@ int i; int c=0;
                 int offset=word1[i]-'A';
                 printf("%c", toupper(c));
                 }
-        }
+            }
 
     int score2 = compute_score(word2);
 
 
-
     // TODO: Print the winner
-}
 
 
-int compute_score(string word)
-{
+
+int compute_score(string word);
+
     // TODO: Compute and return score for string
+
 }
