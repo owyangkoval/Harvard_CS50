@@ -32,27 +32,23 @@ int main(int argc, string argv[2]){
             return 0;
         }
 
-//argv[1] no digits/variables
+//argv[1] no digits/variables/no repeat alpha
     int j;
     for(j=0;j<=argv[1][j];j++){
-        if(isalpha(argv[1][j]))
-            {
-            }
-        else
-            {
-                return 1;
-            }
-        }
-
-//argv[1] no repeat alpha
-for(j=0;j<=argv[1][j];j++){
-    for(int k=j+1; argv[1][k]; k++){
+        for(int k=j+1; argv[1][k]; k++){
             if (argv[1][j] == argv[1][k])
                 {
                 return 1;
                 }
-            }
+            else if(isalpha(argv[1][j]))
+                {
+                }
+            else
+                {
+                return 1;
+                }
         }
+    }
 
 //variables
 string s = get_string("Plaintext: ");
