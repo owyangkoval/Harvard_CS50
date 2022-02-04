@@ -22,7 +22,7 @@ int main(int argc, string argv[2]){
             return 1;
         }
 
-//argv count verification
+//argv[1] character count verification
     if (strlen(argv[1])==26)
         {
         }
@@ -32,7 +32,7 @@ int main(int argc, string argv[2]){
             return 0;
         }
 
-//argv no digits/variables
+//argv[1] no digits/variables
     int j;
     for(j=0;j<=argv[1][j];j++){
         if(isalpha(argv[1][j]))
@@ -44,15 +44,13 @@ int main(int argc, string argv[2]){
             }
         }
 
+//argv[1] no repeat alpha
     for(int k=j+1; k<argv[1][k]; ){
-            if (argv[1][j] == argv[1][k]){
-            for(k=j; k<=argv[1][k]; k++)
+            if (argv[1][j] == argv[1][k])
                 {
-                argv[1][k] = argv[1][k+1];
                 return 1;
                 }
             }
-        }
 
 //variables
 string s = get_string("Plaintext: ");
