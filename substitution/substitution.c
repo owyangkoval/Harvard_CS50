@@ -33,15 +33,17 @@ int main(int argc, string argv[2]){
         }
 
 //argv no digits/variables
-    int j;
+    int j; int k=0;
     for(j=0;j<=argv[1][j];j++){
         if(isalpha(argv[1][j]))
             {
             }
-        else if(argv[1][j]==argv[1][j+1])
-            {
-                return 1;
+        else if(argv[1][j] == argv[1][k]){
+            for(k=j; k<=argv[1][k]; k++){
+            argv[1][k] = argv[1][k+1];
             }
+            return 1;
+        }
         else
             {
                 return 1;
