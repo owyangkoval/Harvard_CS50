@@ -23,18 +23,26 @@ int i; int c=0;
         if (word1[i] >= 'a' && word1[i] <= 'z')
                 {
                 //Lowercase Formula for cipher using key
-                int offset=word1[i]-'a';
-                printf("%c", tolower(c));
+                int word1t=word1[i]-'a';
                 }
             else if (word1[i] >= 'A' && word1[i] <= 'Z')
                 {
-                int offset=word1[i]-'A';
-                printf("%c", toupper(c));
+                int word1=word1[i]-'A';
                 }
             }
 
     int score2 = compute_score(word2);
-
+    for(i=0;i<strlen(word1);i++){
+        if (word2[i] >= 'a' && word2[i] <= 'z')
+                {
+                //Lowercase Formula for cipher using key
+                int word2=word2[i]-'a';
+                }
+            else if (word2[i] >= 'A' && word2[i] <= 'Z')
+                {
+                int word2=word2[i]-'A';
+                }
+            }
 
     // TODO: Print the winner
 
