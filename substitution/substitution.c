@@ -44,13 +44,6 @@ int main(int argc, string argv[2]){
             }
         }
 
-//argv[1] no repeat alpha
-    for(int k=j+1; k<argv[1][k]; ){
-            if (argv[1][j] == argv[1][k])
-                {
-                return 1;
-                }
-            }
 
 //variables
 string s = get_string("Plaintext: ");
