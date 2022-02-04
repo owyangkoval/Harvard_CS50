@@ -38,8 +38,8 @@ int main(int argc, string argv[2]){
         if(isalpha(argv[1][j]))
             {
             }
-        else if(argv[1][j] != '\0'){
-                argv[1][j]=argv[1][j+1];
+        else if(argv[1][j]==argv[1][j+1])
+            {
                 return 1;
             }
         else
