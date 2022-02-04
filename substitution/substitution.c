@@ -38,6 +38,10 @@ int main(int argc, string argv[2]){
         if(isalpha(argv[1][j]))
             {
             }
+        else if
+            {
+
+            }
         else
             {
                 return 1;
