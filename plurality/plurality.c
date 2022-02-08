@@ -53,7 +53,7 @@ int main(int argc, string argv[])
         string name = get_string("Vote: ");
 
         // Check for invalid vote
-        if (name[i] == 0)
+        if (strcmp(argv[i] == 0)
         {
             return 0;
         }
