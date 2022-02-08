@@ -56,13 +56,13 @@ int main(int argc, string argv[])
         if (strcmp(candidates[i].name) == 0)
         {
             printf("%s\n", candidates[i].votes);
-            return 0;
+            return 1;
 
         // Check for invalid vote
         if (!vote(name))
             {
                 printf("Invalid vote.\n");
-                return 1;
+                return 0;
             }
     }
 
