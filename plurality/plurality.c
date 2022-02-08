@@ -53,7 +53,7 @@ int main(int argc, string argv[])
     {
         string name = get_string("Vote: ");
 
-        if (strcmp(candidates[i].name, name[i] == 0)
+        if (strcmp((candidates[i].name, *name[i]) == 0)
         {
             candidates[i].votes+=1;
             return 0;
