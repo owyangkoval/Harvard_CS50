@@ -54,12 +54,15 @@ int main(int argc, string argv[])
         string name = get_string("Vote: ");
 
         if (strcmp(candidates[i].name, "%s") == 0)
-
+            {
+                return 0;
+            }
         // Check for invalid vote
         if (!vote(name))
-        {
-            printf("Invalid vote.\n");
-        }
+            {
+                printf("Invalid vote.\n");
+                return 1;
+            }
     }
 
     // Display winner of election
