@@ -45,6 +45,7 @@ int main(int argc, string argv[])
         candidates[i].votes = 0;
     }
 
+
     int voter_count = get_int("Number of voters: ");
 
     // Loop over all voters
@@ -52,16 +53,12 @@ int main(int argc, string argv[])
     {
         string name = get_string("Vote: ");
 
-        // Check for valid/invalid vote
-        if (strcmp(candidates[i].name == 0)
+        // Check for invalid vote
+        if (!vote(name))
         {
-            return 0;
+            printf("Invalid vote.\n");
         }
-        else if (!vote(name))
-        {
-        printf("Invalid vote.\n");
-        return 1;
-        }
+    }
 
     // Display winner of election
     print_winner();
