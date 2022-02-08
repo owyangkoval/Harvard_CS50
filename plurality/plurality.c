@@ -53,9 +53,11 @@ int main(int argc, string argv[])
     {
         string name = get_string("Vote: ");
 
-        if (strcmp(candidates[i].name, "%s") == 0)
+        if (strcmp(candidates[i].name, argv[i]) == 0)
             {
+                candidates[i].votes++;
                 return 0;
+
             }
         // Check for invalid vote
         if (!vote(name))
