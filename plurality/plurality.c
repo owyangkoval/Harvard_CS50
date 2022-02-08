@@ -44,10 +44,7 @@ int main(int argc, string argv[])
         candidates[i].name = argv[i + 1];
         candidates[i].votes = 0;
     }
-
-    //voter input
-
-
+    
     int voter_count = get_int("Number of voters: ");
 
     // Loop over all voters
