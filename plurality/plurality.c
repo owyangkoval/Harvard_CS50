@@ -47,7 +47,7 @@ int main(int argc, string argv[])
 
 
     int voter_count = get_int("Number of voters: ");
-
+`
     // Loop over all voters
     for (int i = 0; i < voter_count; i++)
     {
