@@ -55,7 +55,6 @@ int main(int argc, string argv[])
         // Check for invalid vote
         if (name[i] == 0)
         {
-            printf("%s\n", candidate[i].name);
             return 0;
         }
         else if (!vote(name))
