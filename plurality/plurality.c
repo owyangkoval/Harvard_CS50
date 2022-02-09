@@ -84,7 +84,7 @@ void print_winner(void)
 {
     // TODO
     int voter_count=0;
-    for (int i = 0; i < voter_count; i++)
+    if()
     {
         printf("%s", candidates[i].name);
     }
