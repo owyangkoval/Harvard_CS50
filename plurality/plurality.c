@@ -61,7 +61,7 @@ int main(int argc, string argv[])
             return 1;
         }
     }
-    
+
     // Display winner of election
 
 
