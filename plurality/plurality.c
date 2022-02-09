@@ -56,11 +56,11 @@ int main(int argc, string argv[])
         if (strcmp(candidates[i].name, name) == 0)
         {
             candidates[i].votes++;
-            return true;
+            return 0;
         }
     }
-    return false;
-    
+    return 1;
+
         // Check for invalid vote
         if (!vote(name))
             {
