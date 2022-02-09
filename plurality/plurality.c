@@ -67,8 +67,8 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-        int i=0;
-        if (strcmp(candidates[i].name, name) == 0)
+    int i=0;
+       if (strcmp(candidates[i].name, name) == 0)
             {
                 candidates[i].votes++;
                 return true;
