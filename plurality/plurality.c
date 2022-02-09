@@ -83,6 +83,6 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-    
+
     return;
 }
