@@ -56,29 +56,24 @@ int main(int argc, string argv[])
         if (strcmp(candidates[i].name, name) == 0)
             {
                 candidates[i].votes++;
-                return true;
+                return 0;
             }
-            return false;
+            return 1;
         }
     }
+    
     // Display winner of election
-    string winner;
-    int j;
-    if(j=0;j<)
-    printf("%s", winner);
 
 
 
 // Update vote totals given a new vote
-bool vote(string name)
-{
+bool vote(string name);
+
     // TODO
-    return false;
-}
+
 
 // Print the winner (or winners) of the election
-void print_winner(void)
-{
+void print_winner(void);
+
     // TODO
-    return;
 }
