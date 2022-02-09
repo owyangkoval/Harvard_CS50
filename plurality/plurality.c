@@ -67,10 +67,7 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-        for (int i = 0; i < voter_count; i++)
-    {
-        string name = get_string("Vote: ");
-        {
+        int i=0;
         if (strcmp(candidates[i].name, name) == 0)
             {
                 candidates[i].votes++;
