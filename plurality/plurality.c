@@ -63,7 +63,11 @@ int main(int argc, string argv[])
     }
     // Display winner of election
     string winner;
+    int j;
+    if(j=0;j<)
     printf("%s", winner);
+
+
 
 // Update vote totals given a new vote
 bool vote(string name)
