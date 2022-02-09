@@ -84,7 +84,7 @@ void print_winner(void)
 {
     // TODO
     int voter_count=0;
-    if()
+    if(candidates[i].votes > candidates[i+1].votes)
     {
         printf("%s", candidates[i].name);
     }
