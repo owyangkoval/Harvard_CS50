@@ -67,8 +67,16 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-    
-    return false;
+        for (int i = 0; i < voter_count; i++)
+    {
+        string name = get_string("Vote: ");
+        {
+        if (strcmp(candidates[i].name, name) == 0)
+            {
+                candidates[i].votes++;
+                return true;
+            }
+            return false;
 }
 
 // Print the winner (or winners) of the election
