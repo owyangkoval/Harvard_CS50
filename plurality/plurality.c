@@ -52,21 +52,13 @@ int main(int argc, string argv[])
     for (int i = 0; i < voter_count; i++)
     {
         string name = get_string("Vote: ");
-    {
-        if (strcmp(candidates[i].name, name) == 0)
         {
-            candidates[i].votes++;
-            return 0;
-        }
-        return 1;
-
-        // Check for invalid vote
-        if (!vote(name))
+        if (strcmp(candidates[i].name, name) == 0)
             {
-                printf("Invalid vote.\n");
-                return 1;
+                candidates[i].votes++;
+                return 0;
             }
-    }
+                return 1;
 
     // Display winner of election
     print_winner();
