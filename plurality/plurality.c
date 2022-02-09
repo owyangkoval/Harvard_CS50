@@ -87,7 +87,7 @@ void print_winner(void)
     for (int i = 0; i < voter_count; i++)
     {
         candidates[i].name++;
-        printf("%s," candidates[i].name)
+        printf("%s", candidates[i].name);
     }
     return;
 }
