@@ -60,7 +60,9 @@ int main(int argc, string argv[])
     }
 
     // Display winner of election
-    print_winner();
+    print_winner(string winner);
+
+        for 
 }
 
 // Update vote totals given a new vote
@@ -82,5 +84,6 @@ bool vote(string name)
 void print_winner(void)
     {
     // TODO
+    printf("%s",//the candidate's name);
     return;
 }
