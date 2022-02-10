@@ -82,6 +82,8 @@ bool vote(string name)
 void print_winner(void)
     {
     // TODO
-    char winner = 
+    for(i=0;i<candidate_count;i++)
+    
+    char winner =
     return;
 }
