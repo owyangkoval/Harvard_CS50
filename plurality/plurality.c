@@ -60,9 +60,7 @@ int main(int argc, string argv[])
     }
 
     // Display winner of election
-    print_winner(string winner);
-
-        for
+    print_winner(char[]);
 }
 
 // Update vote totals given a new vote
@@ -84,6 +82,10 @@ bool vote(string name)
 void print_winner(void)
     {
     // TODO
-    print_winner("%s"//the candidate's name);
+    int i=0;
+    if(candidates[i].votes>candidates[i+1].votes)
+        {
+    print_winner("%c", candidates[i].name);
+        }
     return;
 }
