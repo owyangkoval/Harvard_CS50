@@ -90,6 +90,7 @@ void print_winner(void)
         }
         else if (candidates[i].votes>candidates[i+1].votes)
         {
+            candidates[i].votes=candidates[i].votes;
             return 0;
         }
     printf("%d\n", candidates[i].votes);
