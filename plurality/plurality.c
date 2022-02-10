@@ -19,6 +19,9 @@ candidate candidates[MAX];
 // Number of candidates
 int candidate_count;
 
+// Voter Count
+int voter_count;
+
 // Function prototypes
 bool vote(string name);
 void print_winner(void);
