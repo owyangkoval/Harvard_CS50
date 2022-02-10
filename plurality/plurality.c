@@ -19,9 +19,6 @@ candidate candidates[MAX];
 // Number of candidates
 int candidate_count;
 
-// Voter Count
-int voter_count;
-
 // Function prototypes
 bool vote(string name);
 void print_winner(void);
@@ -63,7 +60,7 @@ int main(int argc, string argv[])
     }
 
     // Display winner of election
-    print_winner();
+    print_winner(int voter_count);
 }
 
 // Update vote totals given a new vote
