@@ -87,10 +87,10 @@ void print_winner(void)
     string name=0;
 
     for(i=0;i<voter_count;i++){
-        if (name[0]<name[i])
-            name[0]=name[i];
+        if (candidates[0]<candidates[i])
+            candidates[0]=candidates[i];
     }
-    printf("%c\n", name[0]);
+    printf("%c\n", candidates[MAX]);
 
     return;
 }
