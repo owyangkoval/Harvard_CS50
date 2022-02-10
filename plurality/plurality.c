@@ -87,7 +87,7 @@ void print_winner(void)
         if (candidates[0].votes < candidates[i].votes)
             candidates[0].votes = candidates[i].votes;
     }
-    printf("%s\n", candidates[0].name);
+    printf("%s\n", candidate);
 
     return;
 }
