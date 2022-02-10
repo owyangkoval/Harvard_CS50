@@ -90,7 +90,7 @@ void print_winner(void)
         if (name[0]<name[i])
             name[0]=name[i];
     }
-    printf("%s\n", candidates[i].name);
+    printf("%c\n", name[0]);
 
     return;
 }
