@@ -82,7 +82,9 @@ bool vote(string name)
 void print_winner(void)
     {
     // TODO
-    int i=0;
+    string name;
+
+    while(int i=0){
         if (candidates[i].votes<candidates[i+1].votes)
             {
             candidates[i].votes=candidates[i+1].votes;
@@ -91,6 +93,8 @@ void print_winner(void)
             {
             candidates[i].votes=candidates[i].votes;
             }
-            printf("%s\n", candidates[i+1].name);
+            i++;
+        }
+            printf("%d\n", candidates[i].votes);
             return;
     }
