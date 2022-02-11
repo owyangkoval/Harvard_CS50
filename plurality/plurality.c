@@ -96,5 +96,5 @@ void print_winner(void)
                     i++;
             }
         }
-            return 0;
+            return;
     }
