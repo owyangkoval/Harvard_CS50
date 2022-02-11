@@ -86,15 +86,22 @@ void print_winner(void)
     int votes = sizeof(candidates[i].votes)/sizeof(candidates[0].votes);
 
     //Initialize max with first element of array.
-    int max = candidates[0].votes;
+    int maxvotes = candidates[0].votes;
+    string winner;
 
     //Loop through the array
     for (i = 0; i < candidate_count; i++) {
         //Compare elements of array with max
-       if(candidates[i].votes > max)
-           max = candidates[i].votes;
+       if(candidates[i].votes > maxvotes) {
+           maxvotes = candidates[i].votes;
+           for(int j=0;j<candidate_count;j++)
+           {
+            if(candidates[i].name >= winner)
+                winner = candidates[i].name;
+           }
+       }
     }
-    printf("%s\n", candidates[i].name);
+    printf("%s\n", winner);
 
             return;
 }
