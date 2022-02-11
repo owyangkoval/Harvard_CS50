@@ -87,6 +87,7 @@ void print_winner(void)
 
     int maxvotes = candidates[0].votes;
     string winner;
+    string winner2;
 
     for (i = 0; i < candidate_count; i++) {
         //Compare elements of array with max
@@ -98,9 +99,12 @@ void print_winner(void)
             if(candidates[i].name >= winner)
                 {
                 winner = candidates[i].name;}
+            else if(candidates[i+1].name == winner)
+                {
+                winner2 = candidates[i+1].name;}
             }
         }
-    printf("%s\n", winner);
+    printf("%s %s\n", winner, winner2);
 
             return;
 }
