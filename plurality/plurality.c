@@ -82,19 +82,19 @@ bool vote(string name)
 void print_winner(void)
     {
     // TODO
-    int i=0;
+    int i;
+    {
+    // Initialize maximum element
+    int max = candidates[0].votes;
 
-    while(i<=candidate_count){
-        if (candidates[i].votes<candidates[i+1].votes)
-            {
-            candidates[i].votes=candidates[i+1].votes;
-            }
-        else if (candidates[i].votes>candidates[i+1].votes)
-            {
-            candidates[i].votes=candidates[i].votes;
-            }
-        i++;
-        }
-            printf("%d\n", candidates[i].votes);
+    // Traverse array elements from second and
+    // compare every element with current max
+    for (i = 0; i < candidate_count; i++)
+        if (candidates[i].votes > max)
+            max = candidates[i].votes;
+
+    int n = sizeof(candidates[i].votes)/sizeof(candidates[0].votes);
+    printf("Largest in given array is %d", (candidates[i].votes, n));
+
             return;
-    }
+}
