@@ -106,7 +106,7 @@ void print_winner(void)
             maxvotes2 = candidates[i].votes;
             for(int j=0;j<candidate_count;j++)
            {
-            if(candidates[i].name = candidates[i+1].name)
+            if(candidates[i].name == candidates[i+1].name)
                 winner2 = candidates[i].name;
            }
         }
