@@ -109,8 +109,8 @@ void print_winner(void)
             if(candidates[i].name == candidates[i+1].name)
                 winner2 = candidates[i].name;
            }
-            }
+        }
     printf("%s %s\n", winner, winner2);
-
             return;
-}
+        }
+    }
