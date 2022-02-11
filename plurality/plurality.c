@@ -83,18 +83,18 @@ void print_winner(void)
     {
     // TODO
     int i;
-    {
-    // Initialize maximum element
+    int votes = sizeof(candidates[i].votes)/sizeof(candidates[0].votes);
+
+    //Initialize max with first element of array.
     int max = candidates[0].votes;
 
-    // Traverse array elements from second and
-    // compare every element with current max
-    for (i = 0; i < candidate_count; i++)
-        if (candidates[i].votes > max)
-            max = candidates[i].votes;
-
-    int n = sizeof(candidates[i].votes)/sizeof(candidates[0].votes);
-    printf("Largest in given array is %d", (candidates[i].votes, n));
+    //Loop through the array
+    for (i = 0; i < candidate_count; i++) {
+        //Compare elements of array with max
+       if(candidates[i].votes > max)
+           max = candidates[i].votes;
+    }
+    printf("Largest element present in given array: %d\n", max);
 
             return;
 }
