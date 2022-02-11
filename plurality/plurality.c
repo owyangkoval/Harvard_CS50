@@ -91,12 +91,14 @@ void print_winner(void)
     for (i = 0; i < candidate_count; i++) {
         //Compare elements of array with max
        if(candidates[i].votes >= maxvotes) {
-           maxvotes = candidates[i].votes;}
+           maxvotes = candidates[i].votes;
+           }
            for(int j=0;j<candidate_count;j++)
             {
             if(candidates[i].name >= winner)
                 {
-                winner = candidates[i].name;}
+                winner = candidates[i].name;
+                }
             }
         }
     printf("%s\n", winner);
