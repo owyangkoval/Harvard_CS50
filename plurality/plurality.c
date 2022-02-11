@@ -101,12 +101,12 @@ void print_winner(void)
         }
         //more than one max
            {
-            if(candidates[i+1].votes == maxvotes)
-           maxvotes2 = candidates[i+1].votes;
+            if(candidates[i].votes == maxvotes)
+           maxvotes2 = candidates[i].votes;
            for(int j=0;j<candidate_count;j++)
            {
-            if(candidates[i+1].name == winner)
-                winner2 = candidates[i+1].name;
+            if(candidates[i].name == winner)
+                winner2 = candidates[i].name;
            }
         }
     }
