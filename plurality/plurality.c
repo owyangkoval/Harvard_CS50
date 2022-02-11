@@ -94,7 +94,7 @@ void print_winner(void)
        if(candidates[i].votes > max)
            max = candidates[i].votes;
     }
-    printf("Largest element present in given array: %\n", max);
+    printf("Largest element present in given array: %s\n", max);
 
             return;
 }
