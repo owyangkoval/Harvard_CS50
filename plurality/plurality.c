@@ -103,12 +103,10 @@ void print_winner(void)
 
     for (i = 0; i < candidate_count; i++){
             //more than one max
-        for(int j=0;j<candidate_count;j++){
-        if(candidates[i].votes == maxvotes){
-                winner2 = candidates[i].name;
-                }
+        if(candidates[i].name == winner){
+            winner2 = candidates[i].name;
             }
-    }
+        }
     printf("%s\n", winner2);
 
             return;
