@@ -100,16 +100,10 @@ void print_winner(void)
            }
         }
         //more than one max
-           {
-            if(candidates[i].votes == maxvotes)
-           maxvotes2 = candidates[i].votes;
-           for(int j=0;j<candidate_count;j++)
-           {
-            if(candidates[i].name == winner)
-                winner2 = candidates[i].name;
-           }
+            if(candidates[i].votes == maxvotes){
+                printf("%s\n", candidates[i].name);}
         }
     }
-        printf("%s %s\n", winner, winner2);
+        printf("%s\n", winner);
             return;
 }
