@@ -85,7 +85,7 @@ void print_winner(void)
     int i;
     int maxvotes = candidates[0].votes;
     string winner;
-    int winner2;
+    string winner2;
 
     //Array Loop
     for (i = 0; i < candidate_count; i++) {
@@ -100,10 +100,10 @@ void print_winner(void)
         }
         //more than one max
             if(candidates[i].votes == maxvotes){
-                winner2 = candidates[i].votes;
+                winner2 = candidates[i].name;
                 }
         }
         printf("%s\n", winner);
-        printf("%d\n", winner2);
+        printf("%s\n", winner2);
             return;
 }
