@@ -83,31 +83,20 @@ void print_winner(void)
     {
     // TODO
     int i;
-    int maxvotes = candidates[0].votes;
+    int maxvote = candidates[0].votes;
     string winner;
     string winner2;
 
     //Array Loop
     for (i = 0; i < candidate_count; i++) {
         //Compare elements of array with max
-       if(candidates[i].votes > maxvotes) {
-           maxvotes = candidates[i].votes;
-           for(int j=0;j<candidate_count;j++)
-           {
-            if(candidates[i].name >= winner)
-                winner = candidates[i].name;
+       if(candidates[i].votes > maxvote) {
+           maxvote = candidates[i].votes;
             }
-       }
-    }
-        printf("%s\n", winner);
-
-    for (i = 0; i < candidate_count; i++){
-            //more than one max
-        if(candidates[i].name == winner){
-            winner2 = candidates[i].name;
+        //Tied votes
+        if(candidates[i].votes == maxvote){
+            printf("%s\n", candidates[i].name);
             }
         }
-    printf("%s\n", winner2);
-
             return;
 }
