@@ -143,7 +143,7 @@ void tabulate(void)
 {
     // TODO
         for (int i = 0; i <voter_count; i++){
-            if (preferences[i][0] > )
+            if (preferences[i][0] > preferences[i][1] )
         }
     return;
 }
