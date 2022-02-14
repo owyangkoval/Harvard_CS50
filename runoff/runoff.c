@@ -141,10 +141,12 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
+    int maxvote = preferences[i][0]
+
     // TODO
         for (int i = 0; i < voter_count; i++){
             for (int j=0; j < candidate_count; j++){
-            if (preferences[i][j] > preferences[i][j+1]){
+            if (preferences[i][0] > maxvote){
 
 
             }
