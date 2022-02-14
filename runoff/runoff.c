@@ -148,7 +148,7 @@ void tabulate(void)
         for (int j = 0; j < voter_count; j++){
             if (preferences[i][j] > maxvotes){
                 maxvotes = preferences[i][j];
-                i++;
+            i++;~
 
         printf("%d", preferences[i][j]);
 
