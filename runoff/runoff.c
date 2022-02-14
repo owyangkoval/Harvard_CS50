@@ -144,9 +144,11 @@ void tabulate(void)
 
     // TODO
         for (int i = 0; i < voter_count; i++){
-            if (preferences[i][0] == preferences[i+1][0]){
-                for ( j = 0; j < candidate_count; j++){
-                    if ()
+            for( j = 0; j < candidate_count; j++){
+            if (preferences[i][j] == preferences[i+1][j]){
+
+
+            }
         }
     return;
 }
