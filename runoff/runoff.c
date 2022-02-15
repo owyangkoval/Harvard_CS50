@@ -158,10 +158,10 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    for (int i = 0; i < voter_count; i++){
-        for(int j = 0; j < candidate_count; j++){
-            printf("%s", candidates[preferences[i][j]].name);}
-        }
+    int i=0; int j=0;
+
+    printf("%s", candidates[preferences[i][j]].name);
+
     return false;
 }
 
