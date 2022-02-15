@@ -159,7 +159,7 @@ bool print_winner(void)
 {
     // TODO
 
-int maxvote = candidates[preferences[
+
 
     for (int i = 0; i < candidate_count; i++){
 
