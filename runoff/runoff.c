@@ -159,8 +159,6 @@ bool print_winner(void)
 {
     // TODO
     //sort?
-    int i=0;
-            printf("%s", candidates[i].name);
     return false;
 }
 
