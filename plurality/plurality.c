@@ -87,11 +87,11 @@ void print_winner(void)
 
     //Array Loop
     for (i = 0; i < candidate_count; i++) {
-        //Compare elements of array with max
+    //Compare array with max
        if(candidates[i].votes > maxvote) {
            maxvote = candidates[i].votes;
             }
-        //Tied votes
+    //Tied votes
         if(candidates[i].votes == maxvote){
             printf("%s\n", candidates[i].name);
             }
