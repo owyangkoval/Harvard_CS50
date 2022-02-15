@@ -162,7 +162,7 @@ bool print_winner(void)
 int maxvote = candidates[preferences[
 
     for (int i = 0; i < candidate_count; i++){
-        if (candidates[preferences[i][j]] == maxvote)
+
     }
 
     return false;
