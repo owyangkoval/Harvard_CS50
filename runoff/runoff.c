@@ -161,7 +161,6 @@ bool print_winner(void)
     int i=0; int j=0;
     if (candidates[preferences[i][j]].eliminated == true){
         printf("%s", candidates[preferences[i][j]].name);}
-
     return false;
 }
 
