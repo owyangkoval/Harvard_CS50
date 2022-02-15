@@ -162,7 +162,7 @@ bool print_winner(void)
         int i=0;
         int j=0;
         if (j < candidate_count-1 && i < voter_count-1){
-            printf("%s", candidates[preferences[i][j]].name);}
+            printf("%s", candidates[i].name);}
     return false;
 }
 
