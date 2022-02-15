@@ -159,8 +159,8 @@ bool print_winner(void)
 {
     // TODO
     //sort?
-    for(int j = 0; j < candidate_count-1; j++)
-    printf("%s", candidates[preferences[i][j]].name);
+    for (int i = 0; i < voter_count-1; i++){
+        printf("%s", candidates[preferences[i][j]].name);}
 
     return false;
 }
