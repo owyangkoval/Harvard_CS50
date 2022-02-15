@@ -84,8 +84,6 @@ void print_winner(void)
     // TODO
     int i;
     int maxvote = candidates[0].votes;
-    string winner;
-    string winner2;
 
     //Array Loop
     for (i = 0; i < candidate_count; i++) {
