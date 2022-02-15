@@ -158,8 +158,7 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    if(candidates[preferences[i][j]].)
-    }
+    printf("%s", preferences[i][j])
 
     return false;
 }
