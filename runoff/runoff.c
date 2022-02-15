@@ -158,9 +158,8 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    int i=0; int j=0;
+    //sort?
 
-    candidates[preferences[i][j]].name
     printf("%s", candidates[preferences[i][j]].name);
 
     return false;
