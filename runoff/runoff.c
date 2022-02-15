@@ -159,10 +159,8 @@ bool print_winner(void)
 {
     // TODO
     //sort?
-        int i=0;
-        int j=0;
-        if (j < candidate_count-1 && i < voter_count-1){
-            printf("%s", candidates[i].name);}
+    int i=0;
+            printf("%s", candidates[i].name);
     return false;
 }
 
