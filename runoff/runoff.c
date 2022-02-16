@@ -168,13 +168,12 @@ bool print_winner(void)
 
             for (int i = 0; i < candidate_count; i++){
                 if (candidates[i].votes > maxvotes)
+                    maxvotes = candidates[i].votes;
                 {
                     printf("%s\n", candidates[i].name);
                     return true;
                 }
             }
-    return false;
-}
     return false;
 }
 
