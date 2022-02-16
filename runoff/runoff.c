@@ -162,11 +162,10 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    int winner = candidates[0].votes;
 
     for (int i = 0; i < candidate_count; i++) {
-        if (candidates[i].votes > winner) {
-            winner = candidates[i].votes;
+        if (candidates[i].votes > (voter_count/2)) {
+            int winner = candidates[i].votes;
             printf("%s\n", candidates[i].name);
             return true;
         }
