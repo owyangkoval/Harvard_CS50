@@ -179,7 +179,7 @@ int find_min(void)
 {
     // TODO
 
-int min = voter_count;
+int min = candidates[0].votes;
 
             for(int i = 0; i < voter_count; i++) {
                 if (candidates[i].votes < min) {
