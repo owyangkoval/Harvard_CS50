@@ -164,6 +164,17 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
+    int maxvotes = candidates[0].name;
+
+            for (int i = 0; i < candidate_count; i++){
+                if (candidates[i].votes > maxvotes)
+                {
+                    printf("%s\n", candidates[i].name);
+                    return true;
+                }
+            }
+    return false;
+}
     return false;
 }
 
