@@ -175,7 +175,7 @@ bool is_tie(int min)
     // TODO
             for (int i = 0; i < candidate_count; i++)
             {
-                if (!candidates[i].eliminated)
+                if (candidates[preferences[i][j]].eliminated == false)
                 {
                     printf("%s\n", candidates[i].name);
                 }
