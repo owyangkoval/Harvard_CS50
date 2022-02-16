@@ -173,7 +173,16 @@ int find_min(void)
 bool is_tie(int min)
 {
     // TODO
-    if ()
+            for (int i = 0; i < candidate_count; i++)
+            {
+                if (!candidates[i].eliminated)
+                {
+                    printf("%s\n", candidates[i].name);
+                }
+            }
+            return true;
+        }
+
     return false;
 }
 
