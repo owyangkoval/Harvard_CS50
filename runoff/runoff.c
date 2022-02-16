@@ -185,6 +185,7 @@ int min = voter_count;
                 if (candidates[i].votes < min) {
                     if (!candidates[i].eliminated) {
                     min = candidates[i].votes;
+                    return min;
                 }
             }
         }
@@ -211,8 +212,8 @@ void eliminate(int min)
     // TODO
 
             for(int i = 0; i < voter_count-1; i++) {
-                if (candidates[i].votes < min) {
-                    candidates[i].eliminated = true
+                if (candidates[i].votes = min) {
+                    candidates[i].eliminated = true;
                 }
             }
         }
