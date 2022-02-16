@@ -126,6 +126,9 @@ int main(int argc, string argv[])
 }
 
 
+
+
+
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
@@ -182,7 +185,7 @@ int min = voter_count;
             for(int i = 0; i < voter_count-1; i++) {
                 if (candidates[i].votes < min) {
                     if (!candidates[i].eliminated) {
-                    min = candidates[i].votesp;
+                    min = candidates[i].votes;
                 }
             }
         }
