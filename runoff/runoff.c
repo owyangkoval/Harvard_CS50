@@ -167,9 +167,8 @@ bool print_winner(void)
     int maxvotes = candidates[0].votes;
 
             for (int i = 0; i < candidate_count; i++){
-                if (candidates[i].votes > maxvotes)
+                if (candidates[i].votes > maxvotes && candidates[i].eliminated == false){
                     maxvotes = candidates[i].votes;
-                {
                     printf("%s\n", candidates[i].name);
                     return true;
                 }
@@ -208,6 +207,6 @@ bool is_tie(int min)
 void eliminate(int min)
 {
     // TODO
-    
+
     return;
 }
