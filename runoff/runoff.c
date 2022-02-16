@@ -185,9 +185,9 @@ int min = voter_count;
                 if (candidates[i].votes < min) {
                     if (!candidates[i].eliminated) {
                     min = candidates[i].votes;
-                    return min;
+                    }
                 }
-            }
+                return min;
         }
     return 0;
 }
