@@ -164,7 +164,7 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    int maxvotes = candidates[0].name;
+    int maxvotes = candidates[0].votes;
 
             for (int i = 0; i < candidate_count; i++){
                 if (candidates[i].votes > maxvotes)
@@ -191,7 +191,7 @@ bool is_tie(int min)
 {
     // TODO
 
-    int maxvotes = candidates[0].name;
+    int maxvotes = candidates[0].votes;
 
             for (int i = 0; i < candidate_count; i++){
                 if (candidates[i].votes == maxvotes)
