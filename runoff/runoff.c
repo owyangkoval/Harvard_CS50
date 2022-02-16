@@ -125,6 +125,8 @@ int main(int argc, string argv[])
     return 0;
 }
 
+
+
 // Record preference if vote is valid
 bool vote(int voter, int rank, string name)
 {
@@ -158,7 +160,6 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    //sort?
     return false;
 }
 
@@ -173,16 +174,16 @@ int find_min(void)
 bool is_tie(int min)
 {
     // TODO
-            for (int i = 0; i < candidate_count; i++)
-            {
-                if (candidates[preferences[i][j]].eliminated == false)
+
+    int maxvotes = candidates[0].name;
+
+            for (int i = 0; i < candidate_count; i++){
+                if (candidates[i].votes == maxvotes)
                 {
                     printf("%s\n", candidates[i].name);
+                    return true;
                 }
             }
-            return true;
-        }
-
     return false;
 }
 
