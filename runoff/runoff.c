@@ -159,13 +159,11 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    int maxvotes = candidates[0].votes;
-
-            for (int i = 0; i < candidate_count; i++){
-                if (candidates[i].votes > maxvotes){
-                    maxvotes = candidates[i].votes;
-                    printf("%s\n", candidates[i].name);
-                    return true;
+    for (int i = 0; i < candidate_count; i++) {
+        if (candidates[i].votes > maxvotes) {
+            maxvotes = candidates[i].votes;
+            printf("%s\n", candidates[i].name);
+            return true;
                 }
             }
     return false;
@@ -176,8 +174,11 @@ bool print_winner(void)
 int find_min(void)
 {
     // TODO
-    
-        find_min=
+
+            for(int i = 0; i < voter_count; i++) {
+                if (candidate[])
+
+            }
     return 0;
 }
 
