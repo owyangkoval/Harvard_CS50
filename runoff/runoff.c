@@ -212,7 +212,7 @@ void eliminate(int min)
 
             for(int i = 0; i < voter_count-1; i++) {
                 if (candidates[i].votes < min) {
-                    min = candidates[i].eliminated
+                    candidates[i].eliminated = true
                 }
             }
         }
