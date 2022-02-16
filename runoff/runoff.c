@@ -188,8 +188,6 @@ bool is_tie(int min)
 
     int min = candidates[0].votes;
 
-candidates = { 1, 1, 2 }
-
     for (int i = 0; i < candidate_count; i++) {
         if (candidates[i].votes == candidates[i+1].votes) {
 
