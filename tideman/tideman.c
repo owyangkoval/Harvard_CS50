@@ -100,6 +100,16 @@ int main(int argc, string argv[])
 bool vote(int rank, string name, int ranks[])
 {
     // TODO
+    for (i = 0; i < candidate_count; i++) {
+        for (j = 0; j < candidate_count; j++) {
+            if ((strcmp(candidates[i].name, name)==0) && (strcmp(candidates[j].name, name)==0)){
+                if (i > j) {
+                    int ranks = preferences[i][j];
+                    return true;
+                }
+            }
+        }
+    }
     return false;
 }
 
