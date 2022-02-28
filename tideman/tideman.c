@@ -131,8 +131,12 @@ void record_preferences(int ranks[])
 void add_pairs(void)
 {
     // TODO
-    for (int i = 0; i < voter_count; i++)
-        if (strcmp(preferences[i][j],))
+    for (int i = 0; i < candidate_count; i++) {
+        for (int j = 0; j < i; j++) {
+        if (strcmp(preferences[i][j], preferences[i][j])==0);
+            preferences[i][j]
+
+
     return;
 }
 
