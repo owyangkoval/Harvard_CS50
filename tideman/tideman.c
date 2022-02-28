@@ -134,7 +134,7 @@ void add_pairs(void)
     for (int i = 0; i < candidate_count; i++) {
         for (int j = 0; j < candidate_count; j++) {
         if ((strcmp(pair[i].winner, winner)==0) && (strcmp(pair[i].loser, loser)==0));
-            pair_count++;
+            pair[i]++;
         }
     }
     return;
