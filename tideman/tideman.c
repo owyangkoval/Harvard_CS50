@@ -133,8 +133,8 @@ void add_pairs(void)
     // TODO
     for (int i = 0; i < candidate_count; i++) {
         for (int j = 0; j < candidate_count; j++) {
-        if (strcmp(preferences[i][j], preferences[i][j])==0);
-            preferences[i][j]
+        if (strcmp(preferences[i][j] )==0);
+            voterrank[i][j]
 
 
     return;
