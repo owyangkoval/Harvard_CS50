@@ -133,13 +133,8 @@ void add_pairs(void)
     // TODO
     for (int i = 0; i < candidate_count; i++) {
         for (int j = 0; j < candidate_count; j++) {
-            if (!pair_count[pair[i]].winner
+            if (ranks[rank])
 
-        }
-            candidates[preferences[i][j]]++;
-
-                        if (!candidates[preferences[i][j]].eliminated) {
-                candidates[preferences[i][j]].votes++
         }
     }
     return;
