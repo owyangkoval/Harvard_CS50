@@ -147,11 +147,16 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     // TODO
-int unsorted=0;
-int sorted=0;
+    for (int i = 0; i < candidate_count; i++) {
+        for (int j = i + 1; j < candidate_count; j++) {
+                     if(i > j){
+            temp=number[i];
+            number[i]=number[j];
+            number[j]=temp;
+         }
+      }
+   }
 
-for (unsorted = 0; unsorted < candidate_count; unsorted++){
-    if (unsorted > 0)
 
 }
 
