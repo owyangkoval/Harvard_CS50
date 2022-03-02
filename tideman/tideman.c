@@ -159,7 +159,11 @@ void sort_pairs(void)
             {
                 max = j;
             }
+            temp = pairs[i];
+            pairs[i] = pairs[max];
+            pairs[max] = temp;
         }
+    }
     return;
 }
 
