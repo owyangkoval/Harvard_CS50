@@ -13,12 +13,12 @@ int i,j,k,temp;
                 if (array[j] < array[min]) {
                     array[min] = array[j];
                     min = j;
+                                    printf("%d",array[i]);
                     }
                     if (min != i) {
                     temp = array[i];
                     array[i] = array[min];
                     array[min] = temp;
-                    printf("%d",array[i]);
                     }
                 }
             }
