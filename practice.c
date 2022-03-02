@@ -19,8 +19,8 @@ int i,j,temp;
                     temp = array[i];
                     array[i] = array[min];
                     array[min] = temp;
-                    printf("%d",array[min]);
                     }
+                printf("%d%d%d%d", array[min])
             }
         printf("\n");
     }
