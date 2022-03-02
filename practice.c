@@ -11,8 +11,8 @@ int array[4] = {3, 5, 1, 9};
             for (int j=i+1; j<4; j++)  {
                 if (array[j] < array[min]) {
                     array[j] = array[min];
-                    printf("%d", array[j]);
                     min = j;
+                    printf("%d", array[j]);
                     }
                     int temp = array[i];
                     array[i] = array[min];
