@@ -14,9 +14,10 @@ int array[4] = {5, 3, 1, 9};
                     min = j;
                 }
                 if (min != i) {
-                    array[min] = array[i];
+                    int temp = array[i];
                     array[i] = array[min];
-                printf("%d", array[i]);
+                    array[min] = temp;
+                printf("%d", array[min]);
                 }
             }
         }
