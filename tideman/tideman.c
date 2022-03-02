@@ -150,9 +150,9 @@ void sort_pairs(void)
     int unsorted;
     int strongestpair;
 
-    for (int i = 0; i < candidate_count; i++) {
-        for (int j = i + 1; j < candidate_count; j++) {
-                     if(unsorted > 
+    for (int i = 0; i < pair_count; i++) {
+        for (int j = i + 1; j < pair_count; j++) {
+                     if(unsorted >
                      strongestpair =
 
          }
