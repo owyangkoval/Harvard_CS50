@@ -2,15 +2,23 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
+int main (void)
 {
-    // 4 elements
-    //create selection sort
-    int A, B, C, D;
-    int array[A, B, C, D];
+int array[4] = {5, 3, 1, 9};
 
-    for (i=0;i<4;i++){
-
-    }
-
+   for (int i=0; i<3; i++) {
+        int min = i;
+            for (int j=i+1; j<4; j++) {
+                if (array[j] < array[min]) {
+                    array[j] = array[min];
+                    min = j;
+                }
+                if (min != i) {
+                    array[min] = array[i];
+                    array[i] = array[min];
+                printf("%d", array[i]);
+                }
+            }
+        }
+            printf("\n");
 }
