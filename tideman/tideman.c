@@ -156,8 +156,8 @@ void sort_pairs(void)
     int sorted_pair=0;
     int imax = (MAX * (MAX - 1) / 2);
 
-    for (int i = 0; i < pair_count-1; i++) {
-        for (int j = i + 1; j < pair_count; j++) {
+    for (int i = 0; i < pair_count-1; i--) {
+        for (int j = 0; j < pair_count; j++) {
                      preferences[pairs[i]].winner][pairs[i].loser]-preferences[pairs[i]].winner][pairs[i].loser]
 
                      imax = j;
