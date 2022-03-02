@@ -147,13 +147,13 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     // TODO
-    int unsorted_pair;
-    int sorted_pair;
-    int imax;
+    int unsorted_pair=0;
+    int sorted_pair=0;
+    int imax=MAX;
 
     for (int i = 0; i < pair_count-2; i++) {
         for (int j = i + 1; j < pair_count-1; j++) {
-                     if(unsorted_pair >
+                     if(unsorted_pair[j]>unsorted_pair[imax])
                      strongestpair =
 
          }
