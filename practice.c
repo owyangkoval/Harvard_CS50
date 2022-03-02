@@ -10,7 +10,7 @@ int main(void)
     int array[A, B, C, D];
 
     for (i=0;i<4;i++){
-        
+
     }
 
 }
