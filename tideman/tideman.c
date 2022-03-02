@@ -153,7 +153,7 @@ void sort_pairs(void)
 
     for (int i = 0; i < pair_count-2; i++) {
         for (int j = i + 1; j < pair_count-1; j++) {
-                     if(unsorted_pair[j]>unsorted_pair[imax])
+                     if(unsorted_pair[i] > unsorted_pair[imax])
                      imax = j;
 
          }
