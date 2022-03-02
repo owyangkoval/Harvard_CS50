@@ -13,7 +13,7 @@ int i,j,k,temp;
                 if (array[j] < array[min]) {
                     array[min] = array[j];
                     min = j;
-                                    printf("%d",array[i]);
+                    printf("%d",array[min]);
                     }
                     if (min != i) {
                     temp = array[i];
