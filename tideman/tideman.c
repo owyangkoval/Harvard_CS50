@@ -156,8 +156,8 @@ void sort_pairs(void)
     int sorted_pair=0;
     int imax = (MAX * (MAX - 1) / 2);
 
-    for (int i = 0; i < pair_count-2; i++) {
-        for (int j = i + 1; j < pair_count-1; j++) {
+    for (int i = 0; i < pair_count-1; i++) {
+        for (int j = i + 1; j < pair_count; j++) {
                      if(unsorted_pair[i] > unsorted_pair[imax])
                      imax = j;
 
