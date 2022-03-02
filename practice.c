@@ -12,12 +12,12 @@ int array[4] = {5, 3, 1, 9};
                 if (array[j] < array[min]) {
                     array[j] = array[min];
                     min = j;
+                            printf("%d", array[min]);
                     }
                     int temp = array[i];
                     array[i] = array[min];
                     array[min] = temp;
                 }
-        printf("%s", array[]);
             }
         printf("\n");
 }
