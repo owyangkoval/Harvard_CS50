@@ -20,7 +20,7 @@ int i,j,k,temp;
                     array[i] = array[min];
                     array[min] = temp;
                     }
-            }
+                }
                 for (k=0;k<4;k++){
                 printf("%d", array[k]);
                 }
