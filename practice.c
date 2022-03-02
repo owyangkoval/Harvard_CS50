@@ -4,7 +4,7 @@
 
 int main (void)
 {
-int array[4] = {3, 5, 1, 9};
+int array[4] = {5, 3, 1, 9};
 
    for (int i=0; i<3; i++) {
         int min = i;
@@ -12,12 +12,12 @@ int array[4] = {3, 5, 1, 9};
                 if (array[j] < array[min]) {
                     array[j] = array[min];
                     min = j;
-                    printf("%d", array[j]);
                     }
                     int temp = array[i];
                     array[i] = array[min];
                     array[min] = temp;
                 }
+        printf("%s", array[]);
             }
         printf("\n");
 }
