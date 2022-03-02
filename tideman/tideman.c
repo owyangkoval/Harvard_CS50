@@ -152,9 +152,8 @@ void sort_pairs(void)
     for (int i = 0; i < candidate_count; i++) {
         for (int j = i + 1; j < candidate_count; j++) {
                      if(i > j){
-            temp=number[i];
-            number[i]=number[j];
-            number[j]=temp;
+                
+
          }
       }
    }
