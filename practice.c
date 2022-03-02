@@ -14,13 +14,13 @@ int i,j,temp;
                     array[min] = array[j];
                     min = j;
                     }
+                }
                     if (min != i) {
                     temp = array[i];
                     array[i] = array[min];
                     array[min] = temp;
-                    printf("%d",array[min]);
+                    printf("%s",array[]);
                     }
-                }
             }
         printf("\n");
     }
