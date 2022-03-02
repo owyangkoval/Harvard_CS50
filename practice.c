@@ -5,7 +5,7 @@
 int main (void)
 {
 int array[4] = {5, 3, 1, 9};
-int i,j,temp;
+int i,j,k,temp;
 
    for (i=0; i<3; i++) {
         int min = i;
@@ -20,7 +20,9 @@ int i,j,temp;
                     array[i] = array[min];
                     array[min] = temp;
                     }
-                printf("%d%d%d%d", array[min])
             }
+                for (k=0;k<4;k++){
+                printf("%d", array[k]);
+                }
         printf("\n");
     }
