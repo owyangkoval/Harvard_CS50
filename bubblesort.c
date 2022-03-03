@@ -8,7 +8,7 @@ int array[4] = {5, 3, 1, 9};
 int i,j,temp;
 
     for(i=0;i<3;i++) {
-            for(j=0;j<2;j++) {
+            for(j=0;j<3;j++) {
                 if(array[j]>array[j+1]) {
                     temp = array[j];
                     array[j] = array[j+1];
