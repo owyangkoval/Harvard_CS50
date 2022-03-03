@@ -13,8 +13,11 @@ int i,j,k,temp;
                 if(array[j]<array[min]) {
                     min = j;
                     }
-                if (min!=i) {
-                    temp
+                    if (min != i) {
+                    temp = array[i];
+                    array[i] = array[min];
+                    array[min] = temp;
+                    i++;
                     }
                 }
             for(k=0;k<4;k++){
