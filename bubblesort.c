@@ -10,8 +10,8 @@ int i,j,k,temp;
     for(i=0;i<3;i++) {
         int min = i;
             for(j=i+1;j<4;j++) {
-                if(array[min]>array[j]) {
-                    j = min;
+                if(array[j])<array[min]) {
+                    min = j;
                         }
                 }
                     if (min != i) {
