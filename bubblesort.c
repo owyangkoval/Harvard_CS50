@@ -14,9 +14,9 @@ int i,j,k,temp;
                     max = j;
                         }
                 }
-                    if (max != i) {
-                    temp = array[i];
-                    array[i] = array[max];
+                    if (max != j) {
+                    temp = array[j];
+                    array[j] = array[max];
                     array[max] = temp;
                         }
                 }
