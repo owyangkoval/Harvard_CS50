@@ -9,8 +9,8 @@ int i,j,k,temp;
 
     for(i=0;i<3;i++) {
             for(j=0;j<4;j++) {
-                if(array[i]>array[j]) {
-                    i = j;
+                if(array[j]>array[j+1]) {
+                    j = j+1;
                         }
                     }
                 }
