@@ -13,11 +13,10 @@ int i,j,k,temp;
                 if(array[j]<array[min]) {
                     min = j;
                 }
-                if (min!=i) {
-                    
+                for(k=0;k<4;k++){
+                printf("%d", array[k])
                 }
             }
-    }
-
+        }
         printf("\n");
     }
