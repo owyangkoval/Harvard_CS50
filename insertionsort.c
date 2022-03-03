@@ -7,3 +7,4 @@ int main (void)
 int array[4] = {5, 3, 1, 9};
 int i,j,k,temp;
 
+
