@@ -15,8 +15,8 @@ int i,j,k,temp;
                     }
                 }
                     if (min != i) {
-                    temp = array[i];
-                    array[i] = array[min];
+                    temp = array[j];
+                    array[j] = array[min];
                     array[min] = temp;
                     }
                 }
