@@ -14,7 +14,7 @@ int i,j,k,temp;
                     min = j;
                     }
                 if (min!=i) {
-
+                    
                     }
                 }
             for(k=0;k<4;k++){
