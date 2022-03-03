@@ -15,9 +15,9 @@ int i,j,temp;
                     array[j+1] = temp;
                     }
                 }
-            for(i=0;i<4;i++){
-            printf("%d", array[i]);
             }
+        for(i=0;i<4;i++){
+        printf("%d", array[i]);
          }
         printf("\n");
     }
