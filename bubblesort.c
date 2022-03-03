@@ -8,16 +8,16 @@ int array[4] = {5, 3, 1, 9};
 int i,j,k,temp;
 
     for(i=0;i<3;i++) {
-        int min = i;
+        int max = i;
             for(j=i+1;j<4;j++) {
-                if(array[j])<array[min]) {
-                    min = j;
+                if(array[max]>array[j]) {
+                    max = j;
                         }
                 }
-                    if (min != i) {
+                    if (max != i) {
                     temp = array[i];
-                    array[i] = array[min];
-                    array[min] = temp;
+                    array[i] = array[max];
+                    array[max] = temp;
                         }
                 }
             for(k=0;k<4;k++){
