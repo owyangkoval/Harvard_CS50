@@ -11,7 +11,7 @@ int i,j,k,temp;
         int min = i;
             for(j=i+1;j<4;j++) {
                 if(array[min]>array[j]) {
-                    min = j;
+                    j = min;
                         }
                 }
                     if (min != i) {
