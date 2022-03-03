@@ -12,10 +12,13 @@ int i,j,k,temp;
             for(j=i+1;i<4;i++) {
                 if(array[j]<array[min]) {
                     min = j;
+                    }
+                if (min!=i) {
+
+                    }
                 }
-                for(k=0;k<4;k++){
-                printf("%d", array[k])
-                }
+            for(k=0;k<4;k++){
+            printf("%d", array[k]);
             }
         }
         printf("\n");
