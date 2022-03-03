@@ -15,9 +15,9 @@ int i,j,k,temp;
                         }
                 }
                     if (max != j) {
-                    temp = array[j];
-                    array[j] = array[max];
-                    array[max] = temp;
+                    temp = array[max];
+                    array[max] = array[i];
+                    array[i] = temp;
                         }
                 }
             for(k=0;k<4;k++){
