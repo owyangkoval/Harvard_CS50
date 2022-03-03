@@ -12,6 +12,9 @@ int i,j,k,temp;
                 if(array[j]>array[j+1]) {
                     j = j+1;
                         }
+                    temp = array[j];
+                    array[j] = array[j+1];
+                    temp = array[j+1];
                     }
                 }
             for(k=0;k<4;k++){
