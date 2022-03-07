@@ -8,10 +8,10 @@ int array[4] = {5, 3, 1, 9};
 int i;
 
 for (i=0;i<4;i++) {
-    if(array[i]==5) {
+    if(array[i]==8) {
         printf("Index found at %d\n",i);
         }
-    else {
+    else if (i==4) {
         printf("Element not found\n");
         break;
         }
