@@ -8,10 +8,18 @@ int array[4] = {5, 3, 1, 9};
 int i,j,k,temp;
 
    for (i=1; i<3; i++) {
-        int min = i;
-            for (j=i+1; j<4; j++) {
-                if (array[j] < array[min]) {
-                    min = j;
-                    }
-                }
+        temp = array[i];
+        j = i-1;
+        while (j >= 0 && array[j] > temp) {
+            array[j+1] = array[j];
+            j--;
+            }
+        array[j+1] = temp;
+        }
+
+    for(k=0;k<4;k++){
+        printf("%d", array[k]);
+         }
+        printf("\n");
+    }
 
