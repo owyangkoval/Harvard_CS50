@@ -9,11 +9,11 @@ int i;
 int found=0;
 
 for (i=0;i<4;i++) {
-    if(array[i]==8) {
+    if(array[i]==9) {
         printf("Index found at %d\n",i);
         }
     }
-        else (found==0) {
+        if(found==0) {
         printf("Element not found\n");
         }
 }
