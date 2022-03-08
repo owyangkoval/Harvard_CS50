@@ -6,7 +6,6 @@ int main (void)
 {
 int array[4] = {5, 3, 1, 9};
 int i;
-int found=0;
 
 for (i=0;i<4;i++) {
     if(array[i]==4) {
