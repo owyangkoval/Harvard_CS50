@@ -11,9 +11,8 @@ for (i=0;i<4;i++) {
     if(array[i]==8) {
         printf("Index found at %d\n",i);
         }
-    else if (i==4) {
+        else {
         printf("Element not found\n");
-        break;
         }
     }
 }
