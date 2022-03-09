@@ -11,12 +11,12 @@ int mid = (l+r)/2;
 
 while(l<=r){
     if(10==array[mid]) {
-        printf("Index found at %d\n", mid);
+        printf("Index found at %d\n", array[mid]);
         break;
             }
     else if (10<array[mid]) {
         r = mid-1;
-        
+
         printf("Index found at %d\n", r);
         break;
             }
