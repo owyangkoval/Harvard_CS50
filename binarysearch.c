@@ -11,7 +11,6 @@ int mid = (l+r)/2;
 
 while(l<=r){
     if(array[mid]==3) {
-        return mid;
         printf("Index found at %d\n", mid);
         break;
             }
