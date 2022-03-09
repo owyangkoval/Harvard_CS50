@@ -5,9 +5,9 @@
 int main (void)
 {
 int array[6] = {2, 8, 9, 1, 3, 4};
-int start = array[0];
-int end = array[5];
-int pivot = array[0];
+int start = 0;
+int end = 5;
+int pivot = 0;
 int temp;
 
 while (start>end) {
