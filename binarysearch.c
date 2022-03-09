@@ -15,7 +15,7 @@ while(l<=r){
         printf("Index found at %d\n", array[mid]);
         break;
             }
-    else if (9<array[mid]) {
+    if (9<array[mid]) {
         r = mid-1;
         printf("Index found at %d\n", array[i]);
         break;
