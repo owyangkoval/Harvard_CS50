@@ -8,12 +8,12 @@ int array[4] = {5, 3, 1, 9};
 int i;
 
 for (i=0;i<4;i++) {
-    if(array[i]==4) {
+    if(array[i]==9) {
         printf("Index found at %d\n",i);
         break;
         }
     }
-        if(i==4) {
+        if(i==9) {
         printf("Element not found\n");
         }
 }
