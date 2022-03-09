@@ -16,6 +16,7 @@ while(l<=r){
             }
     else if (10<array[mid]) {
         r = mid-1;
+        
         printf("Index found at %d\n", r);
         break;
             }
