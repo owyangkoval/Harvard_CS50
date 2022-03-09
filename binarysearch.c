@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int binarysearch(array, n, data) {
+int main(void) {
 int l=0;
 int r=n-1;
 
