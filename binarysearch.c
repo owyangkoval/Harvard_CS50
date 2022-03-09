@@ -9,8 +9,8 @@ int l=0;
 int r=5;
 int mid = (l+r)/2;
 
-while(l<=r){
-    if(array[mid]) {
+while(l<r){
+    if(10==array[mid]) {
         printf("Index found at %d\n", mid);
         break;
             }
