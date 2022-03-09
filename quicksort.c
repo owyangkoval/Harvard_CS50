@@ -25,7 +25,6 @@ if (start>end) {
         temp=array[start];
         array[start]=array[end];
         array[end]=temp;
-        return end;
         }
     for(int k=0;k<6;k++){
         printf("%d", array[k]);
