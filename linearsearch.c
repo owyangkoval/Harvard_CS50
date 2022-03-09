@@ -13,7 +13,7 @@ for (i=0;i<4;i++) {
         break;
         }
     }
-        if(i==9) {
+        if(i==4) {
         printf("Element not found\n");
         }
 }

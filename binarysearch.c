@@ -26,5 +26,8 @@ while(l<=r){
         break;
             }
         }
-    return -1;
+    if(i==6) {
+    printf("Element not found\n");
     }
+    return -1;
+}
