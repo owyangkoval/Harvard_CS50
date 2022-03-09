@@ -10,6 +10,7 @@ int r=5;
 int i=0;
 int mid = (l+r)/2;
 
+int binary
 while(l<=r){
     if(array[mid]==2) {
         return mid;
