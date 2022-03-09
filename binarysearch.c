@@ -12,17 +12,17 @@ int mid = (l+r)/2;
 
 while(l<=r){
     if(9==array[mid]) {
-        printf("Index found at %d\n", array[mid]);
+        printf("Index found at %d\n", mid);
         break;
             }
     if (9<array[mid]) {
         r = mid-1;
-        printf("Index found at %d\n", array[i]);
+        printf("Index found at %d\n", mid-1);
         break;
             }
     else {
         l = mid+1;
-        printf("Index found at %d\n", array[i]);
+        printf("Index found at %d\n", mid+1);
         break;
             }
         }
