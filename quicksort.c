@@ -2,8 +2,16 @@
 #include <stdio.h>
 #include <string.h>
 
-void partition(array, start, end) {
-int pivot = array[0];
+int void (main)
+    int array[6] = {2, 8, 9, 1, 3, 4};
+    int pivot = array[0];
+    for(int k=0;k<6;k++){
+        printf("%d", array[k]);
+            }
+        printf("\n");
+}
+
+void partition(int array[], array[start], array[end], pivot) {
 int temp;
 
 while(array[start]<=pivot) {
@@ -22,12 +30,3 @@ if (start>end) {
         array[start]=array[end];
         array[end]=temp;
         }
-
-void main()
-    int array[6] = {2, 8, 9, 1, 3, 4};
-
-    for(int k=0;k<6;k++){
-        printf("%d", partition);
-            }
-        printf("\n");
-}
