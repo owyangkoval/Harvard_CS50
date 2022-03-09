@@ -2,11 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (void)
-{
-int array[6] = {2, 8, 9, 1, 3, 4};
-int start = 0;
-int end = 5;
+void partition(array, start, end) {
 int pivot = array[0];
 int temp;
 
@@ -26,8 +22,12 @@ if (start>end) {
         array[start]=array[end];
         array[end]=temp;
         }
+
+void main()
+    int array[6] = {2, 8, 9, 1, 3, 4};
+
     for(int k=0;k<6;k++){
-        printf("%d", array[k]);
+        printf("%d", partition);
             }
         printf("\n");
 }
