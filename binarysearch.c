@@ -5,9 +5,9 @@
 int binarysearch(array, n, data) {
 int l=0;
 int r=n-1;
-int mid = (l+r)/2;
 
 while(l<=r){
+    int mid = (l+r)/2;
     if(data==array[mid]) {
         return mid;
             }
@@ -21,13 +21,3 @@ while(l<=r){
     return -1;
 }
 
-
-int main(void) {
-
-int array[] = {1, 2, 3, 7, 9, 10};
-int data = 3;
-
-
-
-
-}
