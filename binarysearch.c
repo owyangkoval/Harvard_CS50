@@ -20,4 +20,5 @@ while(l<=r){
             }
         printf("Index found at %d\n", mid);
         }
+    return -1;
     }
