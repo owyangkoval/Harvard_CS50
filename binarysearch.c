@@ -10,13 +10,13 @@ int r=5;
 int i=0;
 int mid = (l+r)/2;
 
-while(l<r){
-    if(9==array[mid]) {
+while(l<=r){
+    if(array[mid]==9) {
         return mid;
         printf("Index found at %d\n", mid);
         break;
             }
-    if (9<array[mid]) {
+    if (array[mid>9]) {
         r = mid-1;
         printf("Index found at %d\n", mid-1);
         break;
