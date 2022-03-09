@@ -16,13 +16,9 @@ while(l<=r){
             }
     if (array[mid]>3) {
         r = mid-1;
-        printf("Index found at %d\n", r);
-        break;
             }
     else {
         l = mid+1;
-        printf("Index found at %d\n", l);
-        break;
             }
         }
     return -1;
