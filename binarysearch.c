@@ -10,15 +10,18 @@ int r=5;
 
 while(l<=r){
     int mid = (l+r)/2;
-    if(3==array[mid]) {
+    if(10==array[mid]) {
+        printf("Index found at %d\n", mid);
+        break;
             }
-    else if (3<array[mid]) {
+    else if (10<array[mid]) {
         r = mid-1;
+        printf("Index found at %d\n", r);
             }
     else {
         l = mid+1;
+        printf("Index found at %d\n", l);
             }
-        printf("Index found at %d\n", mid);
         }
     return -1;
     }
