@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 
+// Function prototypes
+quicksort
+
 int void (main)
     int array[6] = {2, 8, 9, 1, 3, 4};
     int pivot = array[0];
@@ -11,7 +14,7 @@ int void (main)
         printf("\n");
 }
 
-void partition(int array[], array[start], array[end], pivot) {
+void quicksort(int array[], array[start], array[end]) {
 int temp;
 
 while(array[start]<=pivot) {
