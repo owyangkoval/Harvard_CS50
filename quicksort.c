@@ -4,10 +4,10 @@
 
 int main (void)
 {
-int array[6] = {2, 8, 10, 1, 3, 4};
-int start = 0;
-int end = 5;
-int pivot = 0;
+int array[6] = {2, 8, 9, 1, 3, 4};
+int start = array[0];
+int end = array[5];
+int pivot = array[0];
 int temp;
 
 while (start>end) {
@@ -27,10 +27,10 @@ while (start>end) {
         array[start]=array[end];
         array[end]=temp;
         return end;
+        }
     }
     for(int k=0;k<6;k++){
         printf("%d", array[k]);
             }
         printf("\n");
-        }
 }
