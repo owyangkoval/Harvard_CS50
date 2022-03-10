@@ -2,10 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (void)
-{
-int array[4] = {5, 3, 1, 9};
-int i,j,k,temp;
+int selectionsort(i,j,temp){
 
    for (i=0; i<3; i++) {
         int min = i;
@@ -20,6 +17,12 @@ int i,j,k,temp;
                     array[min] = temp;
                     }
                 }
+}
+
+
+int main (void) {
+int array[4] = {5, 3, 1, 9};
+
                 for (k=0;k<4;k++){
                 printf("%d", array[k]);
                 }
