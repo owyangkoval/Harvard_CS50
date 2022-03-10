@@ -13,7 +13,7 @@ int i, j, k, temp;
                     }
                     if (min != i) {
                     temp = array[j];
-                    array[j] = array[min];
+                    array[j] = array[min];;
                     }
                 }
             }
