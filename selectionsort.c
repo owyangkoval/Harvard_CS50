@@ -10,12 +10,12 @@ int i, j, temp;
             for (j=i+1; j<length; j++) {
                 if (array[j] < array[min]) {
                     min = j;
-                    }
+                        }
                     if (min != i) {
                     temp = array[j];
                     array[j] = array[min];
                     array[min] = temp;
-                    }
+                        }
                 }
             }
         printf("Sorted Array: ");
