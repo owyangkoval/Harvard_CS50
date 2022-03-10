@@ -23,6 +23,6 @@ int selectionsort(int array[],int i,int j,int temp){
 int main (void) {
 int array[4] = {5, 3, 1, 9};
 
-selectionsort()
+    sorted = selectionsort()
         printf("\n");
     }
