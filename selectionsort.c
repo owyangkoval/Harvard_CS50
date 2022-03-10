@@ -17,6 +17,7 @@ int i, j, temp;
                     }
                 }
             }
+        printf("Sorted Array: ");
 }
 
 int main (void) {
