@@ -3,7 +3,7 @@
 #include <string.h>
 
 int selectionsort(int min) {
-int i; int j; int temp; int array[];
+int i; int j; int temp; int array[4];
 
    for (i=0; i<3; i++) {
         min = i;
