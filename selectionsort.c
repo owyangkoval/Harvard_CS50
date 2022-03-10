@@ -3,7 +3,7 @@
 #include <string.h>
 
 void selectionsort(int array[], int length) {
-int i, j, k, temp;
+int i, j, temp;
 
    for (i=0; i<length-1; i++) {
         int min = i;
@@ -17,14 +17,14 @@ int i, j, k, temp;
                     }
                 }
             }
-        for(k=0; k<length; k++) {
-            printf("%d",array[k]);
-        }
-    printf("\n");
 }
 
 int main (void) {
 
     int array[4] = {5, 3, 1, 9};
     selectionsort(array, 4);
+        for(int k=0; k<4; k++) {
+            printf("%d",array[k]);
+        }
+        printf("\n");
 }
