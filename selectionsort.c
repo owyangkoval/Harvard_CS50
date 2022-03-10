@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int selectionsort(int i, int j, int array[]) {
+int selectionsort(int array[]) {
+int i, j, k, temp;
 
    for (i=0; i<3; i++) {
         int min = i;
@@ -11,21 +12,20 @@ int selectionsort(int i, int j, int array[]) {
                     min = j;
                     return min;
                     }
-                }
                     if (min != i) {
-                    int temp = array[j];
+                    temp = array[j];
                     array[j] = array[min];
                     array[min] = temp;
                     }
                 }
+            }
+        for(k=0; k<4; k++) {
+            printf("%d",array[k]);
+        }
 }
 
-
 int main (void) {
-int array[4] = {5, 3, 1, 9};
 
+    int array[4] = {5, 3, 1, 9};
     selectionsort(array);
-    for (int k=0; k<4; k++) {
-    printf("%d", array[k]);
-    }
 }
