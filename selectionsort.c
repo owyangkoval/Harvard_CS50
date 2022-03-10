@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int selectionsort(int array[]) {
+void selectionsort(int array[]) {
 int i, j, k, temp;
 
    for (i=0; i<3; i++) {
@@ -20,6 +20,7 @@ int i, j, k, temp;
         for(k=0; k<4; k++) {
             printf("%d",array[k]);
         }
+    printf("\n");
 }
 
 int main (void) {
