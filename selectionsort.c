@@ -24,6 +24,8 @@ int selectionsort(int i, int j, int array[]) {
 int main (void) {
 int array[4] = {5, 3, 1, 9};
 
-    sorted = selectionsort(i, j, array);
-        printf("%d", selectionsort);
+    selectionsort(array);
+    for (int k=0; k<4; k++) {
+    printf("%d", array[k]);
     }
+}
