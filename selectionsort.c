@@ -10,12 +10,10 @@ int i, j, k, temp;
             for (j=i+1; j<4; j++) {
                 if (array[j] < array[min]) {
                     min = j;
-                    return min;
                     }
                     if (min != i) {
                     temp = array[j];
                     array[j] = array[min];
-                    array[min] = temp;
                     }
                 }
             }
