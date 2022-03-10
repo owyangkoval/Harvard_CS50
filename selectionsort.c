@@ -23,7 +23,7 @@ int i, j, temp;
 
 int main (void) {
 
-    int array[] = {5, 3, 1, 9};
+    int array[4] = {5, 3, 1, 9};
     selectionsort(array, 4);
         for(int k=0; k<4; k++) {
             printf("%d",array[k]);
