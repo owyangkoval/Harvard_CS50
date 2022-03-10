@@ -2,13 +2,15 @@
 #include <stdio.h>
 #include <string.h>
 
-int selectionsort(int array[],int i,int j,int temp){
+int selectionsort(int min) {
+int i; int j; int temp; int array[];
 
    for (i=0; i<3; i++) {
-        int min = i;
+        min = i;
             for (j=i+1; j<4; j++) {
                 if (array[j] < array[min]) {
                     min = j;
+                    return min;
                     }
                 }
                     if (min != i) {
