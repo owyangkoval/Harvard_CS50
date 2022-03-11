@@ -2,9 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (void)
-{
-int array[4] = {5, 3, 1, 9};
+void bubblesort(int array[], int length) {
 int i,j,k,temp;
 
     for(i=0;i<3;i++) {
@@ -20,4 +18,10 @@ int i,j,k,temp;
         printf("%d", array[k]);
          }
         printf("\n");
+}
+
+int main (void)
+{
+int array[4] = {5, 3, 1, 9};
+    bubblesort(array, 4);
     }

@@ -2,9 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (void)
-{
-int array[4] = {5, 3, 1, 9};
+void insertionsort(int array[], int length) {
 int i,j,k,temp;
 
    for (i=1; i<3; i++) {
@@ -21,5 +19,13 @@ int i,j,k,temp;
         printf("%d", array[k]);
          }
         printf("\n");
+}
+
+
+int main (void)
+{
+int array[4] = {5, 3, 1, 9};
+
+    insertionsort(array, 4);
     }
 

@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (void)
-{
-int array[4] = {5, 3, 1, 9};
+
+void linearsearch(int array[], int length) {
 int i;
 
 for (i=0;i<4;i++) {
@@ -16,4 +15,11 @@ for (i=0;i<4;i++) {
         if(i==4) {
         printf("Element not found\n");
         }
+}
+
+
+int main (void)
+{
+int array[4] = {5, 3, 1, 9};
+    linearsearch(array, 4);
 }
