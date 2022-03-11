@@ -5,8 +5,8 @@
 void bubblesort(int array[], int length) {
 int i, j, k, temp;
 
-    for(i=0;i<5;i++) {
-            for(j=0;j<4;j++) {
+    for(i=0;i<6;i++) {
+            for(j=0;j<5;j++) {
                 if (array[j]>array[j+1]) {
                     temp = array[j];
                     array[j] = array[j+1];
