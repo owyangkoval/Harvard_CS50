@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 
+void sort()
+
+
+
+
 int main (void)
 {
 int array[6] = {1, 2, 3, 7, 9, 10};
