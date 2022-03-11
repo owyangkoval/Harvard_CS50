@@ -7,15 +7,16 @@ int i, j, temp;
 
    for (i=0; i<3; i++) {
         int min = i;
-            for (j=i+1; j<4; j++) {
+            for (j=i+1; j<4; j++)  {
                 if (array[j] < array[min]) {
                     min = j;
                         }
-                    if (min != i) {
-                    temp = array[j];
-                    array[j] = array[min];
-                        }
-                }
+                    }
+            if (min != i) {
+                temp = array[i];
+                array[i] = array[min];
+                array[min] = temp;
+                    }
             }
         for(int k=0; k<4; k++) {
             printf("%d",array[k]);
