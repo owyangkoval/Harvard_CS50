@@ -5,9 +5,9 @@
 void selectionsort(int array[], int length) {
 int i, j, temp;
 
-   for (i=0; i<3; i++) {
+   for (i=0; i<5; i++) {
         int min = i;
-            for (j=i+1; j<4; j++) {
+            for (j=i+1; j<6; j++) {
                 if (array[j] < array[min]) {
                     min = j;
                         }
@@ -24,10 +24,7 @@ int i, j, temp;
     }
 
 
-
-int main (void)
-{
-int array[6] = {1, 2, 3, 7, 9, 10};
+void binarysearch(int array[], int length) {
 int l=0;
 int r=5;
 
@@ -45,4 +42,10 @@ while(l<=r){
             }
         }
     return -1;
+}
+
+int main (void)
+{
+int array[6] = {10, 2, 1, 7, 9, 3};
+
 }
