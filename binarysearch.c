@@ -2,24 +2,21 @@
 #include <stdio.h>
 #include <string.h>
 
-void selectionsort(int array[], int length) {
-int i, j, temp;
+void bubblesort(int array[], int length) {
+int i, j, k, temp;
 
-   for (i=0; i<5; i++) {
-        int min = i;
-            for (j=i+1; j<6; j++) {
-                if (array[j] < array[min]) {
-                    min = j;
-                        }
-                    if (min != i) {
+    for(i=0;i<5;i++) {
+            for(j=0;j<4;j++) {
+                if (array[j]>array[j+1]) {
                     temp = array[j];
-                    array[j] = array[min];
-                        }
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
                     }
                 }
-        for(int k=0; k<4; k++) {
-            printf("%d",array[k]);
             }
+        for(k=0;k<6;k++){
+        printf("%d", array[k]);
+         }
         printf("\n");
     }
 
@@ -40,12 +37,12 @@ while(l<=r){
     else {
         l = mid+1;
             }
-        }
-    return -1;
+    }
 }
 
 int main (void)
 {
 int array[6] = {10, 2, 1, 7, 9, 3};
-
+    bubblesort(array, 6);
+    binarysearch(array, 6);
 }
