@@ -3,9 +3,7 @@
 #include <string.h>
 
 void quicksort(int array[], int start, int end) {
-int array[start] = 0;
-int array[end] = 5;
-int pivot; int temp;
+int pivot=0; int temp;
 
     while(array[start]<=pivot) {
         start++;
@@ -14,7 +12,7 @@ int pivot; int temp;
         end--;
         }
     if (start<end) {
-        int temp=array[end];
+        temp=array[end];
         array[end]=array[start];
         array[start]=temp;
         }
@@ -27,8 +25,5 @@ int pivot; int temp;
 
 int main(void) {
     int array[6] = {2, 8, 9, 1, 3, 4};
-    for(int k=0;k<6;k++){
-        printf("%d", array[k]);
-            }
-        printf("\n");
+    quicksort(array, 0, 5);
 }
