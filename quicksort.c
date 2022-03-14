@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void partition(int array[], int lowerbound, int upperbound) {
+int partition(int array[], int lowerbound, int upperbound) {
 int pivot=0, start=lowerbound, end=upperbound, temp;
 
 while(start<end) {
@@ -24,17 +24,22 @@ while(start<end) {
     return end;
 }
 
-void quiksort (int array[], int lowerbound, int upperbound) {
+void quicksort (int array[], int lowerbound, int upperbound, int length) {
     if (lowerbound<upperbound) {
-        loc = partition(array, upperbound, lowerbound);
-        
+        int location = partition(array, upperbound, lowerbound);
+        quicksort(array, lowerbound, location-1)
+        quicksort(array, location+1, upperbound);
+        }
+    for(k=0;k<length;k++){
+        printf("%d", array[k]);
+        }
+        printf("\n");
     }
-
 }
 
 
 
 int main(void) {
     int array[6] = {2, 8, 9, 1, 3, 4};
-    quicksort(array, 0, 5);
+    quicksort(array, 0, 5, 6);
 }
