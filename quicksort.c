@@ -3,8 +3,9 @@
 #include <string.h>
 
 void quicksort(int array[], int start, int end) {
-int pivot=0; int temp;
+int pivot=0, temp;
 
+while(start<end) {
     while(array[start]<=pivot) {
         start++;
         }
@@ -12,15 +13,11 @@ int pivot=0; int temp;
         end--;
         }
     if (start<end) {
-        temp=array[end];
-        array[end]=array[start];
-        array[start]=temp;
-        }
-    if (start>end) {
         temp=array[start];
         array[start]=array[end];
         array[end]=temp;
         }
+    }
 }
 
 int main(void) {
