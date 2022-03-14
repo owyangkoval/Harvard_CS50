@@ -1,45 +1,42 @@
-#include <cs50.h>
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
 
-int partition(int array[], int lowerbound, int upperbound) {
-int pivot=0, start=lowerbound, end=upperbound, temp;
+void quicksort(int array[],int first,int last){
+int i, j, pivot, temp;
 
-while(start<end) {
-    while(array[start]<=pivot) {
-        start++;
-        }
-    while(array[end]>pivot) {
-        end--;
-        }
-    if (start<end) {
-        temp=array[start];
-        array[start]=array[end];
-        array[end]=temp;
-        }
-    }
-    temp = array[lowerbound];
-    array[lowerbound]=array[end];
-    array[end]=temp;
-    return end;
-}
+if(first<last){
+    pivot=first; i=first; j=last;
 
-void quicksort (int array[], int lowerbound, int upperbound, int length) {
-    if (lowerbound<upperbound) {
-        int location = partition(array, upperbound, lowerbound);
-        quicksort(array, lowerbound, location-1)
-        quicksort(array, location+1, upperbound);
+    while(i<j){
+    while(array[i]<=array[pivot]&&i<last)
+        i++;
+    while(array[j]>array[pivot])
+        j--;
+    if(i<j){
+        temp=array[i];
+        array[i]=array[j];
+        array[j]=temp;
+            }
         }
-    for(k=0;k<length;k++){
-        printf("%d", array[k]);
-        }
-        printf("\n");
+    temp=array[pivot];
+    array[pivot]=array[j];
+    array[j]=temp;
+    quicksort(array,first,j-1);
+    quicksort(array,j+1,last);
     }
 }
 
+int main(){
 
+int array[6] = {10, 2, 6, 1, 9, 4};
+int i;
+int length=6;
 
-int main(void) {
-    int array[6] = {2, 8, 9, 1, 3, 4};
-    quicksort(array, 0, 5, 6);
+for(i=0;i<length;i++)
+quicksort(array,0,length-1);
+printf("The Sorted Order is: ");
+
+for(i=0;i<length;i++)
+printf("%d",array[i]);
+printf("\n");
+return 0;
 }
