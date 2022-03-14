@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int sum(int i) {
+int fib(int i) {
 int j=0;
    if (i==1)
     return 1;
