@@ -1,16 +1,32 @@
 #include <stdio.h>
 
-int fib(int i) {
-int j=0;
-   if (i==0)
-    return 1;
-   j = fib(i-1)+fib(i-2);
-   return j;
+int factorial(int n) {
+   //base case
+   if(n == 0) {
+      return 1;
+   } else {
+      return n * factorial(n-1);
+   }
 }
 
-int main(void) {
-    int i=0;
-    int k=fib(55);
-    printf("%d", k);
-    printf("\n");
+int fibbonacci(int n) {
+   if(n == 0){
+      return 0;
+   } else if(n == 1) {
+      return 1;
+   } else {
+      return (fibbonacci(n-1) + fibbonacci(n-2));
+   }
+}
+
+int main() {
+   int n = 55;
+   int i;
+
+   printf("Factorial of %d: %d\n" , n , factorial(n));
+   printf("Fibbonacci of %d: " , n);
+
+   for(i = 0;i<n;i++) {
+      printf("%d ",fibbonacci(i));
+   }
 }
