@@ -10,6 +10,6 @@ int j=0;
 
 int main(void) {
     int i=0;
-    int k=fib(55);
+    int k=fib(1);
     printf("The sum of numbers from 1 - 5: %d\n", k);
 }
