@@ -2,7 +2,7 @@
 
 int sum(int i) {
 int j=0;
-   if (i<1)
+   if (i==1)
     return 1;
    j = i+sum(i-1);
    return j;
@@ -10,6 +10,6 @@ int j=0;
 
 int main(void) {
     int i=0;
-    int k=sum(1);
+    int k=sum(5);
     printf("The sum of numbers from 1 - 5: %d\n", k);
 }
