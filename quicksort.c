@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-void quicksort(int array[], int start, int end) {
-int pivot=0, temp;
+void quicksort(int array[], int lowerbound, int upperbound) {
+int pivot=0, start=lowerbound, end=upperbound, temp;
 
 while(start<end) {
     while(array[start]<=pivot) {
@@ -18,6 +18,10 @@ while(start<end) {
         array[end]=temp;
         }
     }
+    temp = array[lowerbound];
+    array[lowerbound]=array[end];
+    array[end]=temp;
+    return end;
 }
 
 int main(void) {
