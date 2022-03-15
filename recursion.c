@@ -1,21 +1,17 @@
 #include <stdio.h>
 
-int fibonacci(int previousnum, int num) {
-int i;
-if(i == 1) {
+int fib(int n) {
+if(n == 1) {
       return 1;
    }
 else {
-   i=1;
-   int nextnum = previousnum + num;
-   previousnum = num;
-   num = nextnum;
+   return(fib(n-1)+fib(n-2));
    }
 }
 
 int main() {
    int k;
 
-   k = fibonacci(55);
+   k = fib(55);
       printf("%d ",k);
 }
