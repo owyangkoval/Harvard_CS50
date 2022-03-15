@@ -5,7 +5,7 @@ if(i == 1) {
       return 1;
    }
 else {
-      int j = (fibbonacci(i) + fibbonacci(i-2));
+      int j = (fibbonacci(i-1) + fibbonacci(i-2));
       return j;
    }
 }
