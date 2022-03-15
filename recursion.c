@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 int fibbonacci(int previousnum, int num) {
+int i;
 if(i == 1) {
       return 1;
    }
 else {
-   int i=1;
-   nextnum = previousnum + num;
-   
-      return j;
+   i=1;
+   int nextnum = previousnum + num;
+   previousnum = num;
+   num = nextnum;
    }
 }
 
