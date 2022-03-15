@@ -1,16 +1,18 @@
 #include <stdio.h>
 
-int fibbonacci(int n) {
-if(n == 1) {
+int fibbonacci(int i) {
+if(i == 1) {
       return 1;
-   } else {
-      return (fibbonacci(n-1) + fibbonacci(n-2));
+   }
+else {
+      int j = (fibbonacci(i) + fibbonacci(i-2));
+      return j;
    }
 }
 
 int main() {
-   int i;
+   int k;
 
-   i = fibbonacci(55);
-      printf("%d ",i);
+   k = fibbonacci(55);
+      printf("%d ",k);
 }
