@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-int fibbonacci(int i) {
+int fibbonacci(int previousnum, int num) {
 if(i == 1) {
       return 1;
    }
 else {
-      int j = (fibbonacci(i-1) + fibbonacci(i-2));
+   int i=1;
+   nextnum = previousnum + num;
+   
       return j;
    }
 }
