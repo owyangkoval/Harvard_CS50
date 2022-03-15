@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int fibbonacci(int previousnum, int num) {
+int fibonacci(int previousnum, int num) {
 int i;
 if(i == 1) {
       return 1;
@@ -16,6 +16,6 @@ else {
 int main() {
    int k;
 
-   k = fibbonacci(55);
+   k = fibonacci(55);
       printf("%d ",k);
 }
