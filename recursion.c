@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int even(int i) {
+int even(array[], int i) {
 int j = 0;
 int k = 0;
 
@@ -16,5 +16,6 @@ int k = 0;
 }
 
 int main() {
+int array[6]= {}
    even(14);
 }
