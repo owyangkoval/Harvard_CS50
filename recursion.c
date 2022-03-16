@@ -22,7 +22,7 @@ int main(void) {
 int n;
 
 printf("Input the number of elements to be stored in the array : ");
-scanf("%d",n);
+scanf("%d",&n);
 printf("\nInput %d elements in the array: ", n);
 
 int a[n];
