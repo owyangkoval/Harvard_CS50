@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 int digits(int i) {
+int j;
    if (i>=0) {
    printf("Integer: ");
    scanf("%d",&i);
-   digits(i/=10);
-   return 1;
+   j = digits(i/=10);
+   return j;
    }
 }
 
