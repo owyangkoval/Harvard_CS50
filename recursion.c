@@ -5,7 +5,7 @@ void ArrayElement(int arr1[], int st, int l);
 
 int main()
 {
-    int arrayst[MAX];
+    int array1[MAX];
     int n, i;
 
 	printf(" Input the number of elements to be stored in the array :");
