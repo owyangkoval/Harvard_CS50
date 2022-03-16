@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int even(array[], int i) {
+int even(int i) {
 int j = 0;
 int k = 0;
 
@@ -8,14 +8,22 @@ int k = 0;
    return 2;
    }
    else if (i>2) {
-   j = array[i-2]
-   printf("The elements in the array are : %d, %d, %d, %d, %d, %d");
-   printf("\n");
+   j = even(i-2);
    return j;
    }
 }
 
 int main() {
-scanf("Input array numbers)
-   even(14);
+int array[6];
+int i;
+
+even(14);
+
+for(i=0; i < 5; ++i) {
+    printf("Enter number%d: ",i);
+    scanf("%d", &array[i]);
+
+printf("The elements in the array are : ", average);
+printf("\n");
+   }
 }
