@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+void f() {
+   printf("pusheen\n");
+   return;
+}
+
+f();
+
 int fib(int n) {
 if(n <= 1) {
       return 1;
