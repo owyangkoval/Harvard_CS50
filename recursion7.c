@@ -13,7 +13,7 @@ int k=0; int j=0;
    if (i<=0)
    return 0;
    else {
-   k = gcdnum(i/j);
+   k = gcdnum(i/(i/j);
    return k;
    }
 }
