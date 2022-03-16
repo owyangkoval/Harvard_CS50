@@ -9,6 +9,6 @@ int digits(int i) {
 }
 
 int main() {
-   int k = digits(50);
+   digits(i)
    printf("The number of digits in the number is : ", k);
 }
