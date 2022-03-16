@@ -10,6 +10,7 @@ int k=0;
    }
 }
 
+int gcdnum2
 
 int main(void) {
 int i, j, k;
