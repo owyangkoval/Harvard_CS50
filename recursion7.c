@@ -3,9 +3,12 @@
 int gcdnum(int i, int j) {
 int k=0;
    while (i!=j) {
-   k = gcdnum(i/(j/i));
-   return k;
+      if (i>j)
+         return(i, i-j);
+      else
+         return(i, j-1);
    }
+   return i;
 }
 
 int main(void) {
