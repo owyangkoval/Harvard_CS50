@@ -13,6 +13,17 @@ void f(int i) {
 
 f(1);
 
+int abs(int x) {
+   if (x >= 0) {
+      return x;
+   } else {
+      return -x;
+   }
+}
+
+int y = abs(-5);
+printf("%d\n", y);
+
 int fib(int n) {
 if(n <= 1) {
       return 1;
