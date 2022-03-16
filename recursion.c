@@ -6,7 +6,7 @@ int input(int a[],int n) {
    printf("\nelement - %d: ",n);
    scanf("%d", &a[n]);
    }
-   return 1;
+   return n;
 }
 
 int evenset(int a[],int n) {
@@ -14,7 +14,7 @@ int evenset(int a[],int n) {
    evenset(a,n-1);
    printf("%d ",a[n]);
    }
-return 1;
+return n;
 }
 
 
