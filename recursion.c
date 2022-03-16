@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 int digits(int i) {
-int k = 0;
+int k=0;
    if (i>=0) {
-   printf("Integer: ");
-   scanf("%d",&i);
    digits(i/=10);
    k=k+1;
    }
@@ -14,6 +12,9 @@ int k = 0;
 
 
 int main(void) {
+int i;
 
-   digits(50);
+   printf("Integer: ");
+   scanf("%d",&i);
+   digits(i);
 }
