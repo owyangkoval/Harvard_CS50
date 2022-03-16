@@ -4,7 +4,8 @@ int digitsum(int i) {
    if (i>10)
    return 0;
    else
-   return 1 + countdigits(i/10);
+   int k = (i/10) + (i%10)
+   return k;
 }
 
 
