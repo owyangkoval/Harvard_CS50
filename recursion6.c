@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 int digitsum(int i) {
-   if (i>10)
+int k=0;
+   if (i<10)
    return 0;
    else
-   int k = (i/10) + (i%10)
+   k = (i/10) + (i%10);
    return k;
 }
 
@@ -15,5 +16,5 @@ int i; int j;
    printf("Integer: ");
    scanf("%d",&i);
    j = digitsum(i);
-   printf("The number of digits in the number is : %d\n", j);
+   printf("The sum of the digits in the number is : %d\n", j);
 }
