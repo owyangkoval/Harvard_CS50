@@ -8,14 +8,14 @@ int k = 0;
    return 2;
    }
    else if (i>2) {
-   j = even(i-2);
-   printf("Element - %d: %d", k, j);
+   j = array[i-2]
+   printf("The elements in the array are : %d, %d, %d, %d, %d, %d");
    printf("\n");
    return j;
    }
 }
 
 int main() {
-int array[6]= {}
+scanf("Input array numbers)
    even(14);
 }
