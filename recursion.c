@@ -5,9 +5,11 @@ int j;
    if (i>=0) {
    printf("Integer: ");
    scanf("%d",&i);
-   j = digits(i/=10);
-   return j;
+   j=j+1;
+   digits(i/=10);
    }
+   else
+   return j;
 }
 
 int main() {
