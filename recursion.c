@@ -1,34 +1,12 @@
-#include<stdio.h>
+#include <stdio>
 
-int input(int a[],int n) {
-   if(n>=0) {
-   input(a,n-1);
-   printf("\nelement - %d: ",n);
-   scanf("%d", &a[n]);
-   }
-   return n;
+int digits(int i) {
+   digits(i/=10)
+   printf("Integer:)
 }
-
-int evenset(int a[],int n) {
-   if(n>=0) {
-   evenset(a,n-1);
-   printf("%d ",a[n]);
-   }
-return n;
-}
-
 
 int main(void) {
-int n;
-
-printf("Input the number of elements to be stored in the array : ");
-scanf("%d",&n);
-printf("\nInput %d elements in the array: ", n);
-
-int a[n];
-
-input(a,n-1);
-printf("\n\nThe elements in the array are: ");
-evenset(a,n-1);
+   digits(50);
+   printf("The number of digits in  )
 
 }
