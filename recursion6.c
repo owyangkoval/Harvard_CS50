@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 int digitsum(int i) {
-int k=0;
+int k=0;int l=0;
    if (i<=0)
    return 0;
    else
    k = (i%10);
-   return k + (i/10);
+   l = digitsum(i/=10);
+   return k+l;
 }
 
 
