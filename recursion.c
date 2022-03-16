@@ -6,8 +6,6 @@ void f() {
 
 void g() {
    f();
-   return;
-   f();
 }
 
 g();
