@@ -5,15 +5,13 @@ void ArrayElement(int arr1[], int st, int l);
 
 int main()
 {
-    int arr1[MAX];
+    int arrayst[MAX];
     int n, i;
-	printf("\n\n Recursion : Print the array elements :\n");
-	printf("-------------------------------------------\n");
 
 	printf(" Input the number of elements to be stored in the array :");
     scanf("%d",&n);
 
-    printf(" Input %d elements in the array :\n",n);
+    printf(" Input %d elements in the array. \n",n);
     for(i=0;i<n;i++)
         {
 	      printf(" element - %d : ",i);
