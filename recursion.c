@@ -12,5 +12,5 @@ else {
 
 int main() {
    int k;
-   k = fib(55);
+   k = fib(5);
 }
