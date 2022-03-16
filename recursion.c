@@ -7,6 +7,8 @@ int j = 0;
       return 2;
    else
       return evenset(i-2);
+      printf("The elements in the array are :%d", evenset(i));
+      printf("\n");
 }
 
 
@@ -19,8 +21,5 @@ int i;
       scanf("%d", &array[i]);
 
    evenset(14);
-
-   printf("The elements in the array are :%d", evenset(i));
-   printf("\n");
       }
 }
