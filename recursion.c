@@ -1,37 +1,35 @@
-#include <stdio.h>
-#define MAX 100
+#include<stdio.h>
 
-void ArrayElement(int arr1[], int st, int l);
-
-int main()
-{
-    int array1[MAX];
-    int n, i;
-
-	printf(" Input the number of elements to be stored in the array :");
-    scanf("%d",&n);
-
-    printf(" Input %d elements in the array. \n",n);
-    for(i=0;i<n;i++)
-        {
-	      printf(" element - %d : ",i);
-	      scanf("%d",&arr1[i]);
-	    }
-
-    printf(" The elements in the array are : ");
-    ArrayElement(arr1, 0, n);//call the function ArrayElement
-    printf("\n\n");
-    return 0;
+int input(int a[],int n) {
+   if(n>=0)
+   {
+   input(a,n-1);
+   printf("\nelement - %d: ",n);
+   scanf("%d", &a[n]);
+   }
+   return 1;
 }
 
-void ArrayElement(int arr1[], int st, int l)
+int evenset(int a[],int n)
 {
-    if(st >= l)
-        return;
+if(n>=0)
+{
+evenset(a,n-1);
+printf("%d ",a[n]);
+}
+return 1;
+}
 
-    //Prints the current array element
-    printf("%d  ", arr1[st]);
 
-    /* Recursively call ArrayElement to print next element in the array */
-    ArrayElement(arr1, st+1, l);//calling the function  ArrayElement itself
+int main(void)
+{
+int n;
+printf("Input the number of elements to be stored in the array : ");
+scanf("%d", &n);
+printf("\nInput %d elements in the array: ",n);
+
+int a[n];
+input(a,n-1);
+printf("\n\nThe elements in the array are: ");
+evenset(a,n-1);
 }
