@@ -2,7 +2,7 @@
 
 int digitsum(int i) {
 int k=0;
-   if (i<10)
+   if (i<=0)
    return 0;
    else
    k = (i/10) + (i%10);
