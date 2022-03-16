@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 void f(int i) {
+   if (i > 0) {
+      printf("pusheen\n");
+      f(i - 1);
+   else {
+      printf("pip\n");
+   }
    return;
-   printf("pusheen\n");
 }
 
-void g() {
-   f();
-   f();
-}
-
-g();
+f(1);
 
 int fib(int n) {
 if(n <= 1) {
