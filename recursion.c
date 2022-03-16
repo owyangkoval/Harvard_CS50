@@ -5,7 +5,7 @@ void f(int i) {
       printf("pusheen\n");
       f(i - 1);
       printf("stormy\n");
-   else {
+   } else {
       printf("pip\n");
    }
    return;
