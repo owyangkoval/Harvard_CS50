@@ -1,15 +1,13 @@
 #include <stdio.h>
 
 int digits(int i) {
-int j;
    if (i>=0) {
    printf("Integer: ");
    scanf("%d",&i);
-   j=j+1;
    digits(i/=10);
    }
    else
-   return j;
+   return i;
 }
 
 int main() {
