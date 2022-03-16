@@ -21,8 +21,9 @@ int abs(int x) {
    }
 }
 
-int y = abs(-5);
-printf("%d\n", y);
+int y = abs(-1);
+int z = abs(-2);
+printf("%d %d\n", y, z);
 
 int fib(int n) {
 if(n <= 1) {
