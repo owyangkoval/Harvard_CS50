@@ -1,8 +1,7 @@
 #include<stdio.h>
 
 int input(int a[],int n) {
-   if(n>=0)
-   {
+   if(n>=0) {
    input(a,n-1);
    printf("\nelement - %d: ",n);
    scanf("%d", &a[n]);
@@ -10,13 +9,11 @@ int input(int a[],int n) {
    return 1;
 }
 
-int evenset(int a[],int n)
-{
-if(n>=0)
-{
-evenset(a,n-1);
-printf("%d ",a[n]);
-}
+int evenset(int a[],int n) {
+   if(n>=0) {
+   evenset(a,n-1);
+   printf("%d ",a[n]);
+   }
 return 1;
 }
 
