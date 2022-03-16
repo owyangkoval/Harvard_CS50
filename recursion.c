@@ -1,41 +1,20 @@
 #include <stdio.h>
 
-void f(int i) {
-   if (i > 0) {
-      printf("pusheen\n");
-      f(i - 1);
-      printf("stormy\n");
-   } else {
-      printf("pip\n");
+int even(int i) {
+int j = 0;
+int k = 0;
+
+   if(i<=2) {
+   return 2;
    }
-   return;
-}
-
-f(1);
-
-int abs(int x) {
-   if (x >= 0) {
-      return x;
-   } else {
-      return -x;
-   }
-}
-
-int y = abs(-1);
-int z = abs(-2);
-printf("%d %d\n", y, z);
-
-int fib(int n) {
-if(n <= 1) {
-      return 1;
-   }
-else {
-   return (fib(n-1)+fib(n-2));
-   printf("%d ",n);
+   else if (i>2) {
+   j = even(i-2);
+   printf("Element - %d: %d", k, j);
+   printf("\n");
+   return j;
    }
 }
 
 int main() {
-   int k;
-   k = fib(5);
+   even(14);
 }
