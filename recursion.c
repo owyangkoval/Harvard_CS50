@@ -4,6 +4,7 @@ void f(int i) {
    if (i > 0) {
       printf("pusheen\n");
       f(i - 1);
+      printf("stormy\n");
    else {
       printf("pip\n");
    }
