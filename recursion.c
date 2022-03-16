@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int digits(int i) {
+int countdigits(int i) {
 int k=0;
    if (i>=0) {
-   digits(i/=10);
+   countdigits(i/=10);
    k++;
    printf("The number of digits in the number is : %d", k);
    }
@@ -16,5 +16,5 @@ int i;
 
    printf("Integer: ");
    scanf("%d",&i);
-   digits(i);
+   countdigits(i);
 }
