@@ -2,7 +2,7 @@
 
 int input(int a[],int n) {
     if(n>=0) {
-    input(a,n-1);
+    input(a,n-1); //question about n-1 and how it carries over into the next printf//
     printf("\nelement - %d: ",n);
     scanf("%d", &a[n]);
     }
