@@ -1,12 +1,16 @@
 #include <stdio.h>
 
 void f() {
-   for (int i = 0; i < 1; ++i) {
-      printf("pusheen\n");
-   }
+   printf("pusheen\n");
 }
 
-f();
+void g() {
+   f();
+   return;
+   f();
+}
+
+g();
 
 int fib(int n) {
 if(n <= 1) {
