@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 void f() {
-   printf("pusheen\n");
-   return;
+   for (int i = 0; i < 1; ++i) {
+      printf("pusheen\n");
+   }
 }
 
 f();
