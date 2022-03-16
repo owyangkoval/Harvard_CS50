@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void f() {
+void f(int i) {
+   return;
    printf("pusheen\n");
 }
 
