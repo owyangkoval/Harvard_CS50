@@ -3,7 +3,7 @@
 int gcdnum(int a, int b) {
 int i=1;
    while (a!=b) {
-      if((a/i)==0 &&(b/i)==0)
+      if((a/i)==0 && (b/i)==0)
          return i;
    }
 }
