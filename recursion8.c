@@ -1,8 +1,21 @@
 #include<stdio.h>
 #define MAX 100
 
+
+int MaxElem(int *num, int n, int max) {
+    if(n<0) {
+      return 0;
+    }
+    else {
+         if(max>*num)
+          max=*num;
+         }
+      return MaxElem(++num, --n, max);
+}
+
+
 int main() {
-int n, a[n],i;
+int n=0, a[n],i;
 
     //number of elements in array
     printf(" Input the number of elements to be stored in the array :");
@@ -16,19 +29,7 @@ int n, a[n],i;
 	      scanf("%d",&a[i]);
 	    }
     MaxElem(a, n-1, a[0]);
-    printf(" Largest element of the array is: %d\n\n", MaxElem);
+    printf(" Largest element of the array is: %d\n\n", a[i]);
     return 0;
 }
 
-
-int MaxElem(int *num, int n, int max) {
-    if(n<0) {
-      return 0;
-    }
-    else {
-         if(max>*num) {
-          max=*num;
-         }
-      MaxElem(++num, --n, max);
-    }
-}
