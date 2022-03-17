@@ -1,36 +1,37 @@
-#include <stdio.h>
+#include<stdio.h>
+#define MAX 100
 
-int input(int a[],int n) {
-    if (n>=0) {
-    input(a,n-1);
-    printf("Element - %d: ", n);
-    scanf("%d", &a[n]);
-    }
-    return 1;
-}
-
-int max(int a[],int n) {
-static int i = a[n];
-    if(n<0) {
-        return 0;
-        }
-    if(a[n]>i) {
-        i=a[n];
-        max(a,n-1);
-        return i;
-        }
-}
-
-int main(void) {
-
+int MaxElem(int []);
 int n;
-printf("Input the number of elements to be stored in the array :");
-scanf("%d", &n);
-printf("\nInput %d elements in the array:",n);
 
-int a[n];
-input(a,n-1);
-printf("\n\nThe highest element of the array is: ");
-max(a,n-1);
+int main()
+{
+    int arr1[MAX],hstno,i;
+	printf("\n\n Recursion : Get the largest element of an array :\n");
+	printf("------------------------------------------------------\n");
 
+      printf(" Input the number of elements to be stored in the array :");
+       scanf("%d",&n);
+
+       printf(" Input %d elements in the array :\n",n);
+       for(i=0;i<n;i++)
+        {
+	      printf(" element - %d : ",i);
+	      scanf("%d",&arr1[i]);
+	    }
+    hstno=MaxElem(arr1);//call the function MaxElem to return the largest element
+    printf(" Largest element of the array is: %d\n\n",hstno);
+    return 0;
+}
+int MaxElem(int arr1[])
+{
+    static int i=0,hstno =-9999;
+    if(i < n)
+    {
+         if(hstno<arr1[i])
+           hstno=arr1[i];
+      i++;
+      MaxElem(arr1);//calling the function MaxElem itself to compare with further element
+    }
+    return hstno;
 }
