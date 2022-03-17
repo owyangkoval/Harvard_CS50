@@ -10,7 +10,7 @@ int input(int a[],int n) {
 }
 
 int max(int a[],int n) {
-int i = a[n];
+static int i = a[n];
     if(n<0) {
         return 0;
         }
