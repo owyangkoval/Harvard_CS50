@@ -31,6 +31,6 @@ printf("\nInput %d elements in the array:",n);
 int a[n];
 input(a,n-1);
 printf("\n\nThe highest element of the array is: ");
-highestelem(n);
+max(a,n-1);
 
 }
