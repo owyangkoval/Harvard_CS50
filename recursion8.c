@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int input(int a[], int n) {
+int input(int a[],int n) {
     if (n>=0) {
     input(a,n-1);
     printf("Element - %d: ", n);
@@ -9,15 +9,16 @@ int input(int a[], int n) {
     return 1;
 }
 
-int highestelem(int n) {
-int a=0; int max=0;
-    if (n<n+1) {
-        highestelem(n);
-        max = a[n];
-        a[n] = a[n+1];
-        a[n+1] = max;
-    }
-    return max;
+int max(int a[],int n) {
+    static int i=a[n];
+    if(n<0) {
+        return 0;
+        }
+    if(a[n]>i) {
+        i=a[n];
+        max(a,n-1);
+        return i;
+        }
 }
 
 int main(void) {
