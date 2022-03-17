@@ -29,7 +29,7 @@ int n=0, a[n],i;
 	      scanf("%d",&a[i]);
 	    }
     MaxElem(a, n-1, a[0]);
-    printf(" Largest element of the array is: %d\n\n", a[i]);
+    printf(" Largest element of the array is: %d\n\n", MaxElem(max));
     return 0;
 }
 
