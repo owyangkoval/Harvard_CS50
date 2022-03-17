@@ -16,7 +16,7 @@ int MaxElem(int *num, int n, int max) {
 
 
 int main() {
-int n=0, a[n],i;
+int n=0,max,a,a[n],i;
 
     //number of elements in array
     printf(" Input the number of elements to be stored in the array :");
@@ -29,7 +29,7 @@ int n=0, a[n],i;
 	      printf(" element - %d : ",i);
 	      scanf("%d",&a[i]);
 	    }
-    MaxElem(a, n-1, a[0]);
+    MaxElem(a, n-1, a[max]);
     return 0;
 }
 
