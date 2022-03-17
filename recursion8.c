@@ -9,13 +9,15 @@ int input(int a[], int n) {
     return 1;
 }
 
-int highestelement(int a[], int n) {
-int temp;
+int highestelem(int a[], int n) {
+int max=0;
     if (n<n+1) {
-        temp = a[n];
+        highestelem(a,n-1);
+        max = a[n];
         a[n] = a[n+1];
-        a[n+1] =temp;
+        a[n+1] = max;
     }
+    return max;
 }
 
 int main(void) {
@@ -28,6 +30,6 @@ printf("\nInput %d elements in the array:",n);
 int a[n];
 input(a,n-1);
 printf("\n\nThe highest element of the array is: ");
-highestelement(n);
+highestelem(n);
 
 }
