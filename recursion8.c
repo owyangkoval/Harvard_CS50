@@ -5,7 +5,7 @@ int MaxElem(int []);
 int n;
 
 int main() {
-int arrayelem[MAX],hstno,i;
+int arrayelem[MAX],i;
 
     //number of elements in array
     printf(" Input the number of elements to be stored in the array :");
@@ -18,22 +18,19 @@ int arrayelem[MAX],hstno,i;
 	      printf(" element - %d : ",i);
 	      scanf("%d",&arrayelem[i]);
 	    }
-    //
-    temp=MaxElem(arrayelem);
-    printf(" Largest element of the array is: %d\n\n",hstno);
+    printf(" Largest element of the array is: %d\n\n", MaxElem);
     return 0;
 }
 
 
-int MaxElem(int arrayelem[])
-{
-    static int i=0,temp =-9999;
-    if(i < n)
-    {
-         if(temp<arrayelem[i])
-           temp=arrayelem[i];
-      i++;
-      MaxElem(arrayelem);//calling the function MaxElem itself to compare with further element
+int MaxElem(int *num, int n, int max) {
+    if(n<0) {
+      return 0;
     }
-    return temp;
+    else {
+         if(max>*num) {
+          max=*num;
+         }
+      MaxElem(++num, --n, max);
+    }
 }
