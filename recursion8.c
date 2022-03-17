@@ -19,7 +19,7 @@ int arrayelem[MAX],hstno,i;
 	      scanf("%d",&arrayelem[i]);
 	    }
     //
-    hstno=MaxElem(arrayelem);
+    temp=MaxElem(arrayelem);
     printf(" Largest element of the array is: %d\n\n",hstno);
     return 0;
 }
@@ -27,13 +27,13 @@ int arrayelem[MAX],hstno,i;
 
 int MaxElem(int arrayelem[])
 {
-    static int i=0,hstno =-9999;
+    static int i=0,temp =-9999;
     if(i < n)
     {
-         if(hstno<arrayelem[i])
-           hstno=arrayelem[i];
+         if(temp<arrayelem[i])
+           temp=arrayelem[i];
       i++;
       MaxElem(arrayelem);//calling the function MaxElem itself to compare with further element
     }
-    return hstno;
+    return temp;
 }
