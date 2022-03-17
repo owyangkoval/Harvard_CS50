@@ -3,9 +3,16 @@
 int gcdnum(int a, int b) {
 int i=1;
    while (a!=b) {
-      if((a/i)==0 && (b/i)==0)
-         return i;
+      if(a==0) return b;
+      if(b==0) return a;
+   if (a>b) {
+      return gcdnum(a%b,b);
+         }
+   else {
+      return gcdnum(a,b%a);
+      }
    }
+   return 1;
 }
 
 int main(void) {
