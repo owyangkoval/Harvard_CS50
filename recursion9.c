@@ -1,10 +1,7 @@
 #include<stdio.h>
-#define MAX 100
 char* ReverseOfString(char[]);
 
-int main()
-{
-
+int main() {
     char str1[MAX],*revstr;
 
     printf(" Input any string: ");
