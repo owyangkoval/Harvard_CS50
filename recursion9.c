@@ -1,14 +1,15 @@
 #include<stdio.h>
+#define MAX 100
 
 int main() {
-    char string[],*revstr;
+    char string[MAX],*revstring;
 
     printf(" Input any string: ");
     scanf("%s",string);
 
-    revstr = ReverseOfString(string);//call the function ReverseOfString
+    revstring = ReverseOfString(string);
 
-    printf(" The reversed string is: %s\n\n",revstring);
+    printf(" The reversed string is: %s\n",revstring);
     return 0;
 }
 
