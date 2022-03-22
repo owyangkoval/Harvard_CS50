@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int factorial(int n) {
+
     if (n==0) {
         return 0;
     }
     else {
-        return 1 + factorial(n*(n-1));
+        factorial(n*(n-1));
     }
-
+    return 1;
 }
 
 int main(void) {
