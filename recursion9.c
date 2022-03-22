@@ -1,23 +1,28 @@
-#include <stdio.h>
+#include<stdio.h>
+#define MAX 100
+char* ReverseOfString(char[]);
 
-int reversestring(char n) {
-    if (n==0) {
-        return 0;
-        }
-    else {
-return reversestring(n=n%2);
-    }
+int main()
+{
+
+    char str1[MAX],*revstr;
+
+    printf(" Input any string: ");
+    scanf("%s",str1);
+
+    revstr = ReverseOfString(str1);//call the function ReverseOfString
+
+    printf(" The reversed string is: %s\n\n",revstr);
+    return 0;
 }
-
-int main(void) {
-int i;
-char n;
-int str[n];
-
-printf(" Input any string: \n");
-scanf("%c",&n);
-
-//reversestring(n);
-printf("The reversed string is: %s\n", str);
-
+char* ReverseOfString(char str1[])
+{
+    static int i=0;
+    static char revstr[MAX];
+    if(*str1)
+    {
+         ReverseOfString(str1+1);//calling the function ReverseOfString itself
+         revstr[i++] = *str1;
+    }
+    return revstr;
 }
