@@ -3,7 +3,7 @@
 int binary(int n) {
 int x=0;
     if (n==1){
-        return 1;
+        return n;
     }
     else {
     x = binary(n%2);
