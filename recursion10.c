@@ -2,13 +2,13 @@
 
 int factorial(int n) {
 int x=0;
-    if (n==0) {
-        return 0;
+    if (n==1) {
+        return n;
     }
     else {
         x = n * factorial(n-1);
     }
-    return x * factorial(n-1);
+    return x;
 }
 
 int main(void) {
