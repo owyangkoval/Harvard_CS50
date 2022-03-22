@@ -6,9 +6,9 @@ int factorial(int n) {
         return 0;
     }
     else {
-        factorial(n-1);
+        x = n * factorial(n-1);
     }
-    return 1;
+    return x;
 }
 
 int main(void) {
