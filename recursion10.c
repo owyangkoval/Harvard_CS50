@@ -6,7 +6,7 @@ int factorial(int n) {
         return 0;
     }
     else {
-        factorial(n*(n-1));
+        factorial(n-1);
     }
     return 1;
 }
@@ -17,5 +17,5 @@ int n = 0, nfactorial;
     scanf("%d", &n);
 
     nfactorial = factorial(n);
-    printf("The Factorial of %d is: %d", n, nfactorial);
+    printf("The Factorial of %d is: %d\n", n, nfactorial);
 }
