@@ -5,8 +5,9 @@ int reversestring(int n) {
     if (n==0) {
         return 0;
         }
-    else
-    
+    else {
+return reversestring(n=n%2);
+    }
 }
 
 int main(void) {
