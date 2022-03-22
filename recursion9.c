@@ -2,24 +2,24 @@
 char* ReverseOfString(char[]);
 
 int main() {
-    char str1[MAX],*revstr;
+    char string[],*revstr;
 
     printf(" Input any string: ");
-    scanf("%s",str1);
+    scanf("%s",string);
 
-    revstr = ReverseOfString(str1);//call the function ReverseOfString
+    revstr = ReverseOfString(string);//call the function ReverseOfString
 
-    printf(" The reversed string is: %s\n\n",revstr);
+    printf(" The reversed string is: %s\n\n",revstring);
     return 0;
 }
-char* ReverseOfString(char str1[])
+char* ReverseOfString(char string[])
 {
     static int i=0;
-    static char revstr[MAX];
-    if(*str1)
+    static char revstring[MAX];
+    if(*string)
     {
-         ReverseOfString(str1+1);//calling the function ReverseOfString itself
-         revstr[i++] = *str1;
+         ReverseOfString(string+1);//calling the function ReverseOfString itself
+         revstring[i++] = *string;
     }
-    return revstr;
+    return revstring;
 }
