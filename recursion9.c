@@ -1,5 +1,4 @@
 #include<stdio.h>
-char* ReverseOfString(char[]);
 
 int main() {
     char string[],*revstr;
@@ -12,6 +11,7 @@ int main() {
     printf(" The reversed string is: %s\n\n",revstring);
     return 0;
 }
+
 char* ReverseOfString(char string[])
 {
     static int i=0;
