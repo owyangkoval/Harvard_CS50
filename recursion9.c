@@ -18,6 +18,6 @@ printf(" Input any string: \n");
 scanf("%c",&n);
 
 //reversestring(n);
-printf("The reversed string is: %d\n", str[n]);
+printf("The reversed string is: %s\n", str);
 
 }
