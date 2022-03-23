@@ -171,9 +171,16 @@ void sort_pairs(void)
 void lock_pairs(void)
 {
     // TODO
-    for (int i=0;i<candidate_count;i++) {
-        if (!candidate[i])
+{
+    for (int i = 0; i < pair_count; i++)
+    {
+        if (!makes_circle(pairs[i].winner, pairs[i].loser))
+        {
+            // Lock the pair unless it makes a circle
+            locked[pairs[i].winner][pairs[i].loser] = true;
+        }
     }
+}
     return;
 }
 
