@@ -170,7 +170,6 @@ void lock_pairs(void) {
     {
         if (!makes_circle(pairs[i].winner, pairs[i].loser))
         {
-            // Lock the pair unless it makes a circle
             locked[pairs[i].winner][pairs[i].loser] = true;
         }
     }
