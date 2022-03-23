@@ -175,7 +175,7 @@ void lock_pairs(void)
     // TODO
 	int i,j,count=0;
 	clrscr();
-	printf("\n Enter number of vertices:");
+	printf("\n Enter number of vertices: ");
 	scanf("%d",&n);
 	for (i=1;i<=n;i++) {
 		reach[i]=0;
