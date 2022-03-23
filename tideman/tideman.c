@@ -171,7 +171,7 @@ void sort_pairs(void)
 void lock_pairs(void)
 {
     // TODO
-    
+
     return;
 }
 
@@ -179,5 +179,6 @@ void lock_pairs(void)
 void print_winner(void)
 {
     // TODO
+    printf("The winner of the election is: " );
     return;
 }
