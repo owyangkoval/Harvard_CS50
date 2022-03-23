@@ -164,6 +164,28 @@ void sort_pairs(void) {
     }
 }
 
+bool makes_circle(int cycle_start, int loser)
+{
+    if (loser == cycle_start)
+    {
+        // If the current loser is the cycle start
+        // The entry makes a circle
+        return true;
+    }
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (locked[loser][i])
+        {
+            if (makes_circle(cycle_start, i))
+            {
+                // Forward progress through the circle
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void) {
     for (int i = 0; i < pair_count; i++)
