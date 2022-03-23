@@ -166,6 +166,13 @@ void sort_pairs(void) {
     }
 }
 
+//  Lock pairs
+void lock_pairs(void)
+{
+    // TODO
+    return;
+}
+
 // Print the winner of the election
 void print_winner(void)
 {
