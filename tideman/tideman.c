@@ -153,16 +153,16 @@ void sort_pairs(void) {
     int i, j, temp;
 
     for (i = 0; i < pair_count; i++) {
-        int min = i;
+        int max = i;
         for (j = i + 1; j < pair_count; j++) {
            if (preferences[pairs[j].winner][pairs[j].loser] > preferences[pairs[i].winner][pairs[i].loser])
             {
-            min = j;
+            max = j;
             }
-            if (min!=i) {
+            if (max!=i) {
             temp = pairs[i];
-            pairs[i] = pairs[min];
-            pairs[min] = temp;
+            pairs[i] = pairs[max];
+            pairs[max] = temp;
             }
         }
     return;
