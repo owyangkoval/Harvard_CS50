@@ -172,12 +172,7 @@ void sort_pairs(void) {
 //  Lock pairs
 void lock_pairs(void)
 {
-    for (int i = 0; i < pair_count; i++)
-    {
-    if (!cycle(pairs[i].loser, pairs[i].winner))
-    {
-        locked[pairs[i].winner][pairs[i].loser] = true;
-    }
+
     }
     return;
 }
@@ -186,7 +181,6 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner(void)
 {
-    // TODO
-    printf("The winner of the election is: " );
+    printf("The winner of the election is: %d", pairs[i].winner);
     return;
 }
