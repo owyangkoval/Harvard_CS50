@@ -3,11 +3,13 @@
 int binary(int n) {
 int x=0;
     if (n!=0) {
+        return 0;
+    }
+    else {
     x = binary(n%2);
     }
     return x;
 }
-
 
 
 int main (void) {
