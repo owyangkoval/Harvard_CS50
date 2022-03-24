@@ -169,6 +169,11 @@ void sort_pairs(void) {
     }
 }
 
+void dfs(graph[i][j], )
+    if (preferences[i][j]==visited) {
+        locked[i][j]==true;
+    }
+
 //  Lock pairs
 void lock_pairs(void)
 {
