@@ -5,7 +5,9 @@ int x=0;
     if (n==1) {
         return 1;
     }
+    else {
     return binary(n%2);
+    }
 }
 
 
