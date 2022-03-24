@@ -172,16 +172,25 @@ void sort_pairs(void) {
 //  Lock pairs
 void lock_pairs(void)
 {
-    //if (.....)
-    {
-        locked[i][j] == true;
-    }
+    for (int i = 0; i < candidate_count; i++) {
+        for (int j = i + 1; j < candidate_count; j++) {
+            if(preferences[i] > preferences[j]) {
+                locked[i][j] = true;
+                }
+            }
+        }
     return;
 }
 
 // Print the winner of the election
 void print_winner(void)
 {
-    printf("The winner of the election is: %s", candidates[i]);
+for (int i = 0; i < candidate_count; i++) {
+    for (int j = i + 1; j < candidate_count; j++) {
+            if(locked[i][j] == false) {
+                printf("The winner of the election is: %s", candidates[i]);
+            }
+        }
+    }
     return;
 }
