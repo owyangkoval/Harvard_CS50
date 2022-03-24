@@ -172,7 +172,7 @@ void sort_pairs(void) {
 //  Lock pairs
 void lock_pairs(void)
 {
-    
+
 }
 
 // Print the winner of the election
