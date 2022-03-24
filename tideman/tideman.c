@@ -173,11 +173,10 @@ void sort_pairs(void) {
 void lock_pairs(void)
 {
     //if (.....)
-    (preferences[locked[i][j] == )
-
+    {
+        locked[i][j] == true;
     }
     return;
-}
 }
 
 // Print the winner of the election
