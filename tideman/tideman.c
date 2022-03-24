@@ -170,15 +170,15 @@ void sort_pairs(void) {
 }
 
 //DFS search algorithm
-void dfs(graph) {
-int i, j;
+void dfs(int i, int j) {
+int visited=0;
     for (i=0;i<pair_count;i++) {
         for (j=0;j<pair_count;j++) {
-            if (preferences[i][j]=visited) {
-                locked[i][j]==true;
+            if (preferences[i][j]==visited) {
+                locked[i][j]=true;
                     }
-            else (preferences[i][j]!=visited) {
-                dfs(graph[i][j]);
+            else {
+                dfs(p);
             }
         }
     }
