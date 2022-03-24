@@ -172,10 +172,6 @@ void sort_pairs(void) {
 //  Lock pairs
 void lock_pairs(void)
 {
-    for (int i = 0; i < pair_count; i++) {
-        for (int j = i+1; j < pair_count; j++) {
-            if(pairs[i].winner > pairs[j].winner) {
-                locked[i][j] = true;
                 }
             }
         }
