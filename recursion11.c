@@ -5,10 +5,7 @@ int x=0;
     if (n==1) {
         return 1;
     }
-    else {
-    x = binary(n%2);
-    }
-    return x;
+    return binary(n%2);
 }
 
 
