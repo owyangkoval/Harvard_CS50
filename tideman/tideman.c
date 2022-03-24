@@ -169,7 +169,7 @@ void sort_pairs(void) {
     }
 }
 
-void dfs(int graph[i][j], int vertex)
+void dfs(struct graph[i][j], int vertex)
 
     if (preferences[i][j]==visited) {
         locked[i][j]==true;
