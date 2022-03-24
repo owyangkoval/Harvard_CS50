@@ -172,11 +172,15 @@ void sort_pairs(void) {
 //  Lock pairs
 void lock_pairs(void)
 {
-int i, j;
-
-    for (i = 0; i < candidate_count; i++) {
-        if (preferences[pairs[i].])
-
+    for (int i = 0; i < pair_count; i++)
+    {
+    if (!cycle(pairs[i].loser, pairs[i].winner))
+    {
+        locked[pairs[i].winner][pairs[i].loser] = true;
+    }
+    }
+    return;
+}
 }
 
 // Print the winner of the election
