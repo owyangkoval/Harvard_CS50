@@ -174,7 +174,7 @@ void lock_pairs(void)
 {
     for (int i = 0; i < candidate_count; i++) {
         for (int j = i + 1; j < candidate_count; j++) {
-            if(preferences[i] > preferences[j]) {
+            if(candidates[i] > candidates[j]) {
                 locked[i][j] = true;
                 }
             }
