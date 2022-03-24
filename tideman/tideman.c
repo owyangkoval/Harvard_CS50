@@ -172,6 +172,8 @@ void sort_pairs(void) {
 //  Lock pairs
 void lock_pairs(void)
 {
+    //if (.....)
+    (preferences[locked[i][j] == )
 
     }
     return;
