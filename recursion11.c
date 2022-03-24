@@ -6,8 +6,9 @@ int x=0;
         return 1;
     }
     else {
-    return binary(n%2);
+    x = binary(n%2);
     }
+    return x;
 }
 
 
