@@ -16,6 +16,7 @@ int i,j,k,temp;
         }
 
     for(k=0;k<4;k++){
+        printf("%p", *i);
         printf("%d", array[k]);
          }
         printf("\n");
