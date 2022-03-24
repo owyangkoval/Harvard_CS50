@@ -178,7 +178,7 @@ int visited=0;
                 locked[i][j]=true;
                     }
             else {
-                dfs(p);
+    
             }
         }
     }
