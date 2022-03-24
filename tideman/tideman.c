@@ -173,11 +173,11 @@ void sort_pairs(void) {
 void dfs() {
     for (int i=0;i<pair_count;i++) {
         for (int j=0;j<pair_count;j++) {
-            if (preferences[i][j]==visited) {
+            if (preferences[i][j]=visited) {
                 locked[i][j]==true;
                     }
             else {
-
+                
             }
         }
     }
