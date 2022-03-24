@@ -6,7 +6,7 @@ int x=0;
         return 1;
     }
     else {
-    x = binary(n%2) + (10 * binary(n/2));
+    x = (n%2) + (10 * binary(n/2));
     }
     return x;
 }
