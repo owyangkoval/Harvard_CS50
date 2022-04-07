@@ -1,11 +1,13 @@
 #include<stdio.h>
 
 int evennum(int i, int j) {
+int even;
     if (i==j)
     return 1;
     else {
-        return evennum(i+1, j);
+        even = evennum(i+1, j);
     }
+    return even;
 }
 
 int oddnum(int i, int j) {
@@ -18,17 +20,21 @@ int oddnum(int i, int j) {
 
 int main(void) {
 
-int i, int j;
+int i=0;
+int j=0;
 
-    printf("Input the range to print starting from %d: %d", i,j);
+    printf("Input the range to print starting from ");
+    scanf("%d",&i);
+    printf(":");
+    scanf("%d",&j);
 
 
-    scanf("All even numbers from %d to %d are: ", &i,&j);
+    printf("All even numbers from %d to %d are: ", i,j);
     int e = evennum(i,j);
-    printf("%d", e);
+    printf("%d\n", e);
 
-    scanf("All odd numbers from %d to %d are: ", &i,&j);
+    printf("All odd numbers from %d to %d are: ", i,j);
     int o = oddnum(i,j);
-    printf("%d", o);
+    printf("%d\n", o);
 
 }
