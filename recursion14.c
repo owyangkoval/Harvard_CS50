@@ -4,7 +4,7 @@ int evennum(int i, int j) {
     if (i==j)
     return 1;
     else {
-        return evennnum(i+1, j);
+        return evennum(i+1, j);
     }
 }
 
@@ -16,7 +16,7 @@ int oddnum(int i, int j) {
     }
 }
 
-int main(void)
+int main(void) {
 
 int i, int j;
 
@@ -30,3 +30,5 @@ int i, int j;
     scanf("All odd numbers from %d to %d are: ", &i,&j);
     int o = oddnum(i,j);
     printf("%d", o);
+
+}
