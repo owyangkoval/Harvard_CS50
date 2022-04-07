@@ -55,22 +55,13 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
-    int pivot = (width/2);
-    int i=0;
-    int j=width;
-    int temp;
+    int max = height;
+    for (int image[i] = max) {
+        i--;
+        for (int j < width) {
+            j++;
+        }
 
-        while (i<pivot) {
-        while (image[i]<image[pivot])
-            i++;
-        while (image[j] > image[pivot])
-            j--;
-        if (i<pivot) {
-            temp = image[i];
-            image[i] = image[j];
-            image[j] = temp;
-                }
-            }
 return;
 }
 
