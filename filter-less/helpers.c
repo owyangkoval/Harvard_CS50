@@ -59,10 +59,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     int i=0;
     int j=width;
     int temp;
-    for (int i = 0; i < height; i++)
-    {
-        for (int j = 0; j < width; j++)
-        {
+
         while (i<pivot) {
         while (image[i]<image[pivot])
             i++;
@@ -74,8 +71,6 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
             image[j] = temp;
                 }
             }
-        }
-    }
 return;
 }
 
