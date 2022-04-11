@@ -3,6 +3,9 @@
 #include <stdbool.h>
 
 typedef int bool;
+#define true 1
+#define false 0
+bool image[i][j] = {true, false};
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
@@ -73,7 +76,6 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-        bool image[i][j] = {true, false};
         int red = image[i][j].rgbtRed;
         int green = image[i][j].rgbtGreen;
         int blue = image[i][j].rgbtBlue;
