@@ -79,10 +79,11 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            if bool (image[i-1][j-1]) = true,
+            if (bool image[i-1][j-1] = true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
+            }
 
             bool (image[i-1][j]) = (true, false)
             bool (image[i-1][j+1]) = (true, false)
