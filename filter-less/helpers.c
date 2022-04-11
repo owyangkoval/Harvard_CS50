@@ -70,17 +70,26 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+        int red = image[i][j].rgbtRed;
+        int green = image[i][j].rgbtGreen;
+        int blue = image[i][j].rgbtBlue;
+        int average = (((float)red + (float)blue + (float)green)/3.00);
+
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
-            if (image[i-1][j-1])
-            if (image[i-1][j]==0)
-            if (image[i-1][j+1]==0)
-            if (image[i][j-1]==0)
-            if (image[i][j+1]==0)
-            if (image[i+1][j-1]==0)
-            if (image[i+1][j]==0)
-            if (image[i+1][j+1]==0)
+            if bool (image[i-1][j-1]) = true,
+            image[i][j].rgbtRed = average;
+            image[i][j].rgbtGreen = average;
+            image[i][j].rgbtBlue = average;
+
+            bool (image[i-1][j]) = (true, false)
+            bool (image[i-1][j+1]) = (true, false)
+            bool (image[i][j-1]) = (true, false)
+            bool (image[i][j+1]) = (true, false)
+            bool (image[i+1][j-1]) = (true, false)
+            bool (image[i+1][j]) = (true, false)
+            bool (image[i+1][j+1]) = (true, false)
     return;
 }
