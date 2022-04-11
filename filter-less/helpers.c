@@ -2,10 +2,8 @@
 #include <math.h>
 #include <stdbool.h>
 
-typedef int bool;
-#define true 1
-#define false 0
-bool image[i][j] = {true, false};
+#define bool _Bool;
+
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
