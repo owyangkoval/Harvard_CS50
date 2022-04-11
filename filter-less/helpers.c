@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdbool.h>
 
-#define bool _Bool;
+bool image[i][j] = { true,false };
 
 
 // Convert image to grayscale
@@ -90,7 +90,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             }
             else return;
 
-            if (bool image[i-1][j] = true) {
+            if (image[i-1][j] = true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
