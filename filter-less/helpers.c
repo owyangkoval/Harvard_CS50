@@ -2,9 +2,6 @@
 #include <math.h>
 #include <stdbool.h>
 
-bool image[i][j] = { true,false };
-
-
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
@@ -74,6 +71,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+        bool image[i][j] = { true, false };
         int red = image[i][j].rgbtRed;
         int green = image[i][j].rgbtGreen;
         int blue = image[i][j].rgbtBlue;
@@ -83,56 +81,56 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            if (bool image[i-1][j-1] = true) {
+            if (image[i-1][j-1] == true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
             }
             else return;
 
-            if (image[i-1][j] = true) {
+            if (image[i-1][j] == true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
             }
             else return;
 
-            if (bool image[i-1][j+1] = true) {
+            if (image[i-1][j+1] == true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
             }
             else return;
 
-            if (bool image[i][j-1] = true) {
+            if (image[i][j-1] == true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
             }
             else return;
 
-            if (bool image[i][j+1] = true) {
+            if (image[i][j+1] == true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
             }
             else return;
 
-            if (bool image[i+1][j-1] = true) {
+            if (image[i+1][j-1] == true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
             }
             else return;
 
-            if (bool image[i+1][j] = true) {
+            if (image[i+1][j] == true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
             }
             else return;
 
-            if (bool image[i+1][j+1] = true) {
+            if (image[i+1][j+1] == true) {
             image[i][j].rgbtRed = average;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
