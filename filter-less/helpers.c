@@ -71,62 +71,61 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-        bool image[i][j] = { true, false };
-        int red = image[i][j].rgbtRed;
-        int green = image[i][j].rgbtGreen;
-        int blue = image[i][j].rgbtBlue;
-        int average = (((float)red + (float)blue + (float)green)/3.00);
-
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
+            int red = image[i][j].rgbtRed;
+            int green = image[i][j].rgbtGreen;
+            int blue = image[i][j].rgbtBlue;
+            int average = (((float)red + (float)blue + (float)green)/3.00);
+
             if (image[i-1][j-1] == true) {
-            red[i-1][j-1] = average;
-            green[i-1][j-1] = average;
-            blue[i-1][j-1] = average;
+            image[i-1][j-1].rgbtRed = average;
+            image[i-1][j-1].rgbtGreen = average;
+            image[i-1][j-1].rgbtBlue = average;
             }
 
             if (image[i-1][j] == true) {
-            image[i][j].rgbtRed = average;
-            image[i][j].rgbtGreen = average;
-            image[i][j].rgbtBlue = average;
+            image[i-1][j].rgbtRed = average;
+            image[i-1][j].rgbtGreen = average;
+            image[i-1][j].rgbtBlue = average;
             }
 
             if (image[i-1][j+1] == true) {
-            image[i][j].rgbtRed = average;
-            image[i][j].rgbtGreen = average;
-            image[i][j].rgbtBlue = average;
+            image[i-1][j+1].rgbtRed = average;
+            image[i-1][j+1].rgbtGreen = average;
+            image[i-1][j+1].rgbtBlue = average;
             }
 
             if (image[i][j-1] == true) {
-            image[i][j].rgbtRed = average;
-            image[i][j].rgbtGreen = average;
-            image[i][j].rgbtBlue = average;
+            image[i][j-1].rgbtRed = average;
+            image[i][j-1].rgbtGreen = average;
+            image[i][j-1].rgbtBlue = average;
             }
 
             if (image[i][j+1] == true) {
-            image[i][j].rgbtRed = average;
-            image[i][j].rgbtGreen = average;
-            image[i][j].rgbtBlue = average;
+            image[i][j+1].rgbtRed = average;
+            image[i][j+1].rgbtGreen = average;
+            image[i][j+1].rgbtBlue = average;
             }
 
             if (image[i+1][j-1] == true) {
-            image[i][j].rgbtRed = average;
-            image[i][j].rgbtGreen = average;
-            image[i][j].rgbtBlue = average;
+            image[i+1][j-1].rgbtRed = average;
+            image[i+1][j-1].rgbtGreen = average;
+            image[i+1][j-1].rgbtBlue = average;
             }
 
             if (image[i+1][j] == true) {
-            image[i][j].rgbtRed = average;
-            image[i][j].rgbtGreen = average;
-            image[i][j].rgbtBlue = average;
+            image[i+1][j].rgbtRed = average;
+            image[i+1][j].rgbtGreen = average;
+            image[i+1][j].rgbtBlue = average;
             }
 
             if (image[i+1][j+1] == true) {
-            image[i][j].rgbtRed = average;
-            image[i][j].rgbtGreen = average;
-            image[i][j].rgbtBlue = average;
+            image[i+1][j+1].rgbtRed = average;
+            image[i+1][j+1].rgbtGreen = average;
+            image[i+1][j+1].rgbtBlue = average;
             }
         }
     }
