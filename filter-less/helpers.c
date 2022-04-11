@@ -122,7 +122,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtBlue = average;
             }
-            else return;
 
             if (image[i+1][j+1] == true) {
             image[i][j].rgbtRed = average;
