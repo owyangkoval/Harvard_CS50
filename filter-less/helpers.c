@@ -87,12 +87,54 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             }
             else return;
 
-            bool (image[i-1][j]) = (true, false)
-            bool (image[i-1][j+1]) = (true, false)
-            bool (image[i][j-1]) = (true, false)
-            bool (image[i][j+1]) = (true, false)
-            bool (image[i+1][j-1]) = (true, false)
-            bool (image[i+1][j]) = (true, false)
-            bool (image[i+1][j+1]) = (true, false)
+            if (bool image[i-1][j] = true) {
+            image[i][j].rgbtRed = average;
+            image[i][j].rgbtGreen = average;
+            image[i][j].rgbtBlue = average;
+            }
+            else return;
+
+            bool (image[i-1][j+1] = true) {
+            image[i][j].rgbtRed = average;
+            image[i][j].rgbtGreen = average;
+            image[i][j].rgbtBlue = average;
+            }
+            else return;
+
+            bool (image[i][j-1] = true) {
+            image[i][j].rgbtRed = average;
+            image[i][j].rgbtGreen = average;
+            image[i][j].rgbtBlue = average;
+            }
+            else return;
+
+            bool (image[i][j+1] = true) {
+            image[i][j].rgbtRed = average;
+            image[i][j].rgbtGreen = average;
+            image[i][j].rgbtBlue = average;
+            }
+            else return;
+
+            bool (image[i+1][j-1] = true) {
+            image[i][j].rgbtRed = average;
+            image[i][j].rgbtGreen = average;
+            image[i][j].rgbtBlue = average;
+            }
+            else return;
+
+            bool (image[i+1][j] = true) {
+            image[i][j].rgbtRed = average;
+            image[i][j].rgbtGreen = average;
+            image[i][j].rgbtBlue = average;
+            }
+            else return;
+
+            bool (image[i+1][j+1] = true) {
+            image[i][j].rgbtRed = average;
+            image[i][j].rgbtGreen = average;
+            image[i][j].rgbtBlue = average;
+            }
+            else return;
+
     return;
 }
