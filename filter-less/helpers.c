@@ -72,27 +72,26 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE new_image[height][width];
-    RGBTRIPLE sum;
-    sum.rgbtRed = 0;
-    sum.rgbtGreen = 0;
-    sum.rgbtBlue = 0;
-    int rgbcount =0;
 
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
-            for (a = i-1; a <= i+1 ; a++) {
-                for (b = j-1; b <=j+1; b++) {
+            int rgbcount = 0;
+            float sumRed = 0;
+            float sumGreen = 0;
+            float sumBlue = 0;
+            for (int a = i-1; a <= i+1 ; a++) {
+                for (int b = j-1; b <=j+1; b++) {
                     if (a <= (height-1) && a >= 0 && b <= (width-1) && b >= 0) {
-                        sum.rgbtRed += image[a][b].rgbtRed;
-                        sum.rgbtGreen += image[a][b].rgbtGreen;
-                        sum.rgbtBlue += image[a][b].rgbtBlue;
+                        sumRed += image[a][b].rgbtRed;
+                        sumGreen += image[a][b].rgbtGreen;
+                        sumBlue += image[a][b].rgbtBlue;
                         rgbcount++;
                     }
                 }
             }
-            new_image[i][j].rgbtRed = sum.rgbtRed/rgbcount;
-            new_image[i][j].rgbtGreen = sum.rgbtGreen/rgbcount;
-            new_image[i][j].rgbtBlue = sum.rgbtBlue/rgbcount;
+            new_image[i][j].rgbtRed = sumRed/rgbcount;
+            new_image[i][j].rgbtGreen = sumGreen/rgbcount;
+            new_image[i][j].rgbtBlue = sumBlue/rgbcount;
         }
     }
     return;
