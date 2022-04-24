@@ -84,9 +84,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     if (a <= (height-1) && a >= 0 && b <= (width-1) && b >= 0) {
                         sum.rgbtRed += image[a][b].rgbtRed;
                     }
-                    new_image[a][b].rgbtRed = sum.rgbtRed/9;
                 }
             }
+            new_image[i][j].rgbtRed = sum.rgbtRed/9;
         }
     }
     return;
