@@ -4,13 +4,14 @@
 
 int main(int argc, char *argv[])
 {
-    FILE *file = fopen("card.raw", "r");
-
+    FILE *fp;
     uint8_t buffer[512];
-    while (fread(buffer, 1, 512, file) == 512)
-        {
 
+    //open file card.raw
+    fp = fopen("card.raw", "r+");
 
-        }
+    //read data
+    fread(buffer, 1, 512, fp);
 
+    fclose(fp);
 }
