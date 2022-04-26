@@ -19,8 +19,10 @@ int main(int argc, char *argv[])
     while (fread(buffer, 1, 512, fp) == 512) {
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0)==0) {
         image++;
-        sprintf(recover, "%03i.jpg\n", image);
+        sprintf(buffer, "%03i.jpg\n", image);
+            }
+    else {
+    fclose(fp);
         }
     }
-    fclose(fp);
 }
