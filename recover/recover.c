@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 int main(int argc, char *argv[])
 {
     FILE *file = fopen("card.raw", "r");
 
-    fread("buffer", 1, 512, "file");
+    uint8_t buffer[512];
+    fread(buffer, 1, 512, file);
 
 
 }
