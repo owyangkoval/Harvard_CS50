@@ -6,7 +6,8 @@ int main(int argc, char *argv[])
 {
     FILE *fp;
     uint8_t buffer[512];
-    int i;
+    int i=0;
+    char l=0;
 
     //open file card.raw
     fp = fopen(argv[1], "r");
@@ -16,9 +17,9 @@ int main(int argc, char *argv[])
         }
 
     //read data
-    while (fread(buffer, 1, 2, fp) == 2) {
-        if (buffer[i]==l)
-        printf("%s\n",buffer);
+    while (fread(buffer, 1, 15, fp) == 15) {
+        if (buffer[i]==l) {
+        sprintf(,"%031", i);
     }
 
 
