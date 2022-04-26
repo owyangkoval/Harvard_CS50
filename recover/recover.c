@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <string.h>
 
 int main(int argc, char *argv[])
 {
@@ -21,9 +22,8 @@ int main(int argc, char *argv[])
         if (buffer[0] == 0x6c & buffer[1] == 0x69) {
             int i=0;
             printf("%s\n",buffer);
-            fwrite(buffer, 1, 8, *fp);
-            sprintf("%03i", i);
-            i++;
+            sprintf(fp, "%03i", i, buffer);
+            //fwrite(buffer, 1, 8, fp);
             }
     }
 }
