@@ -22,9 +22,8 @@ int main(int argc, char *argv[])
         if (buffer[0] == 0x6c & buffer[1] == 0x69) {
             int i=0;
             printf("%s\n",buffer);
-            sprintf(fp, "%03i", i);
-            i++;
-            //fwrite(buffer, 1, 8, fp);
+            
+            fwrite(&fp, 1, 8, fp);
             }
     }
 }
