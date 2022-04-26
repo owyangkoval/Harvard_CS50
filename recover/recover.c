@@ -3,8 +3,9 @@
 
 int main(int argc, char *argv[])
 {
-    FILE *file = fopen(argv[1], "r");
-    sprintf(str, "%d.jpg", recover)
+    FILE *file = fopen(card.raw, "r");
+
+    fread (buffer, 1, 512, *file)
 
     fclose(card.raw);
 }
