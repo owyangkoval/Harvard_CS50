@@ -19,11 +19,10 @@ int main(int argc, char *argv[])
         //if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0)==0) {
 
         if (buffer[0] == 0x6c & buffer[1] == 0x69) {
-            printf("%s",buffer);
-        //fwrite(*buffer, 1, 8, *fp);
+            int i=0;
+            printf("%s\n",buffer);
+            fwrite(*buffer, 1, 8, *fp);
+            sprintf("%03i", i)
             }
-    else {
-    fclose(fp);
-        }
     }
 }
