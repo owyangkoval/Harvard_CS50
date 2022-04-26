@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     uint8_t buffer[512];
 
     //open file card.raw
-    fp = fopen(argv[1], "r");
+    fp = fopen(argv[1], "w+");
         if (fp == NULL) {
             printf("error");
             exit(1);
