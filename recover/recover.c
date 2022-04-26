@@ -8,15 +8,15 @@ int main(int argc, char *argv[])
     uint8_t buffer[512];
 
     //open file card.raw
-    fp = fopen("card.raw", "r");
+    fp = fopen(argv[1], "r");
         if (fp == NULL) {
             printf("error");
             exit(1);
         }
 
     //read data
-    while (fread(buffer, 1, 512, fp) == 512) {
-        
+    while (fread(buffer, 1, 2, fp) == 2) {
+        printf("%s\n",buffer);
     }
 
 
