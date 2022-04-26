@@ -15,7 +15,9 @@ int main(int argc, char *argv[])
         }
 
     //read data
-    while (fread(buffer, 1, 512, fp);
+    while (fread(buffer, 1, 512, fp) == 512) {
+        
+    }
 
 
     //
