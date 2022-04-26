@@ -3,9 +3,9 @@
 
 int main(int argc, char *argv[])
 {
-    FILE *file = fopen(card.raw, "r");
+    FILE *file = fopen("card.raw", "r");
 
-    fread(buffer, 1, 512, *file);
+    fread("buffer", 1, 512, "file");
 
 
 }
