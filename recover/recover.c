@@ -17,13 +17,10 @@ int main(int argc, char *argv[])
         }
 
     //read data
-    while (fread(buffer, 1, 15, fp) == 15) {
-        if (buffer[i]==l) {
-        sprintf(,"%031", i);
+    while (fread(buffer, 1, 8, fp) == 8) {
+        if (buffer[1] == 0x) {
+        printf("%s\n", buffer);
+        }
     }
-
-
-    //
-
     fclose(fp);
 }
