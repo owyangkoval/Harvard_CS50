@@ -7,7 +7,10 @@ int main(int argc, char *argv[])
     FILE *file = fopen("card.raw", "r");
 
     uint8_t buffer[512];
-    fread(buffer, 1, 512, file);
+    while (fread(buffer, 1, 512, file) == 512)
+        {
 
+
+        }
 
 }
