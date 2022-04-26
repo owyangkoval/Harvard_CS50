@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
             int i=0;
             printf("%s\n",buffer);
             sprintf(fp, "%03i", i, buffer);
+            i++;
             //fwrite(buffer, 1, 8, fp);
             }
     }
