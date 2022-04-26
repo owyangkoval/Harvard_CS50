@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
         }
 
     //read data
-    fread(buffer, 1, 512, fp);
-    
+    while (fread(buffer, 1, 512, fp);
+
 
     //
 
