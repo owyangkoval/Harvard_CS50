@@ -9,6 +9,10 @@ int main(int argc, char *argv[])
 
     //open file card.raw
     fp = fopen("card.raw", "r+");
+        if (fp == NULL) {
+            printf("error");
+            exit(1);
+        }
 
     //read data
     fread(buffer, 1, 512, fp);
