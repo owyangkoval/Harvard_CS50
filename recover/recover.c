@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
             {
                 fclose(outputfp);
                 sprintf(filename, "%03i.jpg", i);
+                i++;
                 printf("closing previous file, opening next file %s\n", filename);
                 outputfp = fopen(filename,"w");
                 if (outputfp == NULL)
