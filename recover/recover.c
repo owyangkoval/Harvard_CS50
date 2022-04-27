@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     //read data
     while (fread(buffer, 1, 512, inputfp) == 512) {
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0)==0) {
-                //mark a new image
+                //if first image
                 if (int i=0)
                 {
                 sprintf(filename, "%03i.jpg", i)
