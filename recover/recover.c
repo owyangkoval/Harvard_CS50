@@ -41,13 +41,7 @@ int main(int argc, char *argv[])
             else
             {
                 fclose(outputfp);
-                inputfp = fopen("card.raw", "r");
-                if (inputfp == NULL)
-                {
-                    printf("error\n");
-                    exit(1);
-                }
-                // return?
+                sprintf(filename, "%03i.jpg", i);
             }
         }
         else
