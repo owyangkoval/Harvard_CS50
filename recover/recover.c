@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     int i = 0;
 
     // open file card.raw
+    printf("opening input file %s\n", argv[1]);
     inputfp = fopen(argv[1], "r");
     if (inputfp == NULL)
     {
@@ -20,15 +21,17 @@ int main(int argc, char *argv[])
     }
 
     // read data
+    printf("entering read block\n");
     while (fread(buffer, 1, 512, inputfp) == 512)
     {
+        printf("read block\n");
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0)
         {
             // if first image
             if (i == 0)
             {
                 sprintf(filename, "%03i.jpg", i);
-                printf("opening first file with filename %s\n", filename);
+                printf("opening first file %s\n", filename);
                 i++;
                 outputfp = fopen(filename, "w");
                 if (outputfp == NULL)
@@ -42,8 +45,8 @@ int main(int argc, char *argv[])
             else
             {
                 fclose(outputfp);
-                printf("opening first file with filename '%s'\n", filename);
                 sprintf(filename, "%03i.jpg", i);
+                printf("closing previous file, opening next file %s\n", filename);
                 outputfp = fopen(filename,"w");
                 if (outputfp == NULL)
                 {
@@ -56,6 +59,7 @@ int main(int argc, char *argv[])
         else
         {
             // continue writing to file
+            printf("writing block to open file\n");
             fwrite(&buffer, 1, 512, outputfp);
         }
     }
