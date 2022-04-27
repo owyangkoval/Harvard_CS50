@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
                 else
                 {
                     fclose(outputfp);
-                    inputfp = fopen(filename, "r");
+                    inputfp = fopen("card.raw", "r");
                     if (inputfp == NULL)
                     {
                         printf("error");
