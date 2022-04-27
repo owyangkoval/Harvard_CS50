@@ -22,14 +22,12 @@ int main(int argc, char *argv[])
     // read data
     while (fread(buffer, 1, 512, inputfp) == 512)
     {
-        printf("read block\n");
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
             // if first image
             if (i == 0)
             {
                 sprintf(filename, "%03i.jpg", i);
-                printf("opening first file %s\n", filename);
                 i++;
                 outputfp = fopen(filename, "w");
                 if (outputfp == NULL)
@@ -45,7 +43,6 @@ int main(int argc, char *argv[])
                 fclose(outputfp);
                 sprintf(filename, "%03i.jpg", i);
                 i++;
-                printf("closing previous file, opening next file %s\n", filename);
                 outputfp = fopen(filename,"w");
                 if (outputfp == NULL)
                 {
