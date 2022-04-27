@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
     FILE *inputfp;
-    FILE *outputfp = 0;
+    FILE *outputfp;
     uint8_t buffer[512];
     char filename[8];
     int i = 0;
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     inputfp = fopen(argv[1], "r");
     if (inputfp == NULL)
     {
-        printf("error");
+        printf("error\n");
         exit(1);
     }
 
@@ -32,10 +32,10 @@ int main(int argc, char *argv[])
                 outputfp = fopen(filename, "w");
                 if (outputfp == NULL)
                 {
-                    printf("error");
+                    printf("error\n");
                     exit(1);
-                    fwrite(&buffer, 1, 512, outputfp);
                 }
+                fwrite(&buffer, 1, 512, outputfp);
             }
             // else close file and open new one
             else
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
                 inputfp = fopen("card.raw", "r");
                 if (inputfp == NULL)
                 {
-                    printf("error");
+                    printf("error\n");
                     exit(1);
                 }
             }
@@ -52,10 +52,16 @@ int main(int argc, char *argv[])
         else
         {
             // continue writing to file
+            outputfp = fopen(filename, "w");
+            if (outputfp == NULL)
+            {
+                printf("error\n");
+                exit(1);
+            }
             fwrite(&buffer, 1, 512, outputfp);
         }
-// close file
-fclose(inputfp);
-return(0);
+        // close file
+        fclose(inputfp);
+        return (0);
     }
 }
