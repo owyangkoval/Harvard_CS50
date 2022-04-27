@@ -54,9 +54,8 @@ int main(int argc, char *argv[])
             // continue writing to file
             fwrite(&buffer, 1, 512, outputfp);
         }
-    }
-}
 // close file
-fclose(fp);
+fclose(inputfp);
 return(0);
+    }
 }
