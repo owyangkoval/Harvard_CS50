@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
     FILE *inputfp;
-    FILE *outputfp;
+    FILE *outputfp = 0;
     uint8_t buffer[512];
     char filename[8];
     int i = 0;
