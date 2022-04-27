@@ -39,13 +39,19 @@ int main(int argc, char *argv[])
                 else
                 {
                     fclose(outputfp);
+                    inputfp = fopen(filename, "r");
+                    if (inputfp == NULL)
+                    {
+                        printf("error");
+                        exit(1);
+                    }
                 }
             }
         }
         else
         {
             // continue writing to file
-            fwrite(&buffer, 1, 512, fp);
+            fwrite(&buffer, 1, 512, outputfp);
         }
     }
     // close file
