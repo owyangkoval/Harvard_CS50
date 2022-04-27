@@ -6,7 +6,6 @@
 int main(int argc, char *argv[])
 {
     FILE *inputfp;
-    FILE *outputfp;
     uint8_t buffer[512];
     char filename[8];
 
@@ -25,6 +24,11 @@ int main(int argc, char *argv[])
                 {
                 sprintf(filename, "%03i.jpg", i)
                 i++;
+                    inputfp = fopen(argv[1], "w+");
+                    if (inputfp == NULL) {
+                        printf("error");
+                        exit(1);
+                        }
                 fwrite(&buffer, 1, 512, outputfp);
                 //else close file and open new one
                     else
