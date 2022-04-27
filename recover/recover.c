@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
     int i = 0;
 
     // open file card.raw
-    printf("opening input file %s\n", argv[1]);
     inputfp = fopen(argv[1], "r");
     if (inputfp == NULL)
     {
@@ -21,7 +20,6 @@ int main(int argc, char *argv[])
     }
 
     // read data
-    printf("entering read block\n");
     while (fread(buffer, 1, 512, inputfp) == 512)
     {
         printf("read block\n");
@@ -61,10 +59,7 @@ int main(int argc, char *argv[])
         {
             // continue writing to file
             if (outputfp != NULL) {
-                printf("writing block to open file\n");
                 fwrite(&buffer, 1, 512, outputfp);
-            } else {
-                printf("skipping block\n");
             }
         }
     }
