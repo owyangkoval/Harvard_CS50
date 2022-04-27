@@ -19,14 +19,19 @@ int main(int argc, char *argv[])
     //read data
     while (fread(buffer, 1, 512, fp) == 512) {
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0)==0) {
+            // if(first jpg) {
             int i=0;
             sprintf(filename, "%03i.jpg", i)
             i++;
             fwrite(&buffer, 1, 512, fp);
             }
-    //else close file and open new one
+        //else close file and open new one
+            else {
+               //close jpg and start new file;
+                }
+            }
         else {
-            close(fp);
+            
         }
     }
 }
