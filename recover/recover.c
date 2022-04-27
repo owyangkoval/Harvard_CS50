@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
             }
     //else close file and open new one
         else {
-            close(filename);
+            close();
         }
     }
 }
