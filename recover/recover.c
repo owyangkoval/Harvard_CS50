@@ -42,6 +42,12 @@ int main(int argc, char *argv[])
             {
                 fclose(outputfp);
                 sprintf(filename, "%03i.jpg", i);
+                outputfp = fopen(filename,"w");
+                if (outputfp == NULL)
+                {
+                    printf("error\n");
+                    exit(1);
+                }
             }
         }
         else
