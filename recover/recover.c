@@ -24,13 +24,13 @@ int main(int argc, char *argv[])
                 if (int i=0)
                 {
                 sprintf(filename, "%03i.jpg", i)
+                i++;
                 fwrite(&buffer, 1, 512, outputfp);
                 //else close file and open new one
                     else
                     {
                     fclose(outputfp);
                     fopen(inputfp);
-                    i++;
                     }
                 }
             }
