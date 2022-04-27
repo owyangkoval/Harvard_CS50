@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
     FILE *inputfp;
-    FILE *outputfp;
+    FILE *outputfp = NULL;
     uint8_t buffer[512];
     char filename[8];
     int i = 0;
@@ -59,8 +59,12 @@ int main(int argc, char *argv[])
         else
         {
             // continue writing to file
-            printf("writing block to open file\n");
-            fwrite(&buffer, 1, 512, outputfp);
+            if (outputfp != NULL) {
+                printf("writing block to open file\n");
+                fwrite(&buffer, 1, 512, outputfp);
+            } else {
+                printf("skipping block\n");
+            }
         }
     }
     // close file
