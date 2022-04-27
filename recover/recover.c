@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
 {
     FILE *fp;
     uint8_t buffer[512];
+    char filename[8];
 
     //open file card.raw
     fp = fopen(argv[1], "w+");
