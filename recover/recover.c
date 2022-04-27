@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
             if (i == 0)
             {
                 sprintf(filename, "%03i.jpg", i);
+                printf("i = 0 | filename = %s\n", filename);
                 i++;
                 outputfp = fopen(filename, "w");
                 if (outputfp == NULL)
