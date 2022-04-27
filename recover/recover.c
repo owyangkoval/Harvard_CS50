@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
             if (i == 0)
             {
                 sprintf(filename, "%03i.jpg", i);
-                printf("i = 0 | filename = %s\n", filename);
+                printf("opening first file with filename %s\n", filename);
                 i++;
                 outputfp = fopen(filename, "w");
                 if (outputfp == NULL)
@@ -42,6 +42,7 @@ int main(int argc, char *argv[])
             else
             {
                 fclose(outputfp);
+                printf("opening first file with filename '%s'\n", filename);
                 sprintf(filename, "%03i.jpg", i);
                 outputfp = fopen(filename,"w");
                 if (outputfp == NULL)
