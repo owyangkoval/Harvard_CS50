@@ -6,6 +6,7 @@
 int main(int argc, char *argv[])
 {
     FILE *inputfp;
+    FILE *outputfp;
     uint8_t buffer[512];
     char filename[8];
     int i = 0;
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0)
         {
             // if first image
-            if (i = 0)
+            if (i == 0)
             {
                 sprintf(filename, "%03i.jpg", i);
                 i++;
@@ -33,17 +34,17 @@ int main(int argc, char *argv[])
                 {
                     printf("error");
                     exit(1);
-                }
-                fwrite(&buffer, 1, 512, outputfp);
-                // else close file and open new one
-                else
-                {
-                    fclose(outputfp);
-                    inputfp = fopen("card.raw", "r");
-                    if (inputfp == NULL)
+                    fwrite(&buffer, 1, 512, outputfp);
+                    // else close file and open new one
+                    else
                     {
-                        printf("error");
-                        exit(1);
+                        fclose(outputfp);
+                        inputfp = fopen("card.raw", "r");
+                        if (inputfp == NULL)
+                        {
+                            printf("error");
+                            exit(1);
+                        }
                     }
                 }
             }
