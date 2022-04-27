@@ -29,9 +29,8 @@ int main(int argc, char *argv[])
             else {
                //close jpg and start new file;
                 }
-            }
         else {
-            
-        }
+            fwrite(&buffer, 1, 512, fp);
+            }
     }
 }
