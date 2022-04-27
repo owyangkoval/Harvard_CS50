@@ -48,17 +48,12 @@ int main(int argc, char *argv[])
                     printf("error\n");
                     exit(1);
                 }
+                fwrite(&buffer, 1, 512, outputfp);
             }
         }
         else
         {
             // continue writing to file
-            outputfp = fopen(filename, "w");
-            if (outputfp == NULL)
-            {
-                printf("error\n");
-                exit(1);
-            }
             fwrite(&buffer, 1, 512, outputfp);
         }
     }
