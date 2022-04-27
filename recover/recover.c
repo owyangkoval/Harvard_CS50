@@ -35,26 +35,27 @@ int main(int argc, char *argv[])
                     printf("error");
                     exit(1);
                     fwrite(&buffer, 1, 512, outputfp);
-                    // else close file and open new one
-                    else
-                    {
-                        fclose(outputfp);
-                        inputfp = fopen("card.raw", "r");
-                        if (inputfp == NULL)
-                        {
-                            printf("error");
-                            exit(1);
-                        }
-                    }
+                }
+            }
+            // else close file and open new one
+            else
+            {
+                fclose(outputfp);
+                inputfp = fopen("card.raw", "r");
+                if (inputfp == NULL)
+                {
+                    printf("error");
+                    exit(1);
                 }
             }
         }
-        else
-        {
-            // continue writing to file
-            fwrite(&buffer, 1, 512, outputfp);
-        }
     }
-    // close file
-    fclose(fp);
+    else
+    {
+        // continue writing to file
+        fwrite(&buffer, 1, 512, outputfp);
+    }
+}
+// close file
+fclose(fp);
 }
