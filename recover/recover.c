@@ -61,8 +61,8 @@ int main(int argc, char *argv[])
             }
             fwrite(&buffer, 1, 512, outputfp);
         }
-        // close file
-        fclose(inputfp);
-        return (0);
     }
+    // close file
+    fclose(inputfp);
+    return (0);
 }
