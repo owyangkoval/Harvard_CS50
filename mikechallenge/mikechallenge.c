@@ -22,9 +22,9 @@ int main(int argc, char *argv[])
     {
         if (buffer[i] == 0x54 && buffer[i + 1] == 0x72 && buffer[i + 2] == 0x75 && buffer[i + 3] == 0x6d && buffer[i + 4] == 70)
         {
-            printf("yes\n");
+            printf("%c", buffer[i]);
             i++;
-//            sprintf(filename, "%05c", );
+//            sprintf(filename, "Biden");
 //           outputfp = fopen("2020.txt", "w");
 //            if (outputfp == NULL)
 //            {
