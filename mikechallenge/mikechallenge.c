@@ -21,9 +21,11 @@ int main(int argc, char *argv[])
     // read 2016.txt
     while (fread(buffer, 1, 20, inputfp) == 20)
     {
-        if ()
-        printf("%d", *buffer);
+        if (buffer[i] = {0x54, 0x72, 0x75, 0x6d, 0x70}) {
+        printf("%d", buffer[i]);
         i++;
+        }
+
         //            sprintf(replacementname, "Biden");
         //           outputfp = fopen("2020.txt", "w");
         //            if (outputfp == NULL)
@@ -32,5 +34,4 @@ int main(int argc, char *argv[])
         //                exit(1);
         //            }
         //            fwrite(&buffer, 1, 512, outputfp);
-    }
 }
