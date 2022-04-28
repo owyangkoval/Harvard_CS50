@@ -14,6 +14,6 @@ FILE *intputfp
 
         //read 2016.txt
         while (fread(buffer, 5, 20, inputfp)==20)
-            
+            printf(")
 
 }
