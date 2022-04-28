@@ -3,7 +3,7 @@
 
 int main(int argc, char*argv[]){
 
-FILE *intputfp
+FILE *intputfp;
 
        //open 2016.txt
        inputfp = openfp("2016.txt","r");
