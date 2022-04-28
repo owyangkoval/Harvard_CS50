@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
     FILE *inputfp;
     char *buffer[100];
     char filename[5];
+    int i=0;
 
     // open 2016.txt
     inputfp = fopen("2016.txt", "r");
@@ -21,8 +22,10 @@ int main(int argc, char *argv[])
     {
         if (buffer[i] == "T" && buffer[i + 1] == "r" && buffer[i + 2] == "u" && buffer[i + 3] == "m" && buffer[i + 4] == "p")
         {
-//            sprintf(filename, "%c%c%c%c%c", );
- //           outputfp = fopen("2020.txt", "w");
+            printf("%s", inputfp);
+            i++;
+            sprintf(filename, "%c%c%c%c%c", );
+           outputfp = fopen("2020.txt", "w");
             if (outputfp == NULL)
             {
                 printf("error\n");
