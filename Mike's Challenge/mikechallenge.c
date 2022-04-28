@@ -13,6 +13,7 @@ FILE *intputfp
         }
 
         //read 2016.txt
-        in
+        while (fread(buffer, 5, 20, inputfp)==20)
+            
 
 }
