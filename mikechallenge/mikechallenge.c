@@ -6,8 +6,8 @@ int main(int argc, char *argv[])
 
     FILE *inputfp;
     FILE *outputfp;
-    uint8_t buffer[20];
-    int replacementname[20];
+    char str[5] = 'Trump';
+    ;
     int i = 0;
 
     // open 2016.txt
