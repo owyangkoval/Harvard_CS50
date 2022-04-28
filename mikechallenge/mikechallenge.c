@@ -19,12 +19,7 @@ int main(int argc, char *argv[])
     }
 
     // read 2016.txt
-    while (fread(buffer, 1, 20, inputfp) == 20)
-    {
-        if (buffer[i] = {0x54, 0x72, 0x75, 0x6d, 0x70}) {
-        printf("%d", buffer[i]);
-        i++;
-        }
+    for(i=0;i)
 
         //            sprintf(replacementname, "Biden");
         //           outputfp = fopen("2020.txt", "w");
