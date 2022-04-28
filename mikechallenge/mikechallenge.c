@@ -7,8 +7,6 @@ int main(int argc, char *argv[])
     FILE *inputfp;
     FILE *outputfp;
     char str[5] = 'Trump';
-    ;
-    int i = 0;
 
     // open 2016.txt
     inputfp = fopen("2016.txt", "r");
@@ -19,7 +17,7 @@ int main(int argc, char *argv[])
     }
 
     // read 2016.txt
-    for(i=0;i)
+    for(i=0;i ;i++)
 
         //            sprintf(replacementname, "Biden");
         //           outputfp = fopen("2020.txt", "w");
