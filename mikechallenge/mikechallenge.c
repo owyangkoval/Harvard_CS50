@@ -5,8 +5,8 @@ int main(int argc, char *argv[])
 {
 
     FILE *inputfp;
-    char *buffer[100];
-    char filename[5];
+    int buffer[100];
+    int filename[5];
     int i=0;
 
     // open 2016.txt
@@ -22,17 +22,16 @@ int main(int argc, char *argv[])
     {
         if (buffer[i] == 0x54 && buffer[i + 1] == 0x72 && buffer[i + 2] == 0x75 && buffer[i + 3] == 0x6d && buffer[i + 4] == 70)
         {
-            printf("%s", inputfp);
+            printf("%d", *buffer);
             i++;
-            sprintf(filename, "%c%c%c%c%c", );
-           outputfp = fopen("2020.txt", "w");
-            if (outputfp == NULL)
-            {
-                printf("error\n");
-                exit(1);
-            }
-            fwrite(&buffer, 1, 512, outputfp);
+//            sprintf(filename, "%c%c%c%c%c", );
+//           outputfp = fopen("2020.txt", "w");
+//            if (outputfp == NULL)
+//            {
+//                printf("error\n");
+//                exit(1);
+//            }
+//            fwrite(&buffer, 1, 512, outputfp);
         }
     }
-}
 }
