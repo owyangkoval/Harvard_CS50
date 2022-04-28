@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 
     FILE *inputfp;
     FILE *outputfp;
-    int buffer[20];
+    uint8_t buffer[20];
     int replacementname[20];
     int i = 0;
 
