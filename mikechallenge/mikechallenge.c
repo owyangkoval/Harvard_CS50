@@ -17,7 +17,11 @@ int main(int argc, char *argv[])
     }
 
     // read 2016.txt
-    for(i=0;i ;i++)
+    while (fread(buffer, 1, 20, inputfp) == 20)
+    {
+    for(i=0;i<strlen;i++) {
+        
+    }
 
         //            sprintf(replacementname, "Biden");
         //           outputfp = fopen("2020.txt", "w");
