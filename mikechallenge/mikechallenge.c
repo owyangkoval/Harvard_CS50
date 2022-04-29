@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     char stringop[6] = "Biden";
 
     // open 2016.txt
-    inputfp = fopen("2016.txt", "r+");
+    inputfp = fopen("2016.txt", "r");
     if (inputfp == NULL)
     {
         printf("error\n");
