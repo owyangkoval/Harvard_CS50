@@ -6,8 +6,9 @@ int main(int argc, char *argv[])
 
     FILE *inputfp;
     FILE *outputfp;
-    char string[5] = "Trump";
-
+    char stringip[5] = "Trump";
+    char stringop[5] = "Biden";
+    
     // open 2016.txt
     inputfp = fopen("2016.txt", "w");
     if (inputfp == NULL)
