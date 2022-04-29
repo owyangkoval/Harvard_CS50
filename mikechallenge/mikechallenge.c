@@ -6,10 +6,10 @@ int main(int argc, char *argv[])
 
     FILE *inputfp;
     FILE *outputfp;
-    char str[5] = 'Trump';
+    char*trump[5] = 'Trump';
 
     // open 2016.txt
-    inputfp = fopen("2016.txt", "r");
+    inputfp = fopen("2016.txt", "w");
     if (inputfp == NULL)
     {
         printf("error\n");
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     while (fread(buffer, 1, 20, inputfp) == 20)
     {
     for(i=0;i<strlen;i++) {
-        
+
     }
 
         //            sprintf(replacementname, "Biden");
