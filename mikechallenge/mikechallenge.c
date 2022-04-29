@@ -4,8 +4,8 @@
 int main(int argc, char *argv[])
 {
 
-    FILE *inputfp;
-    FILE *outputfp;
+    FILE *inputfp = NULL;
+    FILE *outputfp = NULL;
     uint8_t buffer[512];
     char stringip[5] = "Trump";
     char stringop[5] = "Biden";
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
     // read 2016.txt
     while (fread(buffer, 1, 20, intputfp) == 20) {
-        
+
     }
 
 }
