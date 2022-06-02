@@ -179,7 +179,7 @@ bool cycle(int end, int cycle_start)
     // Loop through candidates
     for (int i = 0; i < candidate_count; i++)
     {
-        if(locked[end][i]])
+        if(locked[end][i])
         {
             if(cycle(i, cycle_start))
             {
@@ -193,15 +193,16 @@ bool cycle(int end, int cycle_start)
 //Lock pairs
 void lock_pairs(void)
 {
-int i, j;
-int visited=0;
-    for (i=0;i<pair_count;i++) {
-        for (j=0;j<pair_count;j++) {
-            if (preferences[i][j]==visited) {
-                locked[i][j]=true;
-                    }
+    // Loop through pairs
+    for (int i = 0; i < pair_count; i++)
+    {
+        //If cycle returns false, lock the pair
+        if(!cycle(pairs[i].loser, pairs[i].winner))
+        {
+            locked[pairs[i].winner][pairs[i].loser] = true;
         }
     }
+    return;
 }
 
 // Print the winner of the election
