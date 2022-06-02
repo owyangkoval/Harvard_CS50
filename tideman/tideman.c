@@ -180,7 +180,7 @@ int visited=0;
                 locked[i][j]=true;
                     }
             else {
-        return visited;
+        return;
             }
         }
     }
