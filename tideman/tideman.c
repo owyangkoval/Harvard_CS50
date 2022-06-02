@@ -169,8 +169,10 @@ void sort_pairs(void) {
     }
 }
 
-//DFS search algorithm
-void dfs(int i, int j) {
+//Lock pairs
+void lock_pairs(void)
+{
+int i, j;
 int visited=0;
     for (i=0;i<pair_count;i++) {
         for (j=0;j<pair_count;j++) {
@@ -182,14 +184,6 @@ int visited=0;
             }
         }
     }
-}
-
-
-//  Lock pairs
-void lock_pairs(void)
-{
-
-    return;
 }
 
 // Print the winner of the election
