@@ -191,7 +191,7 @@ void print_winner(void)
 {
 for (int i = 0; i < candidate_count; i++) {
     for (int j = i + 1; j < candidate_count; j++) {
-            if(locked[i][j] == false) {
+            if(locked[i][j] == true) {
                 printf("The winner of the election is: %s\n", candidates[i]);
             }
         }
