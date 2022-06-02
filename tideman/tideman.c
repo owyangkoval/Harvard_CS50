@@ -169,60 +169,39 @@ void sort_pairs(void) {
     }
 }
 
-bool cycle(int end, int cycle_start)
+//DFS search algorithm
+void dfs(int i, int j)
 {
-    // Return True if there is a cycle created (recursion base case)
-    if (end == cycle_start)
+    int visited = 0;
+    for (i = 0; i < pair_count; i++)
     {
-        return true;
-    }
-    // Loop through candidates
-    for (int i = 0; i < candidate_count; i++)
-    {
-        if(locked[end][i])
+        for (j = 0; j < pair_count; j++)
         {
-            if(cycle(i, cycle_start))
+            if (preferences[i][j] == visited)
             {
-                return true;
+                locked[i][j] = true;
             }
         }
+        return;
     }
-    return false;
 }
 
-//Lock pairs
+//  Lock pairs
 void lock_pairs(void)
 {
-    // Loop through pairs
-    for (int i = 0; i < pair_count; i++)
-    {
-        //If cycle returns false, lock the pair
-        if(!cycle(pairs[i].loser, pairs[i].winner))
-        {
-            locked[pairs[i].winner][pairs[i].loser] = true;
-        }
-    }
+
     return;
 }
 
 // Print the winner of the election
 void print_winner(void)
 {
-    for(int i = 0; i < candidate_count; i++)
-    {
-        int falseValues = 0;
-        for(int j = 0; j < candidate_count; j++)
-        {
-            if(locked[j][i] == false)
-            {
-                falseValues++;
-                if(falseValues == candidate_count)
-                {
-                    printf("%s\n",candidates[i]);
-                }
+for (int i = 0; i < candidate_count; i++) {
+    for (int j = i + 1; j < candidate_count; j++) {
+            if(locked[i][j] == false) {
+                printf("The winner of the election is: %s\n", candidates[i]);
             }
         }
-
     }
     return;
 }
