@@ -169,6 +169,27 @@ void sort_pairs(void) {
     }
 }
 
+bool cycle(int end, int cycle_start)
+{
+    // Return True if there is a cycle created (recursion base case)
+    if (end == cycle_start)
+    {
+        return true;
+    }
+    // Loop through candidates
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if(locked[end][i]])
+        {
+            if(cycle(i, cycle_start))
+            {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 //Lock pairs
 void lock_pairs(void)
 {
@@ -179,9 +200,6 @@ int visited=0;
             if (preferences[i][j]==visited) {
                 locked[i][j]=true;
                     }
-            else {
-        locked[i][j]=false;
-            }
         }
     }
 }
