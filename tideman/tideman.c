@@ -189,7 +189,14 @@ void dfs(int i, int j)
 //  Lock pairs
 void lock_pairs(void)
 {
-
+    // Loop through pairs
+    for (int i = 0; i < pair_count; i++)
+    {
+        if(!locked[i][j])
+        {
+            locked[pairs[i].winner][pairs[i].loser] = true;
+        }
+    }
     return;
 }
 
