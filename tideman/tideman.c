@@ -192,7 +192,8 @@ void lock_pairs(void)
     // Loop through pairs
     for (int i = 0; i < pair_count; i++)
     {
-        int lock_pairs = dfs(i,j);
+        int winner = pairs[i].winner;
+        int loser = pairs[i].loser;
     }
     return;
 }
