@@ -4,8 +4,13 @@
 
 int main(void) {
 
-int digit;
+int i, j;
 int sudoku[9][9];
 
-    scanf("%d", &digit)
+for (i=0;i<9;i++) {
+    for (j=0;j<9;j++) {
+        scanf("%d",)
+    }
+}
+
 }
