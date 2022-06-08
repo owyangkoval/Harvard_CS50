@@ -4,13 +4,15 @@
 
 int main(void) {
 
-int i, j;
-int sudoku[9][9];
+int i=0;
+int j=0;
+int sudoku[i][j];
 
 for (i=0;i<6;i++) {
     for (j=0;j<6;j++) {
-        scanf("%d",)
+        scanf("%d", &i);
+        scanf("%d", &j);
+        }
     }
-}
-
+    printf("%d", sudoku[i][j]);
 }
