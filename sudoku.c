@@ -6,7 +6,7 @@ int main(void) {
 
 int i=0;
 int j=0;
-int sudoku[i][j];
+int sudoku[6][6];
 
 for (i=0;i<6;i++) {
     for (j=0;j<6;j++) {
