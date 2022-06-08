@@ -11,7 +11,7 @@ int sudoku[i][j];
 for (i=0;i<6;i++) {
     for (j=0;j<6;j++) {
         scanf("%d", &sudoku[i][j]);
+            printf("%d", sudoku[i][j]);
         }
     }
-    printf("%d", sudoku[i][j]);
 }
